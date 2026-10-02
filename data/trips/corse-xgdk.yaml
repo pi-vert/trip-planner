@@ -1,0 +1,1092 @@
+itinerary:
+  - mmhf9wlbu15r9
+  - mmhxk6st1wt6z
+  - mmhxrn8wsauwj
+  - mmhxh8exyr6xs
+  - mmhxzuav7oc1i
+  - mmhxg5xwxzfxf
+  - mmhxo45a83d2w
+  - mmhfau4tg72we
+  - mmhx7wus0es9j
+  - mmhxq7kf6q3ub
+  - mmhxc38p1ox3u
+  - mmhxqrtztnogt
+  - mmhfd0v0sin4c
+  - mmhfdpo54xsae
+  - mmhxu4zhdlf8k
+  - mmhff9lob09g5
+  - mmhffyy4zddku
+  - mmhxe46phycv5
+  - mmhxs4jifke7f
+  - mmhfgpn2e9ep8
+  - mmhxwbii5wms4
+  - mmhxa8ca95fhd
+  - mmhxb7hpoullu
+  - mmhxndhs762ne
+  - mmhxvm10tx04g
+  - mmhxxwbqlzvu7
+  - mmhxyz32bfzbs
+places:
+  mmhf9wlbu15r9:
+    name: Aéroport international de Bastia-Poretta
+    lat: 42.554418
+    lng: 9.482199
+    duration_h: 1
+    budget: 0
+    desc: >-
+      Point d’arrivée pratique pour débuter un road trip en Haute-Corse.
+      L’aéroport permet de rejoindre rapidement Bastia, le Cap Corse et
+      Saint-Florent.
+    closedDays: []
+    ratings:
+      overall: 6
+    tags:
+      - aéroport
+      - arrivée
+      - transport
+      - location-voiture
+    image: https://corse.media.tourinsoft.eu/upload/AEROPORT-BASTIA-PORETTA-1-3.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: https://bastia-aeroport.cci.corsica/
+  mmhxk6st1wt6z:
+    name: Bastia
+    lat: 42.699398
+    lng: 9.450919
+    duration_h: 3
+    budget: 0
+    desc: >-
+      Bastia mêle vieux port, citadelle génoise, ruelles colorées et ambiance
+      méditerranéenne. C’est une excellente porte d’entrée pour découvrir le
+      nord de la Corse sans sacrifier le charme ni la gastronomie.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - patrimoine
+      - vieux-port
+      - citadelle
+      - gastronomie
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/Citadelle-Bastia-Sylvain-Alessandri1-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/BASTIA
+  mmhxrn8wsauwj:
+    name: Brando
+    lat: 42.77395
+    lng: 9.47613
+    duration_h: 2
+    budget: 0
+    desc: >-
+      Brando, avec sa marine d’Erbalunga, séduit par son petit port, ses maisons
+      les pieds dans l’eau et sa tour génoise. L’étape est idéale pour une
+      balade paisible au bord de mer dans l’un des plus beaux villages du Cap
+      Corse.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - village
+      - port
+      - patrimoine
+      - cap-corse
+      - photo
+    image: https://corse.media.tourinsoft.eu/upload/ERBA-.jpeg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/BRANDO
+  mmhxh8exyr6xs:
+    name: Macinaggio
+    lat: 42.9572
+    lng: 9.4531
+    duration_h: 2
+    budget: 0
+    desc: >-
+      Macinaggio est le grand port du nord-est du Cap Corse et le point de
+      départ classique du Sentier des Douaniers. On y apprécie la marina, la
+      plage et l’ambiance de bout du monde avant de continuer vers les paysages
+      les plus sauvages du cap.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - port
+      - cap-corse
+      - randonnée
+      - plage
+      - marina
+    image: https://corse.media.tourinsoft.eu/upload/PORT-DE-MACINAGGIO-1-2-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Accessibilite/Tous-les-prestataires-accessibilites/PORT-DE-PLAISANCE-MACINAGGIO-PORTU-PAUL-LUIGI
+  mmhxzuav7oc1i:
+    name: Sentier des Douaniers
+    lat: 42.982502
+    lng: 9.452792
+    duration_h: 5
+    budget: 0
+    desc: >-
+      Le Sentier des Douaniers relie Macinaggio à Centuri sur un littoral
+      protégé de toute beauté. Entre tours génoises, criques, dunes, maquis et
+      vues sur les îles du Cap, c’est l’une des plus belles randonnées côtières
+      de Corse.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - randonnée
+      - cap-corse
+      - nature
+      - littoral
+      - panorama
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/Sentier-des-douaniers-du-Cap-Corse-142-b---Pointe-Agnello.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Itineraires/Tous-les-itineraires/SENTIER-DES-DOUANIERS
+  mmhxg5xwxzfxf:
+    name: Nonza
+    lat: 42.784406
+    lng: 9.344586
+    duration_h: 2
+    budget: 0
+    desc: >-
+      Nonza est un village spectaculaire accroché à la falaise, célèbre pour sa
+      tour paoline et sa plage sombre en contrebas. On y vient autant pour le
+      panorama que pour l’atmosphère très minérale du Cap Corse occidental.
+    closedDays: []
+    ratings:
+      overall: 9
+    tags:
+      - village
+      - panorama
+      - patrimoine
+      - plage
+      - cap-corse
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/nonza5---Sylvain-Alessandri---Copie.JPG
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/NONZA
+  mmhxo45a83d2w:
+    name: Patrimonio
+    lat: 42.700739
+    lng: 9.364524
+    duration_h: 2
+    budget: 0
+    desc: >-
+      Patrimonio est le grand village viticole du Nebbiu, entouré de vignobles
+      et de reliefs calcaires. C’est une halte parfaite pour une dégustation, un
+      déjeuner et une belle vue sur le golfe de Saint-Florent.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - village
+      - vin
+      - oenotourisme
+      - gastronomie
+      - panorama
+    image: https://corse.media.tourinsoft.eu/upload/PATRIMONIO-10-DSC04552-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/PATRIMONIO
+  mmhfau4tg72we:
+    name: Saint-Florent
+    lat: 42.681295
+    lng: 9.302499
+    duration_h: 3
+    budget: 0
+    desc: >-
+      Saint-Florent est une jolie station portuaire très animée, blottie au fond
+      d’un superbe golfe. Son port, sa citadelle et sa position stratégique à
+      l’entrée des Agriates en font une base idéale pour explorer le nord-ouest
+      de l’île.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - port
+      - citadelle
+      - balade
+      - plages
+    image: https://corse.media.tourinsoft.eu/upload/Saint-Florent-Drone.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/SAINT-FLORENT
+  mmhx7wus0es9j:
+    name: Désert des Agriates
+    lat: 42.696053
+    lng: 9.165571
+    duration_h: 6
+    budget: 0
+    desc: >-
+      Le Désert des Agriates n’est pas un désert de sable mais un vaste
+      territoire sauvage de maquis, de criques et de plages sublimes. On
+      l’explore en bateau, en 4x4 ou à pied pour profiter d’une Corse plus brute
+      et préservée.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - nature
+      - sauvage
+      - 4x4
+      - bateau
+      - randonnée
+    image: https://corse.media.tourinsoft.eu/upload/Plage-de-Saleccia-4.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/LE-DESERT-DES-AGRIATE
+  mmhxq7kf6q3ub:
+    name: Speloncato
+    lat: 42.561686
+    lng: 8.981111
+    duration_h: 1.5
+    budget: 0
+    desc: >-
+      Speloncato domine la vallée du Réginu depuis son piton rocheux. Ce village
+      perché offre de très belles vues, des ruelles anciennes et une ambiance
+      authentique loin des stations balnéaires.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - village-perché
+      - balagne
+      - panorama
+      - patrimoine
+      - authentique
+    image: https://corse.media.tourinsoft.eu/upload/U-SPUNCATU-SPELUNCATO-2-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/U-SPUNCATU-SPELUNCATO
+  mmhxc38p1ox3u:
+    name: Plage de Saleccia
+    lat: 42.726737
+    lng: 9.205548
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Saleccia est l’une des plages les plus mythiques de Corse, avec son sable
+      clair, son eau turquoise et son environnement très préservé. L’accès se
+      mérite, mais la récompense est à la hauteur.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - plage
+      - baignade
+      - eau-turquoise
+      - nature
+      - agriates
+    image: https://corse.media.tourinsoft.eu/upload/Plage-de-Saleccia-4.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/PLAGE-DE-SALECCIA
+  mmhxqrtztnogt:
+    name: Pigna
+    lat: 42.598994
+    lng: 8.902939
+    duration_h: 1.5
+    budget: 0
+    desc: >-
+      Pigna est un village d’artisans emblématique de la Balagne, avec ses
+      ruelles piétonnes, ses ateliers et son atmosphère culturelle. On y vient
+      pour flâner, acheter local et profiter d’un superbe coucher de soleil.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - village
+      - artisanat
+      - culture
+      - balagne
+      - coucher-de-soleil
+    image: https://corse.media.tourinsoft.eu/upload/6427346.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/PIGNA
+  mmhfd0v0sin4c:
+    name: Ile-Rousse
+    lat: 42.637078
+    lng: 8.935262
+    duration_h: 3
+    budget: 0
+    desc: >-
+      L’Île-Rousse offre un centre agréable, un marché vivant, de jolies plages
+      et une belle promenade jusqu’à la Pietra. C’est une excellente base pour
+      découvrir toute la Balagne.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - marché
+      - plage
+      - balade
+      - balagne
+    image: https://corse.media.tourinsoft.eu/upload/L-ISULA-ILE-ROUSSE-1.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/L-ILE-ROUSSE
+  mmhfdpo54xsae:
+    name: Calvi
+    lat: 42.567708
+    lng: 8.759053
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Calvi combine une grande baie, une longue plage, une citadelle
+      impressionnante et une marina animée. C’est l’une des étapes les plus
+      complètes du nord de la Corse, entre ville, plage et patrimoine.
+    closedDays: []
+    ratings:
+      overall: 9
+    tags:
+      - ville
+      - citadelle
+      - plage
+      - marina
+      - balagne
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/Calvi-citadelle-Sylvain-Alessandri-2---Copie.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/CALVI
+  mmhxu4zhdlf8k:
+    name: Réserve naturelle de Scandola
+    lat: 42.356881
+    lng: 8.561336
+    duration_h: 4
+    budget: 0
+    desc: >-
+      La réserve de Scandola est l’un des grands joyaux naturels de Corse,
+      classé au patrimoine mondial de l’UNESCO. Falaises volcaniques, eau
+      limpide et biodiversité exceptionnelle en font une excursion maritime
+      inoubliable.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - unesco
+      - réserve-naturelle
+      - bateau
+      - falaises
+      - snorkeling
+    image: >-
+      https://www.visit-corsica.com/var/ezflow_site/storage/images/media/images2/mareva/naveva-reserve-de-scandola-girolata-golfe-de-porto-et-calanches-de-piana/visite-naveva-sortie-en-mer-reserve-scandola-girolata-golfe-porto-calanches-piana-tourisme-corse-ajaccio-2/6382801-1-fre-FR/visite-naveva-sortie-en-mer-reserve-scandola-girolata-golfe-porto-calanches-piana-tourisme-corse-ajaccio-2_large2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Inspirations-Sea-and-rivers/A-sea-excursion-in-Corsica-Scandola-Nature-Reserve-Girolata-the-Gulf-of-Porto-and-the-Piana-Calanques
+  mmhff9lob09g5:
+    name: Calanques de Piana
+    lat: 42.252522
+    lng: 8.632812
+    duration_h: 2
+    budget: 0
+    desc: >-
+      Les Calanques de Piana déploient un décor grandiose de roches rouges
+      sculptées par l’érosion au-dessus de la mer. La route panoramique et les
+      belvédères offrent quelques-uns des paysages les plus iconiques de l’île.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - unesco
+      - route-panoramique
+      - falaises
+      - photo
+      - côte-ouest
+    image: >-
+      https://www.visit-corsica.com/var/ezflow_site/storage/images/media/images2/mareva/naveva-reserve-de-scandola-girolata-golfe-de-porto-et-calanches-de-piana/visite-naveva-sortie-en-mer-reserve-scandola-girolata-golfe-porto-calanches-piana-tourisme-corse-ajaccio-5/6382816-1-fre-FR/visite-naveva-sortie-en-mer-reserve-scandola-girolata-golfe-porto-calanches-piana-tourisme-corse-ajaccio-5_large2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: https://whc.unesco.org/en/list/258/
+  mmhffyy4zddku:
+    name: Ajaccio
+    lat: 41.926399
+    lng: 8.737603
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Ajaccio, ville natale de Napoléon, combine vieille ville, marchés, musées,
+      front de mer et plages urbaines. C’est une étape vivante et facile à
+      apprécier, surtout en fin de journée.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - napoléon
+      - marché
+      - patrimoine
+      - bord-de-mer
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/place-du-Diamant-Ajaccio-S.Alessandri-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/AIACCIU-AJACCIO
+  mmhxe46phycv5:
+    name: Saint-François
+    lat: 41.916539
+    lng: 8.737564
+    duration_h: 2
+    budget: 0
+    desc: >-
+      La plage Saint-François est une petite plage de sable en plein centre
+      d’Ajaccio, juste à côté de la citadelle. Elle est parfaite pour une
+      baignade urbaine ou une pause rapide sans quitter la ville.
+    closedDays: []
+    ratings:
+      overall: 7
+    tags:
+      - plage
+      - baignade
+      - centre-ville
+      - ajaccio
+    image: https://corse.media.tourinsoft.eu/upload/plagestfrancoisajaccio.png
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/PLAGE-SAINT-FRANCOIS
+  mmhxs4jifke7f:
+    name: Sartène
+    lat: 41.620885
+    lng: 8.972188
+    duration_h: 2.5
+    budget: 0
+    desc: >-
+      Sartène, souvent décrite comme la plus corse des villes corses, séduit par
+      son architecture de granit et son atmosphère puissante. C’est une belle
+      étape pour ressentir une Corse intérieure, historique et très identitaire.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - granit
+      - patrimoine
+      - authentique
+      - histoire
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/Sartene---La-plus-corse-des-villes-corses.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/SARTE-SARTENE
+  mmhfgpn2e9ep8:
+    name: Bonifacio / Bunifaziu
+    lat: 41.387826
+    lng: 9.160618
+    duration_h: 5
+    budget: 0
+    desc: >-
+      Bonifacio impressionne immédiatement par sa citadelle posée sur des
+      falaises calcaires blanches. Entre vieille ville, vues sur les Bouches de
+      Bonifacio et excursions en mer, c’est une étape majeure du sud corse.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - ville
+      - falaises
+      - citadelle
+      - bateau
+      - incontournable
+    image: >-
+      https://corse.media.tourinsoft.eu/upload/Bonifacio--Sylvain-Alessandri-54---Copie.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/BUNIFAZIU-BONIFACIO
+  mmhxwbii5wms4:
+    name: Îles Lavezzi
+    lat: 41.367572
+    lng: 9.264696
+    duration_h: 6
+    budget: 0
+    desc: >-
+      L’archipel des Lavezzi offre un décor de granit blanc, de petites criques
+      et d’eaux transparentes rappelant les Seychelles. C’est une sortie idéale
+      pour la baignade, le masque-tuba et une journée bateau au départ de
+      Bonifacio.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - archipel
+      - baignade
+      - snorkeling
+      - bateau
+      - nature
+    image: >-
+      https://www.visit-corsica.com/var/ezflow_site/storage/images/media/images/plages/iles-lavezzi-maquis-et-mer/2492277-1-fre-FR/Iles-Lavezzi-maquis-et-mer_large2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Inspirations-Sea-and-rivers/The-Lavezzi-Island-archipelago-a-nature-reserve-between-Corsica-and-Sardinia
+  mmhxa8ca95fhd:
+    name: Rondinara
+    lat: 41.472266
+    lng: 9.272403
+    duration_h: 3
+    budget: 0
+    desc: >-
+      Rondinara est célèbre pour sa baie presque parfaitement arrondie et ses
+      eaux calmes. C’est l’une des plages les plus photogéniques et familiales
+      du sud de la Corse.
+    closedDays: []
+    ratings:
+      overall: 9
+    tags:
+      - plage
+      - baignade
+      - eau-calme
+      - famille
+      - photo
+    image: https://corse.media.tourinsoft.eu/upload/rondinara-principale-pal26680.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/PLAGE-DE-RONDINARA
+  mmhxb7hpoullu:
+    name: Palombaggia
+    lat: 41.561582
+    lng: 9.333828
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Palombaggia est l’image de carte postale de la Corse du Sud : sable fin,
+      pins parasols, rochers rouges et mer turquoise. C’est un grand classique,
+      particulièrement beau tôt le matin ou hors saison.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - plage
+      - baignade
+      - pins-parasols
+      - eau-turquoise
+      - incontournable
+    image: https://corse.media.tourinsoft.eu/upload/Plage-de-palombaggia-PV.png
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/PLAGE-DE-PALOMBAGGIA-I-PINI
+  mmhxndhs762ne:
+    name: Porto-Vecchio
+    lat: 41.591138
+    lng: 9.279447
+    duration_h: 3
+    budget: 0
+    desc: >-
+      Porto-Vecchio allie vieille ville fortifiée, port animé et proximité
+      immédiate des plus belles plages du sud. C’est une étape très pratique
+      pour rayonner entre mer et montagne.
+    closedDays: []
+    ratings:
+      overall: 8
+    tags:
+      - ville
+      - port
+      - citadelle
+      - restaurants
+      - sud-corse
+    image: https://corse.media.tourinsoft.eu/upload/Porto-Vecchio-11---Copie.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/PORTI-VECHJU-PORTO-VECCHIO
+  mmhxvm10tx04g:
+    name: Rivière u Cavu
+    lat: 41.717738
+    lng: 9.304389
+    duration_h: 3
+    budget: 0
+    desc: >-
+      La rivière du Cavu est connue pour ses vasques naturelles, ses rochers
+      lissés et ses coins de baignade en pleine nature. C’est une excellente
+      alternative aux plages lors d’une journée chaude.
+    closedDays: []
+    ratings:
+      overall: 9
+    tags:
+      - rivière
+      - baignade
+      - vasques
+      - nature
+      - famille
+    image: https://corse.media.tourinsoft.eu/upload/LA-RIVIERE-DU-CAVU-1-5-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/LA-RIVIERE-DU-CAVU
+  mmhxxwbqlzvu7:
+    name: Aiguilles de Bavella
+    lat: 41.803391
+    lng: 9.214555
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Les Aiguilles de Bavella dressent un spectaculaire rempart rocheux au cœur
+      de l’Alta Rocca. Le site est parfait pour randonner, admirer les panoramas
+      et découvrir les célèbres piscines naturelles du massif.
+    closedDays: []
+    ratings:
+      overall: 10
+    tags:
+      - montagne
+      - randonnée
+      - panorama
+      - nature
+      - alta-rocca
+    image: https://corse.media.tourinsoft.eu/upload/Bavella-22.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Inspirations-and-encounters/Corsica-s-most-beautiful-natural-sites
+  mmhxyz32bfzbs:
+    name: Ruisseau du Coscione
+    lat: 41.820703
+    lng: 9.166928
+    duration_h: 4
+    budget: 0
+    desc: >-
+      Le plateau du Coscione, avec ses pozzines, ses prairies humides et ses
+      animaux en liberté, offre un paysage de montagne très différent du
+      littoral. C’est une superbe balade pour une journée plus fraîche et
+      contemplative.
+    closedDays: []
+    ratings:
+      overall: 9
+    tags:
+      - pozzines
+      - montagne
+      - randonnée
+      - nature
+      - famille
+    image: https://corse.media.tourinsoft.eu/upload/IMG-20160825-183632-2.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: >-
+      https://www.visit-corsica.com/fr/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/PLATEAU-DU-CUSCIONU
+view:
+  center:
+    lat: 42.982502
+    lng: 9.452792
+    zoom: 8
+edges:
+  mmhf9wlbu15r9|mmhfau4tg72we:
+    realKm: 31
+    realMin: 36
+  mmhfau4tg72we|mmhfd0v0sin4c:
+    realKm: 46.4
+    realMin: 52
+  mmhfd0v0sin4c|mmhfdpo54xsae:
+    realKm: 24.1
+    realMin: 29
+  mmhfdpo54xsae|mmhff9lob09g5:
+    realKm: 90.9
+    realMin: 106
+  mmhff9lob09g5|mmhffyy4zddku:
+    realKm: 72.2
+    realMin: 85
+  mmhffyy4zddku|mmhfgpn2e9ep8:
+    realKm: 128.4
+    realMin: 122
+  mmhfgpn2e9ep8|mmhx7wus0es9j:
+    realKm: 196.2
+    realMin: 245
+  mmhfau4tg72we|mmhx7wus0es9j:
+    realKm: 18.2
+    realMin: 62
+  mmhx7wus0es9j|mmhfd0v0sin4c:
+    realKm: 39.6
+    realMin: 83
+  mmhfgpn2e9ep8|mmhxa8ca95fhd:
+    realKm: 20
+    realMin: 28
+  mmhxa8ca95fhd|mmhxb7hpoullu:
+    realKm: 24.7
+    realMin: 34
+  mmhxb7hpoullu|mmhxc38p1ox3u:
+    realKm: 183.1
+    realMin: 243
+  mmhx7wus0es9j|mmhxc38p1ox3u:
+    realKm: 2.4
+    realMin: 14
+  mmhxc38p1ox3u|mmhfd0v0sin4c:
+    realKm: 40.3
+    realMin: 88
+  mmhxb7hpoullu|mmhxe46phycv5:
+    realKm: 137.5
+    realMin: 149
+  mmhffyy4zddku|mmhxe46phycv5:
+    realKm: 1.3
+    realMin: 2
+  mmhxe46phycv5|mmhfgpn2e9ep8:
+    realKm: 129.5
+    realMin: 124
+  mmhxb7hpoullu|mmhxg5xwxzfxf:
+    realKm: 183.3
+    realMin: 200
+  mmhf9wlbu15r9|mmhxg5xwxzfxf:
+    realKm: 46.6
+    realMin: 53
+  mmhxg5xwxzfxf|mmhfau4tg72we:
+    realKm: 19.3
+    realMin: 22
+  mmhxb7hpoullu|mmhxh8exyr6xs:
+    realKm: 181.8
+    realMin: 200
+  mmhf9wlbu15r9|mmhxh8exyr6xs:
+    realKm: 56
+    realMin: 64
+  mmhxh8exyr6xs|mmhxg5xwxzfxf:
+    realKm: 57.8
+    realMin: 68
+  mmhxb7hpoullu|mmhxk6st1wt6z:
+    realKm: 157
+    realMin: 169
+  mmhf9wlbu15r9|mmhxk6st1wt6z:
+    realKm: 20.3
+    realMin: 22
+  mmhxk6st1wt6z|mmhxh8exyr6xs:
+    realKm: 25.2
+    realMin: 32
+  mmhxb7hpoullu|mmhxndhs762ne:
+    realKm: 14.1
+    realMin: 20
+  mmhxndhs762ne|mmhxo45a83d2w:
+    realKm: 153.2
+    realMin: 162
+  mmhxo45a83d2w|mmhxq7kf6q3ub:
+    realKm: 63.9
+    realMin: 71
+  mmhxq7kf6q3ub|mmhxqrtztnogt:
+    realKm: 20.3
+    realMin: 24
+  mmhxqrtztnogt|mmhxrn8wsauwj:
+    realKm: 86.1
+    realMin: 100
+  mmhxrn8wsauwj|mmhxs4jifke7f:
+    realKm: 188.1
+    realMin: 200
+  mmhxs4jifke7f|mmhxu4zhdlf8k:
+    realKm: 175.1
+    realMin: 211
+  mmhxu4zhdlf8k|mmhxvm10tx04g:
+    realKm: 216
+    realMin: 259
+  mmhxvm10tx04g|mmhxwbii5wms4:
+    realKm: 54.5
+    realMin: 70
+  mmhxwbii5wms4|mmhxxwbqlzvu7:
+    realKm: 80.2
+    realMin: 90
+  mmhxxwbqlzvu7|mmhxyz32bfzbs:
+    realKm: 27.3
+    realMin: 45
+  mmhxyz32bfzbs|mmhxzuav7oc1i:
+    realKm: 208.9
+    realMin: 273
+  mmhfd0v0sin4c|mmhxu4zhdlf8k:
+    realKm: 71.1
+    realMin: 110
+  mmhxu4zhdlf8k|mmhfdpo54xsae:
+    realKm: 54.9
+    realMin: 91
+  mmhxs4jifke7f|mmhxvm10tx04g:
+    realKm: 80.6
+    realMin: 88
+  mmhfgpn2e9ep8|mmhxwbii5wms4:
+    realKm: 8.1
+    realMin: 15
+  mmhxwbii5wms4|mmhxa8ca95fhd:
+    realKm: 25.3
+    realMin: 38
+  mmhxvm10tx04g|mmhxxwbqlzvu7:
+    realKm: 59.5
+    realMin: 68
+  mmhxndhs762ne|mmhxxwbqlzvu7:
+    realKm: 47.4
+    realMin: 52
+  mmhxxwbqlzvu7|mmhxo45a83d2w:
+    realKm: 144.1
+    realMin: 150
+  mmhxvm10tx04g|mmhxyz32bfzbs:
+    realKm: 71.6
+    realMin: 101
+  mmhxndhs762ne|mmhxvm10tx04g:
+    realKm: 19.6
+    realMin: 27
+  mmhxs4jifke7f|mmhxyz32bfzbs:
+    realKm: 48.4
+    realMin: 75
+  mmhxk6st1wt6z|mmhxrn8wsauwj:
+    realKm: 9.7
+    realMin: 13
+  mmhxrn8wsauwj|mmhxh8exyr6xs:
+    realKm: 26.3
+    realMin: 30
+  mmhxqrtztnogt|mmhxs4jifke7f:
+    realKm: 214.1
+    realMin: 206
+  mmhxrn8wsauwj|mmhxg5xwxzfxf:
+    realKm: 41.8
+    realMin: 52
+  mmhxrn8wsauwj|mmhxzuav7oc1i:
+    realKm: 38.3
+    realMin: 79
+  mmhxzuav7oc1i|mmhxg5xwxzfxf:
+    realKm: 56.1
+    realMin: 104
+  mmhxg5xwxzfxf|mmhxo45a83d2w:
+    realKm: 16.2
+    realMin: 19
+  mmhxo45a83d2w|mmhfau4tg72we:
+    realKm: 6.7
+    realMin: 9
+  mmhxxwbqlzvu7|mmhxq7kf6q3ub:
+    realKm: 172.8
+    realMin: 178
+  mmhx7wus0es9j|mmhxq7kf6q3ub:
+    realKm: 50.7
+    realMin: 92
+  mmhxq7kf6q3ub|mmhxc38p1ox3u:
+    realKm: 52.1
+    realMin: 101
+  mmhxxwbqlzvu7|mmhxqrtztnogt:
+    realKm: 177.4
+    realMin: 178
+  mmhxc38p1ox3u|mmhxqrtztnogt:
+    realKm: 47.7
+    realMin: 96
+  mmhxqrtztnogt|mmhfd0v0sin4c:
+    realKm: 8.7
+    realMin: 12
+  mmhxxwbqlzvu7|mmhxs4jifke7f:
+    realKm: 44.8
+    realMin: 50
+  mmhfdpo54xsae|mmhxu4zhdlf8k:
+    realKm: 55.2
+    realMin: 92
+  mmhxu4zhdlf8k|mmhff9lob09g5:
+    realKm: 41.4
+    realMin: 82
+  mmhffyy4zddku|mmhxyz32bfzbs:
+    realKm: 89.1
+    realMin: 107
+  mmhxyz32bfzbs|mmhxe46phycv5:
+    realKm: 89.5
+    realMin: 107
+  mmhxe46phycv5|mmhxs4jifke7f:
+    realKm: 79.6
+    realMin: 78
+  mmhxs4jifke7f|mmhfgpn2e9ep8:
+    realKm: 51
+    realMin: 50
+  mmhxh8exyr6xs|mmhxzuav7oc1i:
+    realKm: 12.3
+    realMin: 50
+  mmhxh8exyr6xs|mmhfau4tg72we:
+    realKm: 58.7
+    realMin: 73
+  mmhfau4tg72we|mmhxqrtztnogt:
+    realKm: 53.9
+    realMin: 61
+  mmhxqrtztnogt|mmhxu4zhdlf8k:
+    realKm: 69.9
+    realMin: 109
+  mmhxu4zhdlf8k|mmhffyy4zddku:
+    realKm: 103.6
+    realMin: 144
+  mmhffyy4zddku|mmhxs4jifke7f:
+    realKm: 78.5
+    realMin: 75
+  mmhfgpn2e9ep8|mmhxvm10tx04g:
+    realKm: 48.2
+    realMin: 58
+planning:
+  reservations: []

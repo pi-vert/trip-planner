@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "polynesie-mi2u": {
+      "country": "Polynésie française",
+      "capital": { "name": "Papeete", "lat": -17.535, "lng": -149.5696 },
+      "months": [
+        { "tMin": 23.0, "tMax": 31.2, "rainMm": 317.5, "season": 0.30 },
+        { "tMin": 23.1, "tMax": 31.4, "rainMm": 277.7, "season": 0.30 },
+        { "tMin": 23.4, "tMax": 31.9, "rainMm": 240.2, "season": 0.40 },
+        { "tMin": 23.3, "tMax": 31.8, "rainMm": 143.1, "season": 0.60 },
+        { "tMin": 22.6, "tMax": 31.1, "rainMm": 149.5, "season": 0.75 },
+        { "tMin": 21.6, "tMax": 30.3, "rainMm": 80.8,  "season": 0.90 },
+        { "tMin": 21.2, "tMax": 30.0, "rainMm": 62.7,  "season": 1.00 },
+        { "tMin": 21.1, "tMax": 30.0, "rainMm": 56.4,  "season": 1.00 },
+        { "tMin": 21.6, "tMax": 30.3, "rainMm": 64.3,  "season": 0.90 },
+        { "tMin": 22.1, "tMax": 30.5, "rainMm": 120.9, "season": 0.75 },
+        { "tMin": 22.6, "tMax": 30.6, "rainMm": 155.2, "season": 0.50 },
+        { "tMin": 22.9, "tMax": 30.4, "rainMm": 396.8, "season": 0.30 }
+      ]
+    },
+
+    "amazonie-hi8x": {
+      "country": "Équateur",
+      "capital": { "name": "Quito", "lat": -0.22, "lng": -78.5125 },
+      "months": [
+        { "tMin": 9.8, "tMax": 21.2, "rainMm": 82.5,  "season": 0.70 },
+        { "tMin": 10.1,"tMax": 21.0, "rainMm": 111.0, "season": 0.55 },
+        { "tMin": 10.1,"tMax": 20.8, "rainMm": 146.6, "season": 0.25 },
+        { "tMin": 10.2,"tMax": 20.9, "rainMm": 171.2, "season": 0.20 },
+        { "tMin": 10.1,"tMax": 21.0, "rainMm": 105.5, "season": 0.50 },
+        { "tMin": 9.8, "tMax": 21.1, "rainMm": 39.5,  "season": 0.85 },
+        { "tMin": 9.4, "tMax": 21.5, "rainMm": 21.5,  "season": 1.00 },
+        { "tMin": 9.6, "tMax": 22.2, "rainMm": 27.7,  "season": 1.00 },
+        { "tMin": 9.4, "tMax": 22.3, "rainMm": 68.9,  "season": 0.90 },
+        { "tMin": 9.5, "tMax": 21.8, "rainMm": 114.9, "season": 0.55 },
+        { "tMin": 9.6, "tMax": 21.3, "rainMm": 108.5, "season": 0.55 },
+        { "tMin": 9.7, "tMax": 21.3, "rainMm": 100.4, "season": 0.75 }
+      ]
+    },
+
+    "norvege-ldg7": {
+      "country": "Norvège",
+      "capital": { "name": "Tromsø", "lat": 69.6517, "lng": 18.9556 },
+      "months": [
+        { "tMin": -5.3, "tMax": -1.0, "rainMm": 108.3, "season": 0.75 },
+        { "tMin": -5.6, "tMax": -1.2, "rainMm": 96.7,  "season": 0.80 },
+        { "tMin": -4.4, "tMax": 0.6,  "rainMm": 96.7,  "season": 0.70 },
+        { "tMin": -1.6, "tMax": 4.1,  "rainMm": 71.1,  "season": 0.50 },
+        { "tMin": 2.4,  "tMax": 8.8,  "rainMm": 56.5,  "season": 0.60 },
+        { "tMin": 6.2,  "tMax": 13.0, "rainMm": 58.0,  "season": 0.90 },
+        { "tMin": 9.0,  "tMax": 16.3, "rainMm": 72.5,  "season": 1.00 },
+        { "tMin": 8.3,  "tMax": 15.0, "rainMm": 88.0,  "season": 0.90 },
+        { "tMin": 5.3,  "tMax": 10.9, "rainMm": 111.3, "season": 0.60 },
+        { "tMin": 0.9,  "tMax": 5.2,  "rainMm": 127.4, "season": 0.50 },
+        { "tMin": -1.9, "tMax": 2.1,  "rainMm": 94.4,  "season": 0.70 },
+        { "tMin": -3.9, "tMax": 0.3,  "rainMm": 109.7, "season": 0.75 }
+      ]
+    },
+
+    "islande-iow2": {
+      "country": "Islande",
+      "capital": { "name": "Reykjavík", "lat": 64.14583, "lng": -21.9425 },
+      "months": [
+        { "tMin": -1.7, "tMax": 3.2,  "rainMm": 87.1, "season": 0.40 },
+        { "tMin": -1.9, "tMax": 3.3,  "rainMm": 90.6, "season": 0.45 },
+        { "tMin": -1.3, "tMax": 4.2,  "rainMm": 80.7, "season": 0.50 },
+        { "tMin": 1.0,  "tMax": 6.9,  "rainMm": 59.0, "season": 0.55 },
+        { "tMin": 4.0,  "tMax": 10.1, "rainMm": 52.6, "season": 0.75 },
+        { "tMin": 7.2,  "tMax": 13.0, "rainMm": 43.3, "season": 0.90 },
+        { "tMin": 9.1,  "tMax": 14.9, "rainMm": 49.9, "season": 1.00 },
+        { "tMin": 8.6,  "tMax": 14.1, "rainMm": 64.5, "season": 0.95 },
+        { "tMin": 6.2,  "tMax": 11.4, "rainMm": 87.0, "season": 0.75 },
+        { "tMin": 2.7,  "tMax": 7.6,  "rainMm": 79.8, "season": 0.55 },
+        { "tMin": -0.1, "tMax": 4.7,  "rainMm": 86.5, "season": 0.45 },
+        { "tMin": -1.6, "tMax": 3.3,  "rainMm": 94.9, "season": 0.40 }
+      ]
+    },
+
+    "maldives": {
+      "country": "Maldives",
+      "capital": { "name": "Malé", "lat": 4.17528, "lng": 73.50889 },
+      "months": [
+        { "tMin": 26.0, "tMax": 30.6, "rainMm": 86.8,  "season": 0.95 },
+        { "tMin": 26.3, "tMax": 31.0, "rainMm": 37.9,  "season": 1.00 },
+        { "tMin": 26.8, "tMax": 31.6, "rainMm": 48.6,  "season": 0.95 },
+        { "tMin": 27.1, "tMax": 31.9, "rainMm": 127.2, "season": 0.85 },
+        { "tMin": 26.6, "tMax": 31.5, "rainMm": 238.2, "season": 0.55 },
+        { "tMin": 26.4, "tMax": 31.1, "rainMm": 146.1, "season": 0.40 },
+        { "tMin": 25.9, "tMax": 30.8, "rainMm": 198.1, "season": 0.35 },
+        { "tMin": 25.9, "tMax": 30.7, "rainMm": 193.2, "season": 0.35 },
+        { "tMin": 25.7, "tMax": 30.5, "rainMm": 213.7, "season": 0.40 },
+        { "tMin": 25.7, "tMax": 30.5, "rainMm": 245.4, "season": 0.50 },
+        { "tMin": 25.5, "tMax": 30.4, "rainMm": 235.6, "season": 0.65 },
+        { "tMin": 25.6, "tMax": 30.4, "rainMm": 212.2, "season": 0.85 }
+      ]
+    },
+    "reunion-ki7r": {
+      "country": "La Réunion (France)",
+      "capital": { "name": "Saint-Denis", "lat": -20.8789, "lng": 55.4481 },
+      "months": [
+        { "tMin": 22.3, "tMax": 25.8, "rainMm": 254, "season": 0.20 },
+        { "tMin": 22.5, "tMax": 25.8, "rainMm": 261, "season": 0.15 },
+        { "tMin": 22.2, "tMax": 25.8, "rainMm": 225, "season": 0.25 },
+        { "tMin": 21.3, "tMax": 25.2, "rainMm": 92,  "season": 0.60 },
+        { "tMin": 19.5, "tMax": 23.4, "rainMm": 87,  "season": 0.80 },
+        { "tMin": 17.5, "tMax": 21.9, "rainMm": 53,  "season": 0.95 },
+        { "tMin": 16.6, "tMax": 21.3, "rainMm": 52,  "season": 1.00 },
+        { "tMin": 16.5, "tMax": 21.5, "rainMm": 48,  "season": 1.00 },
+        { "tMin": 17.1, "tMax": 22.3, "rainMm": 47,  "season": 1.00 },
+        { "tMin": 18.4, "tMax": 23.3, "rainMm": 56,  "season": 0.90 },
+        { "tMin": 19.9, "tMax": 24.2, "rainMm": 94,  "season": 0.70 },
+        { "tMin": 21.5, "tMax": 25.4, "rainMm": 149, "season": 0.40 }
+      ]
+    },
+
+    "kilimandjaro-jmsh": {
+      "country": "Tanzanie",
+      "capital": { "name": "Kilimanjaro (JRO)", "lat": -3.4294, "lng": 37.0745 },
+      "months": [
+        { "tMin": 18, "tMax": 32, "rainMm": 50.1, "season": 0.90 },
+        { "tMin": 19, "tMax": 32, "rainMm": 47.4, "season": 0.95 },
+        { "tMin": 19, "tMax": 32, "rainMm": 76.1, "season": 0.55 },
+        { "tMin": 19, "tMax": 29, "rainMm": 95.6, "season": 0.25 },
+        { "tMin": 18, "tMax": 26, "rainMm": 46.7, "season": 0.65 },
+        { "tMin": 16, "tMax": 26, "rainMm": 8.2,  "season": 0.95 },
+        { "tMin": 15, "tMax": 26, "rainMm": 4.5,  "season": 1.00 },
+        { "tMin": 15, "tMax": 27, "rainMm": 9.6,  "season": 1.00 },
+        { "tMin": 16, "tMax": 29, "rainMm": 5.4,  "season": 1.00 },
+        { "tMin": 17, "tMax": 31, "rainMm": 22.2, "season": 0.95 },
+        { "tMin": 19, "tMax": 31, "rainMm": 41.4, "season": 0.75 },
+        { "tMin": 19, "tMax": 31, "rainMm": 46.4, "season": 0.70 }
+      ]
+    }
+  }
+}

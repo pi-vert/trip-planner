@@ -1,0 +1,40 @@
+itinerary:
+  - mlxwuhkpr6u5l
+  - mlxy4wnepjn74
+places:
+  mlxwuhkpr6u5l:
+    name: Quito
+    lat: -0.220164
+    lng: -78.512327
+    duration_h: 1
+    budget: 0
+    desc: 'Départ '
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxy4wnepjn74:
+    name: Coca
+    lat: -0.47218
+    lng: -76.983722
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: >-
+      https://www.nomade-aventure.com/voyage-aventure/equateur/equateur-amazonie-jungle-lecouvey/equ09#strate-dates
+view:
+  center:
+    lat: -0.47218
+    lng: -76.983722
+    zoom: 8
+edges:
+  mlxwuhkpr6u5l|mlxy4wnepjn74:
+    realKm: 302.7
+    realMin: 246

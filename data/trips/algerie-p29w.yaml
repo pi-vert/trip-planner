@@ -1,0 +1,71 @@
+itinerary:
+  - mtpgpx4kzwkg9
+  - mtqx5dx619f8s
+startPlaceId: mtpgpx4kzwkg9
+notes: ''
+places:
+  mtpgpx4kzwkg9:
+    name: Djanet
+    lat: 24.071521
+    lng: 9.615585
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqx5dx619f8s:
+    name: Tlemcen
+    lat: 34.881789
+    lng: -1.316699
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 34.881789
+    lng: -1.316699
+    zoom: 5
+edges:
+  mtpgpcs7t0c1c|mtpgpx4kzwkg9:
+    realKm: 758.1
+    realMin: 756
+  mtpgpx4kzwkg9|mtqx5dx619f8s:
+    realKm: 2433.5
+    realMin: 2080
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

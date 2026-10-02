@@ -1,0 +1,212 @@
+itinerary:
+  - mtpfo3yxu038l
+  - mtpfogdnbxr7j
+  - mtpglg9j1qpbf
+  - mtpglvz7hy60z
+  - mtpgn4r18wdb8
+  - mtpgnncvjixpk
+  - mtpgoaqdaailz
+startPlaceId: mtpfo3yxu038l
+notes: ''
+places:
+  mtpfo3yxu038l:
+    name: Marrakech
+    lat: 31.625826
+    lng: -7.989161
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpfogdnbxr7j:
+    name: Ouarzazate
+    lat: 30.920193
+    lng: -6.910923
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpglg9j1qpbf:
+    name: Zagora
+    lat: 30.327905
+    lng: -5.836996
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpglvz7hy60z:
+    name: Merzouga
+    lat: 31.099917
+    lng: -4.014088
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpgn4r18wdb8:
+    name: Les Jardins De Todgha gorges
+    lat: 31.576696
+    lng: -5.585492
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpgnncvjixpk:
+    name: La Vallee Des Figues
+    lat: 31.455013
+    lng: -5.973734
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpgoaqdaailz:
+    name: Aït Ben Haddou
+    lat: 31.045154
+    lng: -7.130971
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 31.045154
+    lng: -7.130971
+    zoom: 8
+edges:
+  mtpfo3yxu038l|mtpfogdnbxr7j:
+    realKm: 193.8
+    realMin: 222
+  mtpfogdnbxr7j|mtpglg9j1qpbf:
+    realKm: 155.5
+    realMin: 178
+  mtpglg9j1qpbf|mtpglvz7hy60z:
+    realKm: 288.8
+    realMin: 339
+  mtpglvz7hy60z|mtpgmf6cx1l66:
+    realKm: 4205.1
+    realMin: 5457
+  mtpglvz7hy60z|mtpgn4r18wdb8:
+    realKm: 203.4
+    realMin: 220
+  mtpgn4r18wdb8|mtpgnncvjixpk:
+    realKm: 85.1
+    realMin: 105
+  mtpgnncvjixpk|mtpgoaqdaailz:
+    realKm: 160.4
+    realMin: 182
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF
+  - EUR

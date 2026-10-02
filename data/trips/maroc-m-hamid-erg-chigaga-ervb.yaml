@@ -1,0 +1,189 @@
+itinerary:
+  - mtqxfd1q3wb9c
+  - mtqxk4hgtcwor
+  - mtqxlcopjlu99
+  - mtqxlpgu21ul0
+  - mtqxoe65ppg9s
+startPlaceId: mtqxfd1q3wb9c
+notes: ''
+places:
+  mtqxfd1q3wb9c:
+    name: M'Hamid
+    lat: 29.808015
+    lng: -5.737016
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqxk4hgtcwor:
+    name: Sidi Naji
+    lat: 29.735119
+    lng: -5.837915
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Départ à pied de notre bivouac de l’oasis. Ce premier jour mène vers les
+      dunes du Sidi Naji, entre dunes et plateaux désertiques. Le bivouac se
+      pose au cœur de l’Erg, après une journée de marche intense.
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J1
+    url: ''
+  mtqxlcopjlu99:
+    name: Erg Smar
+    lat: 29.713523
+    lng: -6.085992
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Le trek poursuit son chemin pour atteindre les dunes. Nous retrouvons les
+      dunes pour y poser le bivouac. Petite cérémonie du thé au coucher du
+      soleil sur la dune et une bonne tajine pour le dîner à la belle étoile. La
+      nuit vous emporte, l’émotion est intense.
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J3
+    url: ''
+  mtqxlpgu21ul0:
+    name: Erg Chigaga
+    lat: 29.841402
+    lng: -6.29299
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Nous quittons les dunes de sable pour rejoindre les plus hautes dunes du
+      Maroc ; les dunes Erg Chigaga. Ambiance nomade entre simplicité et partage
+      pour cette dernière soirée dans le désert. Le bivouac se pose dans les
+      dunes d’ Erg Chigaga.
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J4
+    url: ''
+  mtqxoe65ppg9s:
+    name: 'Erg Ezzahar '
+    lat: 29.654493
+    lng: -6.038044
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      En marche pour la magnifique dune hurlante, après la traversée d’un long
+      plateau désertique. Cette mer de sable est peu fréquentée et propose un
+      point de vue splendide sur toute la vallée du Drâa. Le Sahara comme on se
+      l’imagine !
+    closedDays: []
+    ratings:
+      Anonyme: 4
+    tags: []
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J2
+    url: ''
+view:
+  center:
+    lat: 29.654493
+    lng: -6.038044
+    zoom: 14
+edges:
+  mtqxfd1q3wb9c|mtqxjkkczqyus:
+    realKm: 3507.1
+    realMin: 4034
+  mtqxfd1q3wb9c|mtqxk4hgtcwor:
+    realKm: 2.1
+    realMin: 8
+  mtqxk4hgtcwor|mtqxlcopjlu99:
+    realKm: 1467.5
+    realMin: 2501
+  mtqxlcopjlu99|mtqxlpgu21ul0:
+    realKm: 1331.4
+    realMin: 2351
+  mtqxlpgu21ul0|mtqxoe65ppg9s:
+    realKm: 1371
+    realMin: 2451
+  mtqxfd1q3wb9c|mtqxlcopjlu99:
+    realKm: 1465.7
+    realMin: 2494
+  mtqxoe65ppg9s|mtqxk4hgtcwor:
+    realKm: 1466.6
+    realMin: 2500
+  mtqxfd1q3wb9c|mtqxlpgu21ul0:
+    realKm: 108.6
+    realMin: 233
+  mtqxfd1q3wb9c|mtqxoe65ppg9s:
+    realKm: 1465.7
+    realMin: 2494
+  mtqxk4hgtcwor|mtqxoe65ppg9s:
+    realKm: 1467.5
+    realMin: 2501
+  mtqxoe65ppg9s|mtqxlcopjlu99:
+    realKm: 0
+    realMin: 0
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

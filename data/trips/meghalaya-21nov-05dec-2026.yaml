@@ -1,0 +1,709 @@
+itinerary:
+  - mtb91665ed1419
+  - mtf8bfec8de5b3
+  - mtb0953cf5a33e
+  - mt905560d79a93
+  - mtd5febcdfa291
+  - mtf6d4f89fb774
+  - mtcf1c8f21431d
+  - mt6d195b56b578
+  - mtb4edd4cb6c15
+  - mt218d37d5a0af
+  - mt35c265c67c00
+  - mtd61616bac32c
+  - mt7c3008aa0001
+  - mt848718d1e1dc
+  - mt353107ad3eeb
+  - mtd8c3b9a23987
+  - mtf4673970eed4
+  - mt87cd144b859a
+  - mt66e2f0c7076a
+  - mt0b044f4f02fc
+startPlaceId: mtb91665ed1419
+notes: >-
+  Voyage aventure de 2 semaines pour 2 personnes : Khasi Hills, ponts vivants,
+  jungle, Umngot et spéléologie dans les Jaintia Hills. Budget cible <= 12 000
+  CHF. Spéléologie uniquement avec équipe locale qualifiée.
+places:
+  mtb91665ed1419:
+    name: Départ — Aéroport de Genève (GVA)
+    lat: 46.2381
+    lng: 6.10895
+    duration_h: 2
+    budget: 0
+    budgetFree: true
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Départ du voyage depuis Genève. Budget vols internationaux indiqué sur la
+      première étape destination.
+    closedDays: []
+    ratings: {}
+    tags:
+      - transport
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: '2026-11-21'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtf8bfec8de5b3:
+    name: Guwahati — arrivée
+    lat: 26.1445
+    lng: 91.7362
+    duration_h: 1
+    budget: 2600
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Arrivée dans le Nord-Est indien. Enveloppe incluant environ 2 300 CHF de
+      vols A/R pour 2 et 300 CHF de transferts.
+    closedDays: []
+    ratings: {}
+    tags:
+      - transport
+      - ville
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-22'
+    arrivalTime: ''
+    departureDate: '2026-11-23'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtb0953cf5a33e:
+    name: Shillong — acclimatation
+    lat: 25.5788
+    lng: 91.8933
+    duration_h: 1
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Mise en jambes et préparation du trek.
+    closedDays: []
+    ratings: {}
+    tags:
+      - ville
+      - montagne
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-23'
+    arrivalTime: ''
+    departureDate: '2026-11-24'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt905560d79a93:
+    name: Mawphlang — Khasi Hills
+    lat: 25.445
+    lng: 91.756
+    duration_h: 1
+    budget: 350
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Forêt sacrée et randonnée sur les anciens sentiers Khasi.
+    closedDays: []
+    ratings: {}
+    tags:
+      - forêt
+      - randonnée
+      - culture
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-24'
+    arrivalTime: ''
+    departureDate: '2026-11-25'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtd5febcdfa291:
+    name: Mawphlang Sacred Grove
+    lat: 25.444
+    lng: 91.754
+    duration_h: 4
+    budget: 60
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Marche guidée dans la forêt sacrée Khasi.
+    closedDays: []
+    ratings: {}
+    tags:
+      - forêt
+      - culture
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt905560d79a93
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtf6d4f89fb774:
+    name: David Scott Trail — section sportive
+    lat: 25.461
+    lng: 91.744
+    duration_h: 5
+    budget: 90
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Ancien chemin muletier à travers collines, villages et ruisseaux.
+    closedDays: []
+    ratings: {}
+    tags:
+      - trek
+    image: ''
+    slot: afternoon
+    stageType: detail
+    parentStageId: mt905560d79a93
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtcf1c8f21431d:
+    name: Sohra / Cherrapunji — falaises et cascades
+    lat: 25.27
+    lng: 91.732
+    duration_h: 1
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Falaises, cascades et départ vers les vallées profondes.
+    closedDays: []
+    ratings: {}
+    tags:
+      - randonnée
+      - canyon
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-25'
+    arrivalTime: ''
+    departureDate: '2026-11-26'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt6d195b56b578:
+    name: Nongriat — ponts vivants
+    lat: 25.249
+    lng: 91.735
+    duration_h: 1
+    budget: 550
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Deux jours à pied autour des ponts vivants, escaliers et piscines
+      naturelles.
+    closedDays: []
+    ratings: {}
+    tags:
+      - jungle
+      - trek
+      - ponts vivants
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-26'
+    arrivalTime: ''
+    departureDate: '2026-11-28'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtb4edd4cb6c15:
+    name: Double Decker Living Root Bridge
+    lat: 25.2492
+    lng: 91.7355
+    duration_h: 5
+    budget: 40
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Descente puis remontée de milliers de marches jusqu’au pont vivant à deux
+      niveaux.
+    closedDays: []
+    ratings: {}
+    tags:
+      - trek
+      - ponts vivants
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt6d195b56b578
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt218d37d5a0af:
+    name: Rainbow Falls
+    lat: 25.242
+    lng: 91.745
+    duration_h: 6
+    budget: 40
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Extension sportive depuis Nongriat vers les bassins et cascades.
+    closedDays: []
+    ratings: {}
+    tags:
+      - trek
+      - cascade
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt6d195b56b578
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt35c265c67c00:
+    name: Mawlynnong & Riwai
+    lat: 25.201
+    lng: 91.916
+    duration_h: 1
+    budget: 250
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Villages Khasi, pont vivant et sentiers forestiers.
+    closedDays: []
+    ratings: {}
+    tags:
+      - culture
+      - forêt
+      - randonnée
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-28'
+    arrivalTime: ''
+    departureDate: '2026-11-29'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtd61616bac32c:
+    name: Shnongpdeng / Umngot
+    lat: 25.177
+    lng: 92.019
+    duration_h: 1
+    budget: 350
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Kayak, rivière claire et marche sur les gorges de l’Umngot.
+    closedDays: []
+    ratings: {}
+    tags:
+      - kayak
+      - rivière
+      - randonnée
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-29'
+    arrivalTime: ''
+    departureDate: '2026-11-30'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt7c3008aa0001:
+    name: Kayak sur l’Umngot
+    lat: 25.177
+    lng: 92.019
+    duration_h: 4
+    budget: 120
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Kayak sur rivière claire et petites gorges.
+    closedDays: []
+    ratings: {}
+    tags:
+      - kayak
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mtd61616bac32c
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt848718d1e1dc:
+    name: Jaintia Hills — spéléologie
+    lat: 25.35
+    lng: 92.45
+    duration_h: 1
+    budget: 850
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Deux jours avec équipe spécialisée pour grottes et canyon souterrain,
+      niveau adapté aux conditions.
+    closedDays: []
+    ratings: {}
+    tags:
+      - spéléologie
+      - aventure
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-30'
+    arrivalTime: ''
+    departureDate: '2026-12-02'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt353107ad3eeb:
+    name: Spéléologie dans les Jaintia Hills
+    lat: 25.35
+    lng: 92.45
+    duration_h: 8
+    budget: 500
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: >-
+      Journée avec guides spéléo, casques, cordes et équipement selon la cavité
+      retenue.
+    closedDays: []
+    ratings: {}
+    tags:
+      - spéléologie
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt848718d1e1dc
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtd8c3b9a23987:
+    name: Wahkhen — Mawryngkhang Bamboo Trail
+    lat: 25.373
+    lng: 91.694
+    duration_h: 1
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Sentier spectaculaire sur passerelles de bambou au-dessus des gorges.
+    closedDays: []
+    ratings: {}
+    tags:
+      - randonnée
+      - canyon
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-02'
+    arrivalTime: ''
+    departureDate: '2026-12-03'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtf4673970eed4:
+    name: Mawryngkhang Bamboo Trail
+    lat: 25.373
+    lng: 91.694
+    duration_h: 5
+    budget: 60
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Passerelles en bambou et vues sur les gorges.
+    closedDays: []
+    ratings: {}
+    tags:
+      - randonnée
+      - canyon
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mtd8c3b9a23987
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt87cd144b859a:
+    name: Shillong — retour
+    lat: 25.5788
+    lng: 91.8933
+    duration_h: 1
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Journée de récupération et marge logistique.
+    closedDays: []
+    ratings: {}
+    tags:
+      - ville
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-03'
+    arrivalTime: ''
+    departureDate: '2026-12-04'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt66e2f0c7076a:
+    name: Guwahati — vol retour
+    lat: 26.1445
+    lng: 91.7362
+    duration_h: 1
+    budget: 250
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Retour à l’aéroport et vol vers Genève.
+    closedDays: []
+    ratings: {}
+    tags:
+      - transport
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-04'
+    arrivalTime: ''
+    departureDate: '2026-12-05'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt0b044f4f02fc:
+    name: Retour — Aéroport de Genève (GVA)
+    lat: 46.2381
+    lng: 6.10895
+    duration_h: 1
+    budget: 0
+    budgetFree: true
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Fin du voyage à Genève.
+    closedDays: []
+    ratings: {}
+    tags:
+      - transport
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-05'
+    arrivalTime: ''
+    departureDate: '2026-12-05'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 25.45
+    lng: 91.95
+    zoom: 7
+edges:
+  mtb91665ed1419|mtf8bfec8de5b3:
+    realKm: 9841.3
+    realMin: 6930
+  mtf8bfec8de5b3|mtb0953cf5a33e:
+    realKm: 98.8
+    realMin: 77
+  mtb0953cf5a33e|mt905560d79a93:
+    realKm: 25.9
+    realMin: 22
+  mt905560d79a93|mtcf1c8f21431d:
+    realKm: 53.7
+    realMin: 53
+  mtcf1c8f21431d|mt6d195b56b578:
+    realKm: 2.6
+    realMin: 3
+  mt6d195b56b578|mt35c265c67c00:
+    realKm: 79.2
+    realMin: 80
+  mt35c265c67c00|mtd61616bac32c:
+    realKm: 33.5
+    realMin: 35
+  mtd61616bac32c|mt848718d1e1dc:
+    realKm: 108.1
+    realMin: 96
+  mt848718d1e1dc|mtd8c3b9a23987:
+    realKm: 134
+    realMin: 120
+  mtd8c3b9a23987|mt87cd144b859a:
+    realKm: 41.6
+    realMin: 40
+  mt87cd144b859a|mt66e2f0c7076a:
+    realKm: 98.8
+    realMin: 76
+  mt66e2f0c7076a|mt0b044f4f02fc:
+    realKm: 9843.7
+    realMin: 6939
+planning:
+  startDate: '2026-11-21'
+  endDate: '2026-12-05'
+  startTime: '07:00'
+  dayStart: '07:00'
+  dayEnd: '22:00'
+  speedKmh: 45
+  meals:
+    breakfast:
+      at: '08:00'
+      durationMin: 60
+    lunch:
+      at: '12:00'
+      durationMin: 60
+    dinner:
+      at: '19:00'
+      durationMin: 60
+  reservations:
+    - id: fixed-dae85d78-tp26
+      title: Forêt sacrée de Mawphlang
+      kind: activity
+      placeId: mtd5febcdfa291
+      placeIds:
+        - mtd5febcdfa291
+      stageId: mt905560d79a93
+      start: 2026-11-24T08:30
+      end: 2026-11-24T12:30
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+    - id: fixed-c0585d6d-tp26
+      title: Double Decker Root Bridge
+      kind: activity
+      placeId: mtb4edd4cb6c15
+      placeIds:
+        - mtb4edd4cb6c15
+      stageId: mt6d195b56b578
+      start: 2026-11-26T08:00
+      end: 2026-11-26T13:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+    - id: fixed-0c1fa6cf-tp26
+      title: Rainbow Falls
+      kind: activity
+      placeId: mt218d37d5a0af
+      placeIds:
+        - mt218d37d5a0af
+      stageId: mt6d195b56b578
+      start: 2026-11-27T08:00
+      end: 2026-11-27T14:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+    - id: fixed-779c2750-tp26
+      title: Kayak sur l’Umngot
+      kind: activity
+      placeId: mt7c3008aa0001
+      placeIds:
+        - mt7c3008aa0001
+      stageId: mtd61616bac32c
+      start: 2026-11-29T10:00
+      end: 2026-11-29T14:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+    - id: fixed-da938146-tp26
+      title: Spéléologie Jaintia Hills
+      kind: activity
+      placeId: mt353107ad3eeb
+      placeIds:
+        - mt353107ad3eeb
+      stageId: mt848718d1e1dc
+      start: 2026-12-01T08:00
+      end: 2026-12-01T16:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+    - id: fixed-551a3ed5-tp26
+      title: Mawryngkhang Bamboo Trail
+      kind: activity
+      placeId: mtf4673970eed4
+      placeIds:
+        - mtf4673970eed4
+      stageId: mtd8c3b9a23987
+      start: 2026-12-02T09:00
+      end: 2026-12-02T14:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: ''
+      notes: ''
+people: 2
+budgetCurrencies:
+  - CHF

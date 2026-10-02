@@ -1,0 +1,126 @@
+itinerary:
+  - mtpewxarxc0q3
+  - mtpf859a3wjnd
+  - mtpf9psiklxwk
+  - mtpfcxmu9hapu
+places:
+  mtpewxarxc0q3:
+    name: Quito
+    lat: -0.220164
+    lng: -78.512327
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Arrivée à Quito
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtpf859a3wjnd:
+    name: Hosteria San Carlos Tababela
+    lat: -0.18840418477540177
+    lng: -78.3441802669537
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - hébergement
+    image: ''
+    slot: ''
+    stageType: detail
+    parentStageId: mtpewxarxc0q3
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtpf9psiklxwk:
+    name: Mandaripanga
+    lat: -0.644355
+    lng: -76.676937
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtpfcxmu9hapu:
+    name: Amazonie
+    lat: -0.657277
+    lng: -76.64068
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: 4 jours de bivouac
+    closedDays: []
+    ratings:
+      Anonyme: 4
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+view:
+  center:
+    lat: -0.657277
+    lng: -76.64068
+    zoom: 13
+edges:
+  mtpewxarxc0q3|mtpf5lg0uk1a0:
+    realKm: 8571.8
+    realMin: 8119
+  mtpewxarxc0q3|mtpf859a3wjnd:
+    realKm: 35.2
+    realMin: 35
+  mtpf859a3wjnd|mtpf9psiklxwk:
+    realKm: 360.2
+    realMin: 379
+  mtpf9psiklxwk|mtpfcxmu9hapu:
+    realKm: 2.9
+    realMin: 7
+  mtpewxarxc0q3|mtpf9psiklxwk:
+    realKm: 384.2
+    realMin: 401
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

@@ -1,0 +1,138 @@
+{
+  "groups": [
+    {
+      "id": "compare-mtq9700a-2sl6",
+      "name": "Désert",
+      "tripIds": [
+        "algerie-p29w",
+        "jordanie-e0h4",
+        "desert-sahara-xphy",
+        "maroc-necv"
+      ]
+    },
+    {
+      "id": "compare-mu9idu1u-r411",
+      "name": "Novembre 2026",
+      "tripIds": [
+        "djibouti-21nov-05dec-2026",
+        "meghalaya-21nov-05dec-2026",
+        "timor-leste-21nov-05dec-2026"
+      ]
+    }
+  ],
+  "offers": {
+    "desert-sahara-xphy": {
+      "provider": "",
+      "price": 0,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "maldives": {
+      "provider": "",
+      "price": 0,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "maroc-necv": {
+      "provider": "Renard du désert",
+      "price": 485,
+      "currency": "EUR",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "https://www.sejourdesertmaroc.com/fr/circuit-en-4x4-depart-marrakech-maroc.php",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "ardeche-ifnx": {
+      "provider": "",
+      "price": 0,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "corse-xgdk": {
+      "provider": "",
+      "price": 0,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "algerie-p29w": {
+      "provider": "",
+      "price": 0,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "",
+      "included": [],
+      "excluded": [],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    },
+    "jordanie-e0h4": {
+      "provider": "Terres d'Aventure",
+      "price": 2300,
+      "currency": "CHF",
+      "flightIncluded": null,
+      "flightPrice": 0,
+      "url": "https://www.terdav.com/ps-jordanie/tp-voyage-sur-mesure/at-randonnee/jorl18--sentiers-desert-jordanien",
+      "included": [
+        "Les documents de voyage.",
+        "Les vols internationaux et taxes aériennes sur compagnie régulière.",
+        "Le visa (sauf pour les séjours de 3 jours ou moins).",
+        "L'accueil anglophone et le transfert par un chauffeur local à votre arrivée à Amman.",
+        "Le transfert de votre hôtel à Madaba à l'aéroport d'Amman avec un chauffeur local.",
+        "La location du véhicule avec kilométrage illimité.",
+        "Une carte SIM pour toute la durée du séjour.",
+        "L'hébergement comme mentionné dans votre programme.",
+        "Le matériel pour le bivouac sauf sac de couchage.",
+        "Les repas comme mentionnés dans votre programme.",
+        "Le Jordan Pass pour les entrées sur la plupart des sites (dont Petra et le Wadi Rum).",
+        "L'accompagnement par un guide bédouin pour la randonnée dans le Wadi Rum et à Petra.",
+        "Le service d’assistance téléphonique, 24h/24 et 7j/7, en cas d’urgence, pendant toute la durée de votre voyage"
+      ],
+      "excluded": [
+        "Les assurances dont celles optionnelles pour le véhicule de location.",
+        "Le carburant.",
+        "Les repas non inclus au programme.",
+        "Les boissons.",
+        "Les entrées sur les sites non inclus dans le Jordan pass.",
+        "Les pourboires et dépenses personnelles.",
+        "Les entrées dans les réserves naturelles."
+      ],
+      "cancellation": "",
+      "rating": 0,
+      "notes": ""
+    }
+  }
+}

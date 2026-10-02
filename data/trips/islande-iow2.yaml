@@ -1,0 +1,951 @@
+itinerary:
+  - kef
+  - mtperg07my6fd
+  - dettifoss
+  - blue_lagoon
+  - mey2dpgowh5ik
+  - hallgrimskirkja
+  - thingvellir
+  - geysir
+  - gullfoss
+  - kerlingarfjoll
+  - seljalandsfoss
+  - skogafoss
+  - reynisfjara
+  - bakgil
+  - kirkjubajarklaustur
+  - skaftafell
+  - jokulsarlon
+  - diamond_beach
+  - hofn
+  - lonsorafi
+  - myvatn_baths
+  - godafoss
+  - akureyri
+  - hvammstangi
+  - hraunfossar
+  - kirkjufell
+  - arnarstapi
+  - borgarfjorour
+  - harpa
+  - kef
+startPlaceId: kef
+notes: ''
+places:
+  dettifoss:
+    name: Dettifoss
+    lat: 65.814
+    lng: -16.384
+    duration_h: 1.5
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Une des chutes les plus puissantes d'Europe; accès est/ouest selon
+      conditions.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dettifoss_Waterfall%2C_Iceland%2C_20240716_1504_1548.jpg/640px-Dettifoss_Waterfall%2C_Iceland%2C_20240716_1504_1548.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss
+  kef:
+    name: Keflavík International Airport (Arrivée/Départ)
+    lat: 63.985
+    lng: -22.605
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Point de départ et d'arrivée du voyage. Récupération/retour du véhicule.
+    closedDays: []
+    ratings:
+      Init: 4
+    tags:
+      - aéroport
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/b/b3/SSJ100_Keflavik_runways_%285160518757%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.kefairport.com/
+  blue_lagoon:
+    name: Blue Lagoon
+    lat: 63.88
+    lng: -22.449
+    duration_h: 2.5
+    budget: 105
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Lagon géothermique emblématique dans un champ de lave — baignade
+      relaxante.
+    closedDays: []
+    ratings:
+      Init: 6
+      Eric: 6
+    tags:
+      - baignade
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/The_Blue_Lagoon_2.jpg/1920px-The_Blue_Lagoon_2.jpg?20200506130138
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.bluelagoon.com/day-visit/the-blue-lagoon
+  mey2dpgowh5ik:
+    name: Travel Inn
+    lat: 64.1393831
+    lng: -21.9363571
+    duration_h: 1
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Appartement a reykjavik
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/1/1a/Reykjavik_from_Hallgr%C3%ADmskirkja%2C_2008-07-19.jpg
+    slot: ''
+    stageType: detail
+    parentStageId: mtperg07my6fd
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.booking.com/hotel/is/travel-inn.html
+  hallgrimskirkja:
+    name: Hallgrímskirkja (Reykjavík)
+    lat: 64.141
+    lng: -21.926
+    duration_h: 1
+    budget: 10
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Église iconique avec vue panoramique depuis la tour (si montée).
+    closedDays: []
+    ratings:
+      Init: 6
+      Eric: 4
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hallgr%C3%ADmskirkja.jpeg/640px-Hallgr%C3%ADmskirkja.jpeg
+    slot: ''
+    stageType: ''
+    parentStageId: mtperg07my6fd
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.hallgrimskirkja.is/en/
+  thingvellir:
+    name: Þingvellir (Parc national)
+    lat: 64.255
+    lng: -21.129
+    duration_h: 3
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Vallée de rift entre plaques tectoniques, chemins faciles et paysages
+      historiques.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Roca_de_la_Ley%2C_Parque_Nacional_de_%C3%9Eingvellir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_022.JPG/640px-Roca_de_la_Ley%2C_Parque_Nacional_de_%C3%9Eingvellir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_022.JPG
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.thingvellir.is/en/
+  geysir:
+    name: Zone géothermique de Geysir
+    lat: 64.313
+    lng: -20.302
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Bassins bouillonnants et geyser Strokkur qui jaillit toutes les 5–10 min.
+      Gratuit mais parking payant (7€).
+    closedDays: []
+    ratings:
+      Init: 6
+      Eric: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gran_Geysir%2C_%C3%81rea_geot%C3%A9rmica_de_Geysir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_107.JPG/640px-Gran_Geysir%2C_%C3%81rea_geot%C3%A9rmica_de_Geysir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_107.JPG
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://geysircenter.is/
+  gullfoss:
+    name: Gullfoss
+    lat: 64.327
+    lng: -20.121
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Chute monumentale en deux paliers — passerelles et belvédères.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Gullfoss%2C_Iceland%2C_20230501_1002_3834.jpg/640px-Gullfoss%2C_Iceland%2C_20230501_1002_3834.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://gullfoss.is/
+  kerlingarfjoll:
+    name: Kerlingarfjöll
+    lat: 64.6241632
+    lng: -19.2583521
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - camping
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kerlingarfj%C3%B6ll_river.jpg/640px-Kerlingarfj%C3%B6ll_river.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://highlandbase.is/
+  seljalandsfoss:
+    name: Seljalandsfoss
+    lat: 63.615
+    lng: -19.992
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Chute d'eau contournable par l'arrière lorsque les conditions le
+      permettent.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Seljalandsfoss_-_panoramio_%287%29.jpg/640px-Seljalandsfoss_-_panoramio_%287%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.south.is/en/place/seljalandsfoss-waterfall
+  skogafoss:
+    name: Skógafoss
+    lat: 63.532
+    lng: -19.511
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Rideau d'eau majestueux; escalier pour accéder aux hauteurs.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Skogafoss-02-2018-gje.jpg/640px-Skogafoss-02-2018-gje.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.south.is/en/place/skogafoss-waterfall
+  reynisfjara:
+    name: Plage de sable noir de Reynisfjara
+    lat: 63.404
+    lng: -19.051
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Colonnes basaltiques, grottes et vagues puissantes (prudence requise).
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Reynisfjara%2C_Iceland%2C_20230501_1639_4044.jpg/640px-Reynisfjara%2C_Iceland%2C_20230501_1639_4044.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: >-
+      https://www.visiticeland.com/article/reynisfjara-black-sand-beach-is-dangerous/
+  bakgil:
+    name: Þakgil
+    lat: 63.5304381
+    lng: -18.8887735
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Cabanes + camping
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pakgil01%28js%29.jpg/640px-Pakgil01%28js%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.thakgil.is/?lang=en
+  kirkjubajarklaustur:
+    name: Kirkjubæjarklaustur
+    lat: 63.793065
+    lng: -18.0418591
+    duration_h: 1
+    budget: 75
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Hotel
+    closedDays: []
+    ratings: {}
+    tags:
+      - hotel
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kirkjub%C3%A6jarklaustur_Aerial_2023_B.jpg/640px-Kirkjub%C3%A6jarklaustur_Aerial_2023_B.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: >-
+      https://www.booking.com/hotel/is/hvoll-guesthouse.fr.html?label=msn-VlstDpBmbD8T4eIMTMh04w-80745527896457%3Atikwd-80745678121192%3Aloc-175%3Aneo%3Amte%3Alp217213%3Adec%3Aqscamping+en+islande&sid=78b755fab7ff2c311bbea67c6048a0ed&aid=865559&ucfs=1&checkin=2026-07-06&checkout=2026-07-07&dest_id=97&dest_type=country&group_adults=3&no_rooms=1&group_children=1&age=17&req_age=17&srpvid=a803685b2f49059b&srepoch=1756565616&matching_block_id=242249208_334744609_0_0_0_293195&atlas_src=sr_iw_title
+  skaftafell:
+    name: Skaftafell (Vatnajökull NP)
+    lat: 64.017
+    lng: -16.974
+    duration_h: 3
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Randonnées vers Skaftafellsjökull ou Svartifoss; centre d'accueil.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Skaftafell_National_Park%2C_Iceland_2011.JPG/640px-Skaftafell_National_Park%2C_Iceland_2011.JPG
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell
+  jokulsarlon:
+    name: Jökulsárlón – Lagon glaciaire
+    lat: 64.048
+    lng: -16.179
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Icebergs dérivant vers l'océan; possibilités de bateau amphibie
+      (supplément).
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/J%C3%B6kuls%C3%A1rl%C3%B3n%2C_Iceland%2C_20240719_1143_2545.jpg/640px-J%C3%B6kuls%C3%A1rl%C3%B3n%2C_Iceland%2C_20240719_1143_2545.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.jokulsarlon.is/
+  diamond_beach:
+    name: Diamond Beach
+    lat: 64.044
+    lng: -16.181
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Morceaux de glace scintillant sur le sable noir — juste en face de
+      Jökulsárlón.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/J%C3%B6kusarlon_Diamond_Beach_-_35483053805.jpg/640px-J%C3%B6kusarlon_Diamond_Beach_-_35483053805.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.south.is/en/place/breidamerkursandur
+  hofn:
+    name: Höfn
+    lat: 64.2532647
+    lng: -15.2080441
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/H%C3%B6fn_%2828308953787%29.jpg/640px-H%C3%B6fn_%2828308953787%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.south.is/en/destinations/towns-regions/towns/hofn-hornafjordur
+  lonsorafi:
+    name: Lónsöræfi
+    lat: 64.5713441
+    lng: -15.1686085
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Cabanes + camping pour un mini-trek de 2-3 jours (réservations
+      obligatoires)
+    closedDays: []
+    ratings: {}
+    tags:
+      - camping
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Tr%C3%B6llakr%C3%B3kar.jpg/640px-Tr%C3%B6llakr%C3%B3kar.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: >-
+      https://www.vatnajokulsthjodgardur.is/en/areas/vatnajokull-south/lonsoraefi
+  myvatn_baths:
+    name: Mývatn Nature Baths
+    lat: 65.64
+    lng: -16.847
+    duration_h: 2
+    budget: 50
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: >-
+      Bassins géothermiques azur en pleine nature — alternative plus calme au
+      Blue Lagoon.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hverfell-drone-shot.jpg/640px-Hverfell-drone-shot.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://myvatnnaturebaths.is/prices
+  godafoss:
+    name: Goðafoss
+    lat: 65.682
+    lng: -17.548
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: « Chute des dieux » — accessible des deux rives, jolies vues.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Go%C3%B0afoss_July_2014.JPG/640px-Go%C3%B0afoss_July_2014.JPG
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.northiceland.is/en/place/godafoss-waterfall
+  akureyri:
+    name: Akureyri – centre & restaurants
+    lat: 65.688
+    lng: -18.126
+    duration_h: 1.5
+    budget: 30
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Pause urbaine au nord — cafés et restaurants autour de Hafnarstræti.
+    closedDays: []
+    ratings:
+      Init: 4
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Akureyri-Harbor-20030602.jpg/640px-Akureyri-Harbor-20030602.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.visitakureyri.is/
+  hvammstangi:
+    name: Hvammstangi
+    lat: 65.3969593
+    lng: -20.9440293
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Hvammstangi_Aerial_2023.jpg/640px-Hvammstangi_Aerial_2023.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.northiceland.is/en/destinations/towns/hvammstangi
+  hraunfossar:
+    name: Hraunfossar & Barnafoss
+    lat: 64.702
+    lng: -20.977
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Chutes émergeant d'un champ de lave — sentiers et passerelles.
+    closedDays: []
+    ratings:
+      Init: 4
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hraunfossar%2C_Iceland%2C_20240715_0841_0740.jpg/640px-Hraunfossar%2C_Iceland%2C_20240715_0841_0740.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.west.is/en/destinations/nature/hraunfossar-and-barnafoss
+  kirkjufell:
+    name: Kirkjufell & Kirkjufellsfoss (Snæfellsnes)
+    lat: 64.938
+    lng: -23.306
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Montagne conique photogénique avec cascade au premier plan.
+    closedDays: []
+    ratings:
+      Init: 6
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg/640px-Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.west.is/en/destinations/nature/kirkjufell-mountain
+  arnarstapi:
+    name: Arnarstapi ↔ Hellnar (côte)
+    lat: 64.755
+    lng: -23.624
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Falaises, arches et colonnes basaltiques — belle balade côtière.
+    closedDays: []
+    ratings:
+      Init: 4
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Arnarstapi_2024_%280754%29_%28cropped2%29.jpg/640px-Arnarstapi_2024_%280754%29_%28cropped2%29.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.west.is/en/place/arnarstapi
+  borgarfjorour:
+    name: Borgarfjörður
+    lat: 64.4952432
+    lng: -22.0192921
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Borgarfj%C3%B6r%C3%B0ur_eystri_2023_A.jpg/640px-Borgarfj%C3%B6r%C3%B0ur_eystri_2023_A.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.west.is/en/destinations/towns-regions/visit-borgarfjordur
+  harpa:
+    name: Harpa – Salle de concert
+    lat: 64.15
+    lng: -21.932
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Bâtiment de verre en nid d'abeille sur le front de mer de Reykjavík.
+    closedDays: []
+    ratings:
+      Init: 4
+      Eric: 5
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/5/5f/Harpa_Concert_Hall%2C_Reykjavik_%28Unsplash%29.jpg
+    slot: ''
+    stageType: detail
+    parentStageId: mtperg07my6fd
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.harpa.is/en
+  mtperg07my6fd:
+    name: Reykjavik
+    lat: 64.145981
+    lng: -21.942237
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 64.145981
+    lng: -21.942237
+    zoom: 11
+edges:
+  kef|blue_lagoon:
+    realKm: 19.6
+    realMin: 20
+  akureyri|hvammstangi:
+    realKm: 195
+    realMin: 170
+  blue_lagoon|mey2dpgowh5ik:
+    realKm: 48.5
+    realMin: 47
+  mey2dpgowh5ik|hallgrimskirkja:
+    realKm: 0.9
+    realMin: 2
+  hallgrimskirkja|thingvellir:
+    realKm: 46.4
+    realMin: 45
+  thingvellir|geysir:
+    realKm: 60.9
+    realMin: 60
+  geysir|gullfoss:
+    realKm: 10.1
+    realMin: 9
+  gullfoss|kerlingarfjoll:
+    realKm: 75.9
+    realMin: 105
+  kerlingarfjoll|seljalandsfoss:
+    realKm: 193.2
+    realMin: 210
+  seljalandsfoss|skogafoss:
+    realKm: 29.5
+    realMin: 29
+  skogafoss|reynisfjara:
+    realKm: 35.1
+    realMin: 33
+  reynisfjara|bakgil:
+    realKm: 32.4
+    realMin: 34
+  bakgil|kirkjubajarklaustur:
+    realKm: 82.7
+    realMin: 72
+  kirkjubajarklaustur|skaftafell:
+    realKm: 69.5
+    realMin: 60
+  skaftafell|jokulsarlon:
+    realKm: 57.1
+    realMin: 51
+  jokulsarlon|diamond_beach:
+    realKm: 1.2
+    realMin: 4
+  diamond_beach|hofn:
+    realKm: 65.8
+    realMin: 58
+  hofn|lonsorafi:
+    realKm: 53.3
+    realMin: 78
+  lonsorafi|dettifoss:
+    realKm: 341.7
+    realMin: 311
+  dettifoss|myvatn_baths:
+    realKm: 65.6
+    realMin: 59
+  myvatn_baths|godafoss:
+    realKm: 52.6
+    realMin: 47
+  godafoss|akureyri:
+    realKm: 37.3
+    realMin: 37
+  hvammstangi|hraunfossar:
+    realKm: 120.6
+    realMin: 112
+  hraunfossar|kirkjufell:
+    realKm: 159
+    realMin: 144
+  kirkjufell|arnarstapi:
+    realKm: 53.8
+    realMin: 52
+  arnarstapi|borgarfjorour:
+    realKm: 129.9
+    realMin: 124
+  borgarfjorour|harpa:
+    realKm: 101.9
+    realMin: 111
+  harpa|kef:
+    realKm: 48.1
+    realMin: 46
+  dettifoss|kef:
+    realKm: 573.5
+    realMin: 505
+  lonsorafi|myvatn_baths:
+    realKm: 343
+    realMin: 323
+  kef|mey2dpgowh5ik:
+    realKm: 46.6
+    realMin: 44
+  mey2dpgowh5ik|thingvellir:
+    realKm: 46.7
+    realMin: 44
+  geysir|kerlingarfjoll:
+    realKm: 86.1
+    realMin: 114
+  seljalandsfoss|reynisfjara:
+    realKm: 62.5
+    realMin: 57
+  reynisfjara|kirkjubajarklaustur:
+    realKm: 82.9
+    realMin: 73
+  jokulsarlon|hofn:
+    realKm: 65.4
+    realMin: 57
+  godafoss|hvammstangi:
+    realKm: 231
+    realMin: 205
+  kirkjufell|borgarfjorour:
+    realKm: 113.8
+    realMin: 113
+  kef|dettifoss:
+    realKm: 572.7
+    realMin: 504
+  dettifoss|blue_lagoon:
+    realKm: 575.5
+    realMin: 508
+  kef|mtperg07my6fd:
+    realKm: 47.6
+    realMin: 46
+  mtperg07my6fd|dettifoss:
+    realKm: 533.9
+    realMin: 472
+  blue_lagoon|thingvellir:
+    realKm: 88.2
+    realMin: 81
+  borgarfjorour|kef:
+    realKm: 141.1
+    realMin: 144
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

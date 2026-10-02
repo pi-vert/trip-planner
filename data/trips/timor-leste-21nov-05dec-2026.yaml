@@ -1,0 +1,637 @@
+itinerary:
+- mt5f09b9194a26
+- mta9952aa2271a
+- mt72df011a3f90
+- mtb484dc2e4f5d
+- mt5a3f86e7502e
+- mt42469d0c6ea9
+- mtc4d1009f7bae
+- mt55de8499c9e6
+- mtd72a4e6f37db
+- mte1605247eb6a
+- mt21cbb762a4ad
+- mtef1da434dc7c
+- mt71b15fd7f74e
+- mt9e20da4d8f1e
+- mt021aec7d6029
+- mt820ca1cbeddc
+- mt6e6202bdad4d
+- mt1f413a112a26
+- mtc9bb00613248
+startPlaceId: mt5f09b9194a26
+notes: 'Voyage aventure de 2 semaines pour 2 personnes : Timor-Leste, hauts plateaux, jungle, Ramelau, Tutuala et Atauro.
+  Budget cible <= 12 000 CHF, estimations indicatives à confirmer avant réservation.'
+places:
+  mt5f09b9194a26:
+    name: Départ — Aéroport de Genève (GVA)
+    lat: 46.2381
+    lng: 6.10895
+    duration_h: 2
+    budget: 0
+    budgetFree: true
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Départ du voyage depuis Genève. Budget vols internationaux indiqué sur la première étape destination.
+    closedDays: []
+    ratings: {}
+    tags:
+    - transport
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: '2026-11-21'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mta9952aa2271a:
+    name: Dili — arrivée et mise en jambes
+    lat: -8.5569
+    lng: 125.5603
+    duration_h: 1
+    budget: 3200
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Arrivée à Dili. Le budget de cette étape inclut une enveloppe de 3 000 CHF pour les vols internationaux A/R pour
+      2 personnes et 200 CHF de transferts/installation.
+    closedDays: []
+    ratings: {}
+    tags:
+    - ville
+    - transport
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-22'
+    arrivalTime: ''
+    departureDate: '2026-11-23'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt72df011a3f90:
+    name: Cristo Rei — sentier côtier
+    lat: -8.5206
+    lng: 125.6086
+    duration_h: 3
+    budget: 0
+    budgetFree: true
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Marche d’acclimatation avec vues sur la baie de Dili.
+    closedDays: []
+    ratings: {}
+    tags:
+    - randonnée
+    image: ''
+    slot: afternoon
+    stageType: detail
+    parentStageId: mta9952aa2271a
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtb484dc2e4f5d:
+    name: Maubisse — hauts plateaux et café
+    lat: -8.837
+    lng: 125.597
+    duration_h: 1
+    budget: 250
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Montée vers les hauts plateaux centraux, randonnée douce et découverte des plantations de café.
+    closedDays: []
+    ratings: {}
+    tags:
+    - montagne
+    - randonnée
+    - culture
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-23'
+    arrivalTime: ''
+    departureDate: '2026-11-24'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt5a3f86e7502e:
+    name: Randonnée des plantations de café
+    lat: -8.842
+    lng: 125.59
+    duration_h: 4
+    budget: 80
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Marche guidée dans les collines caféières et villages.
+    closedDays: []
+    ratings: {}
+    tags:
+    - randonnée
+    - culture
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mtb484dc2e4f5d
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt42469d0c6ea9:
+    name: Hato Builico — massif du Ramelau
+    lat: -8.913
+    lng: 125.516
+    duration_h: 1
+    budget: 900
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Base pour l’ascension du mont Ramelau et deux jours de marche dans les hautes terres.
+    closedDays: []
+    ratings: {}
+    tags:
+    - trek
+    - montagne
+    - bivouac
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-24'
+    arrivalTime: ''
+    departureDate: '2026-11-27'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtc4d1009f7bae:
+    name: Ascension du mont Ramelau (2 963 m)
+    lat: -8.906
+    lng: 125.493
+    duration_h: 8
+    budget: 220
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Départ avant l’aube, sommet puis retour à Hato Builico.
+    closedDays: []
+    ratings: {}
+    tags:
+    - trek
+    - sommet
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt42469d0c6ea9
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt55de8499c9e6:
+    name: Traversée des hautes terres
+    lat: -8.93
+    lng: 125.53
+    duration_h: 6
+    budget: 180
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Journée de marche sur les crêtes et dans les villages de montagne.
+    closedDays: []
+    ratings: {}
+    tags:
+    - trek
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt42469d0c6ea9
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtd72a4e6f37db:
+    name: Baucau — côte nord-est
+    lat: -8.471
+    lng: 126.458
+    duration_h: 1
+    budget: 250
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Étape de récupération sur la côte avant de rejoindre l’intérieur oriental.
+    closedDays: []
+    ratings: {}
+    tags:
+    - culture
+    - mer
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-27'
+    arrivalTime: ''
+    departureDate: '2026-11-28'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mte1605247eb6a:
+    name: Ossu / Mundo Perdido — forêt de montagne
+    lat: -8.733
+    lng: 126.383
+    duration_h: 1
+    budget: 750
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Trek guidé dans les reliefs et forêts humides du massif de Mundo Perdido.
+    closedDays: []
+    ratings: {}
+    tags:
+    - jungle
+    - trek
+    - nature
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-28'
+    arrivalTime: ''
+    departureDate: '2026-11-30'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt21cbb762a4ad:
+    name: Trek Mundo Perdido
+    lat: -8.748
+    lng: 126.36
+    duration_h: 8
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Trek forestier avec guide local, terrain humide et relief marqué.
+    closedDays: []
+    ratings: {}
+    tags:
+    - jungle
+    - trek
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mte1605247eb6a
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtef1da434dc7c:
+    name: Tutuala — parc Nino Konis Santana
+    lat: -8.395
+    lng: 127.259
+    duration_h: 1
+    budget: 700
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Randonnée entre forêt sèche tropicale, falaises et côte sauvage, avec excursion à Jaco.
+    closedDays: []
+    ratings: {}
+    tags:
+    - jungle
+    - randonnée
+    - snorkeling
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-11-30'
+    arrivalTime: ''
+    departureDate: '2026-12-02'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt71b15fd7f74e:
+    name: Randonnée Nino Konis Santana
+    lat: -8.407
+    lng: 127.275
+    duration_h: 6
+    budget: 180
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Forêt, falaises calcaires et littoral isolé.
+    closedDays: []
+    ratings: {}
+    tags:
+    - jungle
+    - randonnée
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mtef1da434dc7c
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt9e20da4d8f1e:
+    name: Jaco Island — snorkeling
+    lat: -8.417
+    lng: 127.324
+    duration_h: 5
+    budget: 180
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Traversée locale puis snorkeling sur les récifs de Jaco.
+    closedDays: []
+    ratings: {}
+    tags:
+    - snorkeling
+    - mer
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mtef1da434dc7c
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt021aec7d6029:
+    name: Atauro — Manucoco et récifs
+    lat: -8.243
+    lng: 125.607
+    duration_h: 1
+    budget: 900
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Deux jours sur Atauro pour combiner ascension du Manucoco, snorkeling ou plongée et villages.
+    closedDays: []
+    ratings: {}
+    tags:
+    - trek
+    - plongée
+    - snorkeling
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-02'
+    arrivalTime: ''
+    departureDate: '2026-12-04'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt820ca1cbeddc:
+    name: Ascension du Manucoco
+    lat: -8.247
+    lng: 125.6
+    duration_h: 7
+    budget: 220
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Randonnée sportive sur les reliefs d’Atauro.
+    closedDays: []
+    ratings: {}
+    tags:
+    - trek
+    - sommet
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt021aec7d6029
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt6e6202bdad4d:
+    name: Récifs d’Atauro — plongée / snorkeling
+    lat: -8.215
+    lng: 125.58
+    duration_h: 5
+    budget: 300
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Journée en mer avec opérateur local.
+    closedDays: []
+    ratings: {}
+    tags:
+    - plongée
+    - snorkeling
+    image: ''
+    slot: morning
+    stageType: detail
+    parentStageId: mt021aec7d6029
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mt1f413a112a26:
+    name: Dili — retour et marge logistique
+    lat: -8.5569
+    lng: 125.5603
+    duration_h: 1
+    budget: 450
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Retour à Dili, nuit tampon avant le vol retour.
+    closedDays: []
+    ratings: {}
+    tags:
+    - ville
+    - transport
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-04'
+    arrivalTime: ''
+    departureDate: '2026-12-05'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtc9bb00613248:
+    name: Retour — Aéroport de Genève (GVA)
+    lat: 46.2381
+    lng: 6.10895
+    duration_h: 1
+    budget: 0
+    budgetFree: true
+    budgetCurrency: CHF
+    budgetScope: group
+    desc: Fin du voyage à Genève.
+    closedDays: []
+    ratings: {}
+    tags:
+    - transport
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: '2026-12-05'
+    arrivalTime: ''
+    departureDate: '2026-12-05'
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: -8.75
+    lng: 125.9
+    zoom: 7
+edges: {}
+planning:
+  startDate: '2026-11-21'
+  endDate: '2026-12-05'
+  startTime: 07:00
+  dayStart: 07:00
+  dayEnd: '22:00'
+  speedKmh: 45
+  meals:
+    breakfast:
+      at: 08:00
+      durationMin: 60
+    lunch:
+      at: '12:00'
+      durationMin: 60
+    dinner:
+      at: '19:00'
+      durationMin: 60
+  reservations:
+  - id: fixed-9ee68ca7-tp26
+    title: Plantations de café
+    kind: activity
+    placeId: mt5a3f86e7502e
+    placeIds:
+    - mt5a3f86e7502e
+    stageId: mtb484dc2e4f5d
+    start: 2026-11-23T13:00
+    end: 2026-11-23T17:00
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+  - id: fixed-d7306170-tp26
+    title: Ascension du Ramelau
+    kind: activity
+    placeId: mtc4d1009f7bae
+    placeIds:
+    - mtc4d1009f7bae
+    stageId: mt42469d0c6ea9
+    start: 2026-11-25T03:30
+    end: 2026-11-25T11:30
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+  - id: fixed-1c9823fd-tp26
+    title: Traversée des hautes terres
+    kind: activity
+    placeId: mt55de8499c9e6
+    placeIds:
+    - mt55de8499c9e6
+    stageId: mt42469d0c6ea9
+    start: 2026-11-26T08:00
+    end: 2026-11-26T14:00
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+  - id: fixed-25be15cd-tp26
+    title: Trek Mundo Perdido
+    kind: activity
+    placeId: mt21cbb762a4ad
+    placeIds:
+    - mt21cbb762a4ad
+    stageId: mte1605247eb6a
+    start: 2026-11-29T07:30
+    end: 2026-11-29T15:30
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+  - id: fixed-1ffc18dc-tp26
+    title: Jaco Island
+    kind: activity
+    placeId: mt9e20da4d8f1e
+    placeIds:
+    - mt9e20da4d8f1e
+    stageId: mtef1da434dc7c
+    start: 2026-12-01T08:00
+    end: 2026-12-01T13:00
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+  - id: fixed-8cf5d22e-tp26
+    title: Ascension du Manucoco
+    kind: activity
+    placeId: mt820ca1cbeddc
+    placeIds:
+    - mt820ca1cbeddc
+    stageId: mt021aec7d6029
+    start: 2026-12-03T07:00
+    end: 2026-12-03T14:00
+    dateMode: fixed
+    relativeDay: arrival
+    startTime: ''
+    endTime: ''
+    meal: ''
+    notes: ''
+people: 2
+budgetCurrencies:
+- CHF

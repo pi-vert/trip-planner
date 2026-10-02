@@ -1,0 +1,208 @@
+itinerary:
+  - mtqwijv55ej6a
+  - mtqwj4iye31op
+  - mtqwjnln1v6rv
+  - mtqwkpqecinqs
+  - mtqwlacfwacyl
+  - mtqwlku0bus60
+  - mtqwlvf4dau0b
+startPlaceId: mtqwijv55ej6a
+notes: ''
+places:
+  mtqwijv55ej6a:
+    name: Amman
+    lat: 31.951569
+    lng: 35.923963
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwj4iye31op:
+    name: Aire protégée du Wadi Rum
+    lat: 29.517517
+    lng: 35.383643
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwjnln1v6rv:
+    name: Pétra
+    lat: 30.325836
+    lng: 35.474567
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwkpqecinqs:
+    name: Little Petra
+    lat: 30.374077
+    lng: 35.448033
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwlacfwacyl:
+    name: Araba
+    lat: 30.399722
+    lng: 35.167222
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwlku0bus60:
+    name: Mer Morte
+    lat: 31.541946
+    lng: 35.481201
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqwlvf4dau0b:
+    name: Madaba
+    lat: 31.716594
+    lng: 35.794386
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 31.716594
+    lng: 35.794386
+    zoom: 8
+edges:
+  mtqwijv55ej6a|mtqwj4iye31op:
+    realKm: 321.9
+    realMin: 247
+  mtqwj4iye31op|mtqwjnln1v6rv:
+    realKm: 112.7
+    realMin: 108
+  mtqwjnln1v6rv|mtqwkpqecinqs:
+    realKm: 8.6
+    realMin: 18
+  mtqwkpqecinqs|mtqwlacfwacyl:
+    realKm: 89.2
+    realMin: 187
+  mtqwlacfwacyl|mtqwlku0bus60:
+    realKm: 162.5
+    realMin: 217
+  mtqwlku0bus60|mtqwlvf4dau0b:
+    realKm: 86.9
+    realMin: 82
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

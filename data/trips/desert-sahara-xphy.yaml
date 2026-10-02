@@ -1,0 +1,735 @@
+itinerary:
+  - mtpw24r03znug
+  - mtpxpzsspxusn
+  - mtpxqd2z6734z
+  - mtpgz22fdygsc
+  - mtpxxflmc0i1w
+  - mtpxy878110b2
+  - mtpygi2v84xvv
+  - mtpyj6tv3nrnt
+  - mtpymie597ad4
+  - mtph30or3i86h
+  - mtq1l36ay3w3q
+  - mtpxw80nbbspn
+  - mtq1m7kyqqwof
+  - mtpyo3d6ufliy
+  - mtq1o3sgsqtdp
+  - mtpxwzbxjzgv2
+  - mtq1prh4dp66a
+startPlaceId: mtpw24r03znug
+notes: >
+  https://www.sejourdesertmaroc.com/fr/randonnee-desert-de-mhamid-achigaga.php?utm_source=chatgpt.com
+places:
+  mtpgz22fdygsc:
+    name: Erg Chegaga – Lac Iriqui – Foum Zguid – Taznakht
+    lat: 29.841402
+    lng: -6.29299
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J3
+    url: ''
+  mtph30or3i86h:
+    name: M'Hamid
+    lat: 29.808015
+    lng: -5.737016
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dunes_of_MHamid_%282357498901%29.jpg/960px-Dunes_of_MHamid_%282357498901%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: evening
+    stageType: detail
+    parentStageId: mtpw24r03znug
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtphifvsfz9k9:
+    name: Sidi Naji
+    lat: 29.735119
+    lng: -5.837915
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/ISS055-E-35621_-_View_of_Earth.jpg/960px-ISS055-E-35621_-_View_of_Earth.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: detail
+    parentStageId: mtpw24r03znug
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J3
+    url: ''
+  mtphj4jhawkba:
+    name: Erg Smar
+    lat: 29.713523
+    lng: -6.085992
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Zagora.jpg/960px-Zagora.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpw24r03znug:
+    name: Marrakech – Ouarzazate – Zagora – M’Hamid
+    lat: 31.625826
+    lng: -7.989161
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Road_N9_%28Morocco%29_kz03.jpg/960px-Road_N9_%28Morocco%29_kz03.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J1
+    url: ''
+  mtpxpzsspxusn:
+    name: Ouarzazate
+    lat: 30.920193
+    lng: -6.910923
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Kasbah_Taourirt_in_Ouarzazate_2011.jpg/960px-Kasbah_Taourirt_in_Ouarzazate_2011.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtpw24r03znug
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpxqd2z6734z:
+    name: Zagora
+    lat: 30.327905
+    lng: -5.836996
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Zagora.jpg/960px-Zagora.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtpw24r03znug
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpxw80nbbspn:
+    name: Oasis Sacrée
+    lat: 29.879545
+    lng: -6.121122
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20141117065231-vbat.jpg/960px-20141117065231-vbat.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtpymie597ad4
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpxwzbxjzgv2:
+    name: Parc National d'Iriqui
+    lat: 29.827164
+    lng: -6.399086
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Lac d'Iriqui
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/L%E2%80%99Oasis_sacr%C3%A9e_d%E2%80%99oum_L%C3%A2alag_%28signpost%29.JPG/960px-L%E2%80%99Oasis_sacr%C3%A9e_d%E2%80%99oum_L%C3%A2alag_%28signpost%29.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: detail
+    parentStageId: mtpgz22fdygsc
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpxxflmc0i1w:
+    name: Foum Zguid
+    lat: 30.085933
+    lng: -6.874903
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Maroc_Foum_Zguid_overview.jpg/960px-Maroc_Foum_Zguid_overview.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtpgz22fdygsc
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpxy878110b2:
+    name: Taznakht – Aït-Ben-Haddou – Telouet – Marrakech
+    lat: 30.577285
+    lng: -7.204837
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Taznakht.jpg/960px-Taznakht.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J4
+    url: ''
+  mtpygi2v84xvv:
+    name: Marrakech (départ)
+    lat: 31.625826
+    lng: -7.989161
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Marokko0112_%28retouched%29.jpg/960px-Marokko0112_%28retouched%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: detail
+    parentStageId: mtpw24r03znug
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpyj6tv3nrnt:
+    name: M'Hamid El Ghizlane
+    lat: 29.827329
+    lng: -5.723878
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dunes_of_MHamid_%282357498901%29.jpg/960px-Dunes_of_MHamid_%282357498901%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: detail
+    parentStageId: mtpymie597ad4
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtpymie597ad4:
+    name: M'Hamid – Oasis Sacrée – Erg Chegaga
+    lat: 29.808015
+    lng: -5.737016
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: J2
+    url: ''
+  mtpyo3d6ufliy:
+    name: Erg Chegaga
+    lat: 29.841402
+    lng: -6.29299
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Erg_Chegaga.JPG/960px-Erg_Chegaga.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: evening
+    stageType: detail
+    parentStageId: mtpymie597ad4
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtq1l36ay3w3q:
+    name: Marrakech (Fin)
+    lat: 31.625826
+    lng: -7.989161
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Marokko0112_%28retouched%29.jpg/960px-Marokko0112_%28retouched%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: evening
+    stageType: detail
+    parentStageId: mtpxy878110b2
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtq1m7kyqqwof:
+    name: Aït Ben Haddou
+    lat: 31.045154
+    lng: -7.130971
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg/960px-Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: morning
+    stageType: detail
+    parentStageId: mtpxy878110b2
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtq1o3sgsqtdp:
+    name: Télouet
+    lat: 31.289901
+    lng: -7.240707
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/T%C3%A9louet.JPG/960px-T%C3%A9louet.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtpxy878110b2
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtq1prh4dp66a:
+    name: Taznakht
+    lat: 30.577285
+    lng: -7.204837
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Taznakht.jpg/960px-Taznakht.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: evening
+    stageType: detail
+    parentStageId: mtpgz22fdygsc
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 30.577285
+    lng: -7.204837
+    zoom: 9
+edges:
+  mtpgz22fdygsc|mtpgzx9ljmex7:
+    realKm: 394.6
+    realMin: 439
+  mtpgzx9ljmex7|mtph30or3i86h:
+    realKm: 454.5
+    realMin: 535
+  mtph30or3i86h|mtph3c6sy11k5:
+    realKm: 3.3
+    realMin: 14
+  mtpgz22fdygsc|mtph30or3i86h:
+    realKm: 157.8
+    realMin: 201
+  mtph30or3i86h|mtph9zq0fkf9h:
+    realKm: 98.7
+    realMin: 131
+  mtpgz22fdygsc|mtph9zq0fkf9h:
+    realKm: 61
+    realMin: 73
+  mtph9zq0fkf9h|mtph30or3i86h:
+    realKm: 98.6
+    realMin: 131
+  mtpgz22fdygsc|mtphifvsfz9k9:
+    realKm: 159.5
+    realMin: 208
+  mtphifvsfz9k9|mtph9zq0fkf9h:
+    realKm: 100.6
+    realMin: 138
+  mtphifvsfz9k9|mtphj4jhawkba:
+    realKm: 1467.5
+    realMin: 2501
+  mtphj4jhawkba|mtph9zq0fkf9h:
+    realKm: 1368.1
+    realMin: 2366
+  mtphifvsfz9k9|mtpw24r03znug:
+    realKm: 451.1
+    realMin: 539
+  mtpw24r03znug|mtph9zq0fkf9h:
+    realKm: 349.5
+    realMin: 401
+  mtphj4jhawkba|mtpw24r03znug:
+    realKm: 1384.1
+    realMin: 2314
+  mtpw24r03znug|mtph30or3i86h:
+    realKm: 447.9
+    realMin: 531
+  mtphifvsfz9k9|mtpxpzsspxusn:
+    realKm: 255.7
+    realMin: 315
+  mtpxpzsspxusn|mtpw24r03znug:
+    realKm: 195.4
+    realMin: 223
+  mtpxpzsspxusn|mtpxqd2z6734z:
+    realKm: 155.5
+    realMin: 178
+  mtpxqd2z6734z|mtpw24r03znug:
+    realKm: 350.9
+    realMin: 402
+  mtpw24r03znug|mtpxpzsspxusn:
+    realKm: 193.8
+    realMin: 222
+  mtpxqd2z6734z|mtph30or3i86h:
+    realKm: 98.6
+    realMin: 131
+  mtphj4jhawkba|mtpxpzsspxusn:
+    realKm: 1393.9
+    realMin: 2427
+  mtph30or3i86h|mtphifvsfz9k9:
+    realKm: 2.1
+    realMin: 8
+  mtphifvsfz9k9|mtpxw80nbbspn:
+    realKm: 103.1
+    realMin: 222
+  mtpxw80nbbspn|mtpw24r03znug:
+    realKm: 396.8
+    realMin: 451
+  mtpxw80nbbspn|mtpxxflmc0i1w:
+    realKm: 94
+    realMin: 118
+  mtpxxflmc0i1w|mtpw24r03znug:
+    realKm: 312
+    realMin: 344
+  mtpxxflmc0i1w|mtpxy878110b2:
+    realKm: 85.8
+    realMin: 83
+  mtpxy878110b2|mtpw24r03znug:
+    realKm: 226.4
+    realMin: 262
+  mtpxqd2z6734z|mtpxw80nbbspn:
+    realKm: 68
+    realMin: 90
+  mtpxw80nbbspn|mtpxwzbxjzgv2:
+    realKm: 75.4
+    realMin: 140
+  mtpxwzbxjzgv2|mtpxxflmc0i1w:
+    realKm: 42.8
+    realMin: 42
+  mtph30or3i86h|mtpgz22fdygsc:
+    realKm: 157.9
+    realMin: 202
+  mtpxy878110b2|mtpygi2v84xvv:
+    realKm: 226.4
+    realMin: 262
+  mtpygi2v84xvv|mtpyi2kx8uc8x:
+    realKm: 388.2
+    realMin: 432
+  mtpyi2kx8uc8x|mtpw24r03znug:
+    realKm: 428.3
+    realMin: 533
+  mtpygi2v84xvv|mtpyj6tv3nrnt:
+    realKm: 444.7
+    realMin: 518
+  mtpyj6tv3nrnt|mtpw24r03znug:
+    realKm: 446.1
+    realMin: 518
+  mtpyj6tv3nrnt|mtpymie597ad4:
+    realKm: 3.4
+    realMin: 14
+  mtpymie597ad4|mtpw24r03znug:
+    realKm: 449.3
+    realMin: 532
+  mtpymie597ad4|mtpyo3d6ufliy:
+    realKm: 108.6
+    realMin: 233
+  mtpyo3d6ufliy|mtpw24r03znug:
+    realKm: 389.5
+    realMin: 433
+  mtphifvsfz9k9|mtpxxflmc0i1w:
+    realKm: 222
+    realMin: 250
+  mtpxy878110b2|mtpymie597ad4:
+    realKm: 296.6
+    realMin: 314
+  mtpgz22fdygsc|mtpymie597ad4:
+    realKm: 157.8
+    realMin: 201
+  mtpymie597ad4|mtphifvsfz9k9:
+    realKm: 2.1
+    realMin: 8
+  mtpxy878110b2|mtpyo3d6ufliy:
+    realKm: 163.2
+    realMin: 172
+  mtpw24r03znug|mtpymie597ad4:
+    realKm: 447.6
+    realMin: 530
+  mtpgz22fdygsc|mtphj4jhawkba:
+    realKm: 1332.2
+    realMin: 2351
+  mtpgz22fdygsc|mtpxpzsspxusn:
+    realKm: 216.1
+    realMin: 251
+  mtpgz22fdygsc|mtpxqd2z6734z:
+    realKm: 61
+    realMin: 73
+  mtph30or3i86h|mtpxpzsspxusn:
+    realKm: 254
+    realMin: 308
+  mtpgz22fdygsc|mtpxw80nbbspn:
+    realKm: 7.2
+    realMin: 17
+  mtpgz22fdygsc|mtpxxflmc0i1w:
+    realKm: 125.5
+    realMin: 200
+  mtpxqd2z6734z|mtpgz22fdygsc:
+    realKm: 60.8
+    realMin: 73
+  mtpyo3d6ufliy|mtq1l36ay3w3q:
+    realKm: 389.5
+    realMin: 433
+  mtq1l36ay3w3q|mtq1m7kyqqwof:
+    realKm: 170
+    realMin: 198
+  mtq1m7kyqqwof|mtpw24r03znug:
+    realKm: 171.5
+    realMin: 199
+  mtq1m7kyqqwof|mtq1o3sgsqtdp:
+    realKm: 46.6
+    realMin: 70
+  mtq1o3sgsqtdp|mtpw24r03znug:
+    realKm: 128.6
+    realMin: 146
+  mtpgz22fdygsc|mtpxy878110b2:
+    realKm: 163.3
+    realMin: 172
+  mtq1o3sgsqtdp|mtq1prh4dp66a:
+    realKm: 117
+    realMin: 159
+  mtq1prh4dp66a|mtpw24r03znug:
+    realKm: 226.4
+    realMin: 262
+  mtpymie597ad4|mtph30or3i86h:
+    realKm: 0
+    realMin: 0
+  mtph30or3i86h|mtpyo3d6ufliy:
+    realKm: 108.6
+    realMin: 233
+  mtpgz22fdygsc|mtpxwzbxjzgv2:
+    realKm: 43.9
+    realMin: 58
+  mtq1l36ay3w3q|mtpxw80nbbspn:
+    realKm: 395.4
+    realMin: 450
+  mtpxw80nbbspn|mtq1m7kyqqwof:
+    realKm: 267.7
+    realMin: 345
+  mtph30or3i86h|mtq1l36ay3w3q:
+    realKm: 449.3
+    realMin: 532
+  mtq1m7kyqqwof|mtpyo3d6ufliy:
+    realKm: 236.4
+    realMin: 263
+  mtpyo3d6ufliy|mtq1o3sgsqtdp:
+    realKm: 319
+    realMin: 430
+  mtq1o3sgsqtdp|mtpxwzbxjzgv2:
+    realKm: 236.2
+    realMin: 272
+  mtpxwzbxjzgv2|mtq1prh4dp66a:
+    realKm: 123.1
+    realMin: 119
+  mtpxy878110b2|mtpxwzbxjzgv2:
+    realKm: 119.4
+    realMin: 114
+  mtpxwzbxjzgv2|mtpw24r03znug:
+    realKm: 349.4
+    realMin: 381
+  mtpymie597ad4|mtpgz22fdygsc:
+    realKm: 108.6
+    realMin: 233
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF
+  - EUR

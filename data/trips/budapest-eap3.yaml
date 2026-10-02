@@ -1,0 +1,503 @@
+itinerary:
+  - mtqvn9y8qljjw
+  - mtqvo6kvrfe79
+  - mtqvrijmht4wd
+  - mtqvut2xfh07t
+  - mtqvvj6v402m2
+  - mtqvw4jtqhdbb
+  - mtqvwm9z99899
+  - mtqvxycdhj9nu
+  - mtqvzprgzi4u1
+  - mtqw0b1zqy47h
+  - mtvvytfmdy6hi
+  - mupjrjhzwpvdy
+startPlaceId: mtqvn9y8qljjw
+notes: ''
+places:
+  mtqvn9y8qljjw:
+    name: Palais de Budavár
+    lat: 47.495991
+    lng: 19.039801
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg/960px-Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvw4jtqhdbb
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvo6kvrfe79:
+    name: Avenue Andrassy
+    lat: 47.508269
+    lng: 19.067768
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://upload.wikimedia.org/wikipedia/commons/0/0b/Andrassy_ut_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvw4jtqhdbb
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvrijmht4wd:
+    name: Funiculaire
+    lat: 47.497865
+    lng: 19.039789
+    duration_h: 0.15
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings:
+      Anonyme: 4
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Budapest_Funicular_R01.jpg/960px-Budapest_Funicular_R01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvw4jtqhdbb
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvut2xfh07t:
+    name: Bastion des Pêcheurs
+    lat: 47.502305
+    lng: 19.0347
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/20190502_Baszta_Rybacka_w_Budapeszcie_1026_1969_DxO.jpg/960px-20190502_Baszta_Rybacka_w_Budapeszcie_1026_1969_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvmjk6oloz7
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvvj6v402m2:
+    name: Eglise Saint-Matthias
+    lat: 47.502012
+    lng: 19.034211
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/MatyasTemplomFotoThalerTamas20162.JPG/960px-MatyasTemplomFotoThalerTamas20162.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvw4jtqhdbb
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvw4jtqhdbb:
+    name: Pest et la rive Est
+    lat: 47.498979
+    lng: 19.043649
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Budapest%2C_Hungary%2C_View_from_Gellert_Hill_Towards_Pest%2C_Panorama%2C_February_2006.jpg/960px-Budapest%2C_Hungary%2C_View_from_Gellert_Hill_Towards_Pest%2C_Panorama%2C_February_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvwm9z99899:
+    name: Pont des chaînes
+    lat: 47.498979
+    lng: 19.043649
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg/960px-Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvxycdhj9nu:
+    name: Gerbeaud-ház
+    lat: 47.497076
+    lng: 19.050383
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Petit-déjeuner
+    closedDays: []
+    ratings: {}
+    tags:
+      - restaurant
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Gerbeaud_Budapest_2005_078.jpg/960px-Gerbeaud_Budapest_2005_078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqvzprgzi4u1:
+    name: Détente et bains thermaux
+    lat: 47.514753
+    lng: 19.041833
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Budapest_Sz%C3%A9chenyi_Baths_R02.jpg/960px-Budapest_Sz%C3%A9chenyi_Baths_R02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: main
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqw0b1zqy47h:
+    name: Ile Marguerite
+    lat: 47.526909
+    lng: 19.047277
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings:
+      Anonyme: 4
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Margaret_Island.jpg/960px-Margaret_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqw2wujh2b3z:
+    name: Thermes Széchenyi
+    lat: 47.518435
+    lng: 19.082522
+    duration_h: 2
+    budget: 20
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - baignade
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Budapest_Sz%C3%A9chenyi_Baths_R02.jpg/960px-Budapest_Sz%C3%A9chenyi_Baths_R02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtqw3qflzkhuk:
+    name: Thermes Gellért
+    lat: 47.483816
+    lng: 19.050953
+    duration_h: 2
+    budget: 20
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - baignade
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Gell%C3%A9rt_Gyogyfurdo_-_Budapest.jpg/960px-Gell%C3%A9rt_Gyogyfurdo_-_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: afternoon
+    stageType: detail
+    parentStageId: mtqvzprgzi4u1
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mtvvytfmdy6hi:
+    name: 21 Magyar Vendéglő
+    lat: 47.504109
+    lng: 19.031279
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: En travaux jusqu'en 2028
+    closedDays: []
+    ratings: {}
+    tags:
+      - restaurant
+    image: https://zsidai.com/wp-content/uploads/2025/04/21-magyar-vendelgo-01.jpg
+    slot: ''
+    stageType: ''
+    parentStageId: mtqvw4jtqhdbb
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+  mupjrjhzwpvdy:
+    name: Park Plaza Budapest
+    lat: 47.502813
+    lng: 19.039422
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Budapest%2C_artotel%2C_I._Bem_rakpart_16-19.JPG/960px-Budapest%2C_artotel%2C_I._Bem_rakpart_16-19.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: mtqvmjk6oloz7
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 47.502813
+    lng: 19.039422
+    zoom: 14
+edges:
+  mtqvmjk6oloz7|mtqvn9y8qljjw:
+    realKm: 1.8
+    realMin: 4
+  mtqvn9y8qljjw|mtqvo6kvrfe79:
+    realKm: 6.1
+    realMin: 11
+  mtqvo6kvrfe79|mtqvrijmht4wd:
+    realKm: 5
+    realMin: 8
+  mtqvrijmht4wd|mtqvs1ch4xigs:
+    realKm: 0
+    realMin: 0
+  mtqvs1ch4xigs|mtqvut2xfh07t:
+    realKm: 0.9
+    realMin: 2
+  mtqvut2xfh07t|mtqvvj6v402m2:
+    realKm: 0.8
+    realMin: 2
+  mtqvvj6v402m2|mtqvw4jtqhdbb:
+    realKm: 2.6
+    realMin: 5
+  mtqvw4jtqhdbb|mtqvwm9z99899:
+    realKm: 0
+    realMin: 0
+  mtqvwm9z99899|mtqvxycdhj9nu:
+    realKm: 4.2
+    realMin: 7
+  mtqvxycdhj9nu|mtqvzprgzi4u1:
+    realKm: 3
+    realMin: 5
+  mtqvzprgzi4u1|mtqw0b1zqy47h:
+    realKm: 5.5
+    realMin: 9
+  mtqw0b1zqy47h|mtqw2wujh2b3z:
+    realKm: 5.1
+    realMin: 7
+  mtqw2wujh2b3z|mtqw3qflzkhuk:
+    realKm: 5.4
+    realMin: 9
+  mtqvmjk6oloz7|mtqvw4jtqhdbb:
+    realKm: 1
+    realMin: 2
+  mtqvw4jtqhdbb|mtqvzprgzi4u1:
+    realKm: 5.3
+    realMin: 9
+  mtqvrijmht4wd|mtqvut2xfh07t:
+    realKm: 0.9
+    realMin: 2
+  mtqw3qflzkhuk|mtvvytfmdy6hi:
+    realKm: 4.5
+    realMin: 9
+  mtvvytfmdy6hi|mupjrjhzwpvdy:
+    realKm: 1.9
+    realMin: 4
+  mtqw0b1zqy47h|mtqw3qflzkhuk:
+    realKm: 6.1
+    realMin: 11
+  mtqvmjk6oloz7|mtqvo6kvrfe79:
+    realKm: 4.9
+    realMin: 9
+  mtqvo6kvrfe79|mtqvw4jtqhdbb:
+    realKm: 5
+    realMin: 8
+  mtqvw4jtqhdbb|mtqvxycdhj9nu:
+    realKm: 4.2
+    realMin: 7
+  mtqvzprgzi4u1|mtqw3qflzkhuk:
+    realKm: 4.6
+    realMin: 8
+  mtqvzprgzi4u1|mtvvytfmdy6hi:
+    realKm: 3.6
+    realMin: 7
+  mtqvn9y8qljjw|mtqvw4jtqhdbb:
+    realKm: 2.9
+    realMin: 6
+planning:
+  startDate: '2026-10-01'
+  endDate: '2026-10-04'
+  startTime: '07:00'
+  dayStart: '07:00'
+  dayEnd: '22:00'
+  speedKmh: 60
+  meals:
+    breakfast:
+      at: '07:00'
+      durationMin: 60
+    lunch:
+      at: '12:00'
+      durationMin: 60
+    dinner:
+      at: '19:00'
+      durationMin: 60
+  reservations:
+    - id: fixed-muqkqeio-bqmor
+      title: Hotel Park Plaza
+      kind: lodging
+      placeId: mupjrjhzwpvdy
+      placeIds:
+        - mupjrjhzwpvdy
+      stageId: ''
+      start: 2026-10-01T14:00
+      end: 2026-10-04T10:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: lunch
+      notes: ''
+    - id: fixed-muqnlan4-zfbvv
+      title: 21 Magyar Vendéglő
+      kind: meal
+      placeId: mtvvytfmdy6hi
+      placeIds:
+        - mtvvytfmdy6hi
+      stageId: ''
+      start: 2026-10-02T19:00
+      end: 2026-10-02T22:00
+      dateMode: fixed
+      relativeDay: arrival
+      startTime: ''
+      endTime: ''
+      meal: dinner
+      notes: ''
+people: 2
+budgetCurrencies:
+  - CHF

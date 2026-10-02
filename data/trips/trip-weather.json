@@ -1,0 +1,2044 @@
+{
+  "trips": {
+    "budapest-eap3": {
+      "stages": {
+        "mtqvmjk6oloz7": {
+          "name": "Château de Buda",
+          "lat": 47.49745,
+          "lng": 19.04158,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:00:50.969Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": -1.7,
+                "tempMeanC": 0.9,
+                "tempMaxC": 3.9,
+                "humidityPct": 83,
+                "precipitationMm": 35.4,
+                "rainyDays": 8.7,
+                "snowfallCm": 7,
+                "sunshineHours": 156.8
+              },
+              {
+                "month": 2,
+                "tempMinC": 0.5,
+                "tempMeanC": 4,
+                "tempMaxC": 8,
+                "humidityPct": 76,
+                "precipitationMm": 39.5,
+                "rainyDays": 8.4,
+                "snowfallCm": 4,
+                "sunshineHours": 187.1
+              },
+              {
+                "month": 3,
+                "tempMinC": 2.4,
+                "tempMeanC": 7.3,
+                "tempMaxC": 12.6,
+                "humidityPct": 66,
+                "precipitationMm": 41.9,
+                "rainyDays": 8.1,
+                "snowfallCm": 1.4,
+                "sunshineHours": 268.6
+              },
+              {
+                "month": 4,
+                "tempMinC": 6.5,
+                "tempMeanC": 12.1,
+                "tempMaxC": 17.6,
+                "humidityPct": 63,
+                "precipitationMm": 43.6,
+                "rainyDays": 8.3,
+                "snowfallCm": 1.5,
+                "sunshineHours": 314.5
+              },
+              {
+                "month": 5,
+                "tempMinC": 11,
+                "tempMeanC": 16.3,
+                "tempMaxC": 21.3,
+                "humidityPct": 68,
+                "precipitationMm": 67.6,
+                "rainyDays": 12,
+                "snowfallCm": 0,
+                "sunshineHours": 353.7
+              },
+              {
+                "month": 6,
+                "tempMinC": 15.9,
+                "tempMeanC": 21.8,
+                "tempMaxC": 27.2,
+                "humidityPct": 66,
+                "precipitationMm": 68.4,
+                "rainyDays": 9.7,
+                "snowfallCm": 0,
+                "sunshineHours": 392.7
+              },
+              {
+                "month": 7,
+                "tempMinC": 17,
+                "tempMeanC": 23,
+                "tempMaxC": 28.7,
+                "humidityPct": 63,
+                "precipitationMm": 62.1,
+                "rainyDays": 8.6,
+                "snowfallCm": 0,
+                "sunshineHours": 401.3
+              },
+              {
+                "month": 8,
+                "tempMinC": 16.9,
+                "tempMeanC": 22.9,
+                "tempMaxC": 28.9,
+                "humidityPct": 65,
+                "precipitationMm": 51.9,
+                "rainyDays": 8.4,
+                "snowfallCm": 0,
+                "sunshineHours": 374.4
+              },
+              {
+                "month": 9,
+                "tempMinC": 12.6,
+                "tempMeanC": 17.8,
+                "tempMaxC": 23.6,
+                "humidityPct": 71,
+                "precipitationMm": 68.6,
+                "rainyDays": 8.8,
+                "snowfallCm": 0,
+                "sunshineHours": 286.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 7.6,
+                "tempMeanC": 11.9,
+                "tempMaxC": 17.1,
+                "humidityPct": 78,
+                "precipitationMm": 52.5,
+                "rainyDays": 8.2,
+                "snowfallCm": 0,
+                "sunshineHours": 231.1
+              },
+              {
+                "month": 11,
+                "tempMinC": 3.2,
+                "tempMeanC": 6.2,
+                "tempMaxC": 9.6,
+                "humidityPct": 86,
+                "precipitationMm": 56.3,
+                "rainyDays": 9.6,
+                "snowfallCm": 3,
+                "sunshineHours": 144.9
+              },
+              {
+                "month": 12,
+                "tempMinC": 0.2,
+                "tempMeanC": 2.4,
+                "tempMaxC": 4.9,
+                "humidityPct": 87,
+                "precipitationMm": 46.3,
+                "rainyDays": 8.6,
+                "snowfallCm": 7,
+                "sunshineHours": 126.7
+              }
+            ]
+          }
+        },
+        "mtqvw4jtqhdbb": {
+          "name": "Pest et la rive Est",
+          "lat": 47.49898,
+          "lng": 19.04365,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:00:51.221Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": -1.6,
+                "tempMeanC": 1,
+                "tempMaxC": 3.9,
+                "humidityPct": 83,
+                "precipitationMm": 35.4,
+                "rainyDays": 8.7,
+                "snowfallCm": 7,
+                "sunshineHours": 156.8
+              },
+              {
+                "month": 2,
+                "tempMinC": 0.6,
+                "tempMeanC": 4.1,
+                "tempMaxC": 8.1,
+                "humidityPct": 76,
+                "precipitationMm": 39.5,
+                "rainyDays": 8.4,
+                "snowfallCm": 4,
+                "sunshineHours": 187.1
+              },
+              {
+                "month": 3,
+                "tempMinC": 2.4,
+                "tempMeanC": 7.4,
+                "tempMaxC": 12.7,
+                "humidityPct": 67,
+                "precipitationMm": 41.9,
+                "rainyDays": 8.1,
+                "snowfallCm": 1.4,
+                "sunshineHours": 268.6
+              },
+              {
+                "month": 4,
+                "tempMinC": 6.6,
+                "tempMeanC": 12.2,
+                "tempMaxC": 17.6,
+                "humidityPct": 63,
+                "precipitationMm": 43.6,
+                "rainyDays": 8.3,
+                "snowfallCm": 1.5,
+                "sunshineHours": 314.5
+              },
+              {
+                "month": 5,
+                "tempMinC": 11.1,
+                "tempMeanC": 16.4,
+                "tempMaxC": 21.3,
+                "humidityPct": 68,
+                "precipitationMm": 67.6,
+                "rainyDays": 12,
+                "snowfallCm": 0,
+                "sunshineHours": 353.7
+              },
+              {
+                "month": 6,
+                "tempMinC": 16,
+                "tempMeanC": 21.9,
+                "tempMaxC": 27.3,
+                "humidityPct": 66,
+                "precipitationMm": 68.4,
+                "rainyDays": 9.7,
+                "snowfallCm": 0,
+                "sunshineHours": 392.7
+              },
+              {
+                "month": 7,
+                "tempMinC": 17,
+                "tempMeanC": 23.1,
+                "tempMaxC": 28.7,
+                "humidityPct": 63,
+                "precipitationMm": 62.1,
+                "rainyDays": 8.6,
+                "snowfallCm": 0,
+                "sunshineHours": 401.3
+              },
+              {
+                "month": 8,
+                "tempMinC": 17,
+                "tempMeanC": 22.9,
+                "tempMaxC": 29,
+                "humidityPct": 65,
+                "precipitationMm": 51.9,
+                "rainyDays": 8.4,
+                "snowfallCm": 0,
+                "sunshineHours": 374.4
+              },
+              {
+                "month": 9,
+                "tempMinC": 12.6,
+                "tempMeanC": 17.9,
+                "tempMaxC": 23.6,
+                "humidityPct": 71,
+                "precipitationMm": 68.6,
+                "rainyDays": 8.8,
+                "snowfallCm": 0,
+                "sunshineHours": 286.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 7.7,
+                "tempMeanC": 12,
+                "tempMaxC": 17.1,
+                "humidityPct": 78,
+                "precipitationMm": 52.5,
+                "rainyDays": 8.2,
+                "snowfallCm": 0,
+                "sunshineHours": 231.1
+              },
+              {
+                "month": 11,
+                "tempMinC": 3.3,
+                "tempMeanC": 6.3,
+                "tempMaxC": 9.6,
+                "humidityPct": 86,
+                "precipitationMm": 56.3,
+                "rainyDays": 9.6,
+                "snowfallCm": 3,
+                "sunshineHours": 144.9
+              },
+              {
+                "month": 12,
+                "tempMinC": 0.2,
+                "tempMeanC": 2.5,
+                "tempMaxC": 5,
+                "humidityPct": 87,
+                "precipitationMm": 46.3,
+                "rainyDays": 8.6,
+                "snowfallCm": 7,
+                "sunshineHours": 126.7
+              }
+            ]
+          }
+        },
+        "mtqvzprgzi4u1": {
+          "name": "Détente et bains thermaux",
+          "lat": 47.51475,
+          "lng": 19.04183,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:00:51.641Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": -1.6,
+                "tempMeanC": 1,
+                "tempMaxC": 3.9,
+                "humidityPct": 83,
+                "precipitationMm": 35.4,
+                "rainyDays": 8.7,
+                "snowfallCm": 7,
+                "sunshineHours": 156.8
+              },
+              {
+                "month": 2,
+                "tempMinC": 0.6,
+                "tempMeanC": 4.1,
+                "tempMaxC": 8.1,
+                "humidityPct": 76,
+                "precipitationMm": 39.5,
+                "rainyDays": 8.4,
+                "snowfallCm": 4,
+                "sunshineHours": 187.1
+              },
+              {
+                "month": 3,
+                "tempMinC": 2.4,
+                "tempMeanC": 7.4,
+                "tempMaxC": 12.7,
+                "humidityPct": 67,
+                "precipitationMm": 41.9,
+                "rainyDays": 8.1,
+                "snowfallCm": 1.4,
+                "sunshineHours": 268.6
+              },
+              {
+                "month": 4,
+                "tempMinC": 6.6,
+                "tempMeanC": 12.2,
+                "tempMaxC": 17.6,
+                "humidityPct": 63,
+                "precipitationMm": 43.6,
+                "rainyDays": 8.3,
+                "snowfallCm": 1.5,
+                "sunshineHours": 314.5
+              },
+              {
+                "month": 5,
+                "tempMinC": 11.1,
+                "tempMeanC": 16.4,
+                "tempMaxC": 21.3,
+                "humidityPct": 68,
+                "precipitationMm": 67.6,
+                "rainyDays": 12,
+                "snowfallCm": 0,
+                "sunshineHours": 353.7
+              },
+              {
+                "month": 6,
+                "tempMinC": 16,
+                "tempMeanC": 21.9,
+                "tempMaxC": 27.3,
+                "humidityPct": 66,
+                "precipitationMm": 68.4,
+                "rainyDays": 9.7,
+                "snowfallCm": 0,
+                "sunshineHours": 392.7
+              },
+              {
+                "month": 7,
+                "tempMinC": 17,
+                "tempMeanC": 23.1,
+                "tempMaxC": 28.7,
+                "humidityPct": 63,
+                "precipitationMm": 62.1,
+                "rainyDays": 8.6,
+                "snowfallCm": 0,
+                "sunshineHours": 401.3
+              },
+              {
+                "month": 8,
+                "tempMinC": 17,
+                "tempMeanC": 22.9,
+                "tempMaxC": 29,
+                "humidityPct": 65,
+                "precipitationMm": 51.9,
+                "rainyDays": 8.4,
+                "snowfallCm": 0,
+                "sunshineHours": 374.4
+              },
+              {
+                "month": 9,
+                "tempMinC": 12.6,
+                "tempMeanC": 17.9,
+                "tempMaxC": 23.6,
+                "humidityPct": 71,
+                "precipitationMm": 68.6,
+                "rainyDays": 8.8,
+                "snowfallCm": 0,
+                "sunshineHours": 286.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 7.7,
+                "tempMeanC": 12,
+                "tempMaxC": 17.1,
+                "humidityPct": 78,
+                "precipitationMm": 52.5,
+                "rainyDays": 8.2,
+                "snowfallCm": 0,
+                "sunshineHours": 231.1
+              },
+              {
+                "month": 11,
+                "tempMinC": 3.3,
+                "tempMeanC": 6.3,
+                "tempMaxC": 9.6,
+                "humidityPct": 86,
+                "precipitationMm": 56.3,
+                "rainyDays": 9.6,
+                "snowfallCm": 3,
+                "sunshineHours": 144.9
+              },
+              {
+                "month": 12,
+                "tempMinC": 0.2,
+                "tempMeanC": 2.5,
+                "tempMaxC": 5,
+                "humidityPct": 87,
+                "precipitationMm": 46.3,
+                "rainyDays": 8.6,
+                "snowfallCm": 7,
+                "sunshineHours": 126.7
+              }
+            ]
+          }
+        }
+      }
+    },
+    "desert-sahara-xphy": {
+      "stages": {
+        "mtpw24r03znug": {
+          "name": "Marrakech – Ouarzazate – Zagora – M’Hamid",
+          "lat": 31.62583,
+          "lng": -7.98916,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:05:43.592Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 6,
+                "tempMeanC": 12.4,
+                "tempMaxC": 20,
+                "humidityPct": 60,
+                "precipitationMm": 18.5,
+                "rainyDays": 3.2,
+                "snowfallCm": 0,
+                "sunshineHours": 295.7
+              },
+              {
+                "month": 2,
+                "tempMinC": 8,
+                "tempMeanC": 14.4,
+                "tempMaxC": 21.5,
+                "humidityPct": 60,
+                "precipitationMm": 33.9,
+                "rainyDays": 5.4,
+                "snowfallCm": 0,
+                "sunshineHours": 282.7
+              },
+              {
+                "month": 3,
+                "tempMinC": 10.1,
+                "tempMeanC": 16.1,
+                "tempMaxC": 22.8,
+                "humidityPct": 62,
+                "precipitationMm": 41.9,
+                "rainyDays": 7.8,
+                "snowfallCm": 0,
+                "sunshineHours": 336
+              },
+              {
+                "month": 4,
+                "tempMinC": 12.9,
+                "tempMeanC": 19.1,
+                "tempMaxC": 25.9,
+                "humidityPct": 58,
+                "precipitationMm": 29.4,
+                "rainyDays": 5.7,
+                "snowfallCm": 0,
+                "sunshineHours": 357.1
+              },
+              {
+                "month": 5,
+                "tempMinC": 15.6,
+                "tempMeanC": 22.4,
+                "tempMaxC": 29.7,
+                "humidityPct": 53,
+                "precipitationMm": 14.4,
+                "rainyDays": 3.6,
+                "snowfallCm": 0,
+                "sunshineHours": 384
+              },
+              {
+                "month": 6,
+                "tempMinC": 18.3,
+                "tempMeanC": 25.1,
+                "tempMaxC": 32.7,
+                "humidityPct": 51,
+                "precipitationMm": 4.2,
+                "rainyDays": 1.6,
+                "snowfallCm": 0,
+                "sunshineHours": 379.6
+              },
+              {
+                "month": 7,
+                "tempMinC": 20.7,
+                "tempMeanC": 28.6,
+                "tempMaxC": 37.1,
+                "humidityPct": 46,
+                "precipitationMm": 3.9,
+                "rainyDays": 2,
+                "snowfallCm": 0,
+                "sunshineHours": 399.9
+              },
+              {
+                "month": 8,
+                "tempMinC": 21.6,
+                "tempMeanC": 29,
+                "tempMaxC": 37.2,
+                "humidityPct": 46,
+                "precipitationMm": 6.1,
+                "rainyDays": 2.5,
+                "snowfallCm": 0,
+                "sunshineHours": 390.9
+              },
+              {
+                "month": 9,
+                "tempMinC": 18.9,
+                "tempMeanC": 25.3,
+                "tempMaxC": 32.7,
+                "humidityPct": 54,
+                "precipitationMm": 7.9,
+                "rainyDays": 2.4,
+                "snowfallCm": 0,
+                "sunshineHours": 338.1
+              },
+              {
+                "month": 10,
+                "tempMinC": 16.1,
+                "tempMeanC": 22.5,
+                "tempMaxC": 29.6,
+                "humidityPct": 54,
+                "precipitationMm": 19.3,
+                "rainyDays": 2.7,
+                "snowfallCm": 0,
+                "sunshineHours": 321.1
+              },
+              {
+                "month": 11,
+                "tempMinC": 11,
+                "tempMeanC": 17,
+                "tempMaxC": 24,
+                "humidityPct": 58,
+                "precipitationMm": 21,
+                "rainyDays": 4.3,
+                "snowfallCm": 0,
+                "sunshineHours": 286.4
+              },
+              {
+                "month": 12,
+                "tempMinC": 7.4,
+                "tempMeanC": 13.2,
+                "tempMaxC": 20.3,
+                "humidityPct": 67,
+                "precipitationMm": 29.3,
+                "rainyDays": 5.1,
+                "snowfallCm": 0,
+                "sunshineHours": 276.8
+              }
+            ]
+          }
+        },
+        "mtpgz22fdygsc": {
+          "name": "Erg Chegaga – Lac Iriqui – Foum Zguid – Taznakht",
+          "lat": 29.8414,
+          "lng": -6.29299,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:05:44.563Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 8.9,
+                "tempMeanC": 14.9,
+                "tempMaxC": 21.5,
+                "humidityPct": 31,
+                "precipitationMm": 1.2,
+                "rainyDays": 0.5,
+                "snowfallCm": 0,
+                "sunshineHours": 311.1
+              },
+              {
+                "month": 2,
+                "tempMinC": 11.8,
+                "tempMeanC": 18,
+                "tempMaxC": 24,
+                "humidityPct": 28,
+                "precipitationMm": 5.9,
+                "rainyDays": 1,
+                "snowfallCm": 0,
+                "sunshineHours": 297.4
+              },
+              {
+                "month": 3,
+                "tempMinC": 15.3,
+                "tempMeanC": 22.1,
+                "tempMaxC": 28.1,
+                "humidityPct": 22,
+                "precipitationMm": 0.9,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 350.8
+              },
+              {
+                "month": 4,
+                "tempMinC": 19.6,
+                "tempMeanC": 26.5,
+                "tempMaxC": 32.5,
+                "humidityPct": 18,
+                "precipitationMm": 1,
+                "rainyDays": 0.3,
+                "snowfallCm": 0,
+                "sunshineHours": 375.6
+              },
+              {
+                "month": 5,
+                "tempMinC": 23.6,
+                "tempMeanC": 30.6,
+                "tempMaxC": 36.5,
+                "humidityPct": 16,
+                "precipitationMm": 0.9,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 394.9
+              },
+              {
+                "month": 6,
+                "tempMinC": 27.4,
+                "tempMeanC": 34.8,
+                "tempMaxC": 40.9,
+                "humidityPct": 14,
+                "precipitationMm": 0.4,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 385.6
+              },
+              {
+                "month": 7,
+                "tempMinC": 31.2,
+                "tempMeanC": 38.8,
+                "tempMaxC": 45,
+                "humidityPct": 11,
+                "precipitationMm": 0.3,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 400.3
+              },
+              {
+                "month": 8,
+                "tempMinC": 30.9,
+                "tempMeanC": 37.9,
+                "tempMaxC": 43.7,
+                "humidityPct": 14,
+                "precipitationMm": 1.2,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 395
+              },
+              {
+                "month": 9,
+                "tempMinC": 26.4,
+                "tempMeanC": 32.8,
+                "tempMaxC": 38.7,
+                "humidityPct": 23,
+                "precipitationMm": 8.3,
+                "rainyDays": 1.8,
+                "snowfallCm": 0,
+                "sunshineHours": 340.8
+              },
+              {
+                "month": 10,
+                "tempMinC": 21.4,
+                "tempMeanC": 27.4,
+                "tempMaxC": 33.2,
+                "humidityPct": 25,
+                "precipitationMm": 4.5,
+                "rainyDays": 0.9,
+                "snowfallCm": 0,
+                "sunshineHours": 332
+              },
+              {
+                "month": 11,
+                "tempMinC": 15,
+                "tempMeanC": 20.9,
+                "tempMaxC": 26.9,
+                "humidityPct": 30,
+                "precipitationMm": 5.9,
+                "rainyDays": 1,
+                "snowfallCm": 0,
+                "sunshineHours": 295.9
+              },
+              {
+                "month": 12,
+                "tempMinC": 10.2,
+                "tempMeanC": 15.7,
+                "tempMaxC": 22,
+                "humidityPct": 39,
+                "precipitationMm": 6.3,
+                "rainyDays": 0.6,
+                "snowfallCm": 0,
+                "sunshineHours": 296
+              }
+            ]
+          }
+        },
+        "mtpxy878110b2": {
+          "name": "Taznakht – Aït-Ben-Haddou – Telouet – Marrakech",
+          "lat": 30.57729,
+          "lng": -7.20484,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:05:45.311Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 4.1,
+                "tempMeanC": 9.8,
+                "tempMaxC": 16.2,
+                "humidityPct": 40,
+                "precipitationMm": 8.9,
+                "rainyDays": 1.6,
+                "snowfallCm": 1.5,
+                "sunshineHours": 306.9
+              },
+              {
+                "month": 2,
+                "tempMinC": 6,
+                "tempMeanC": 11.7,
+                "tempMaxC": 17.3,
+                "humidityPct": 41,
+                "precipitationMm": 18.7,
+                "rainyDays": 3.3,
+                "snowfallCm": 1.8,
+                "sunshineHours": 290.6
+              },
+              {
+                "month": 3,
+                "tempMinC": 8.7,
+                "tempMeanC": 14.7,
+                "tempMaxC": 20.7,
+                "humidityPct": 38,
+                "precipitationMm": 6.8,
+                "rainyDays": 1.6,
+                "snowfallCm": 0.1,
+                "sunshineHours": 351.5
+              },
+              {
+                "month": 4,
+                "tempMinC": 12.3,
+                "tempMeanC": 18.8,
+                "tempMaxC": 24.9,
+                "humidityPct": 31,
+                "precipitationMm": 5.9,
+                "rainyDays": 0.8,
+                "snowfallCm": 0,
+                "sunshineHours": 375.5
+              },
+              {
+                "month": 5,
+                "tempMinC": 15.8,
+                "tempMeanC": 22.5,
+                "tempMaxC": 28.4,
+                "humidityPct": 28,
+                "precipitationMm": 5.1,
+                "rainyDays": 1.3,
+                "snowfallCm": 0,
+                "sunshineHours": 393.3
+              },
+              {
+                "month": 6,
+                "tempMinC": 19.4,
+                "tempMeanC": 26.5,
+                "tempMaxC": 32.7,
+                "humidityPct": 24,
+                "precipitationMm": 2.1,
+                "rainyDays": 0.7,
+                "snowfallCm": 0,
+                "sunshineHours": 382.3
+              },
+              {
+                "month": 7,
+                "tempMinC": 23,
+                "tempMeanC": 30.3,
+                "tempMaxC": 36.2,
+                "humidityPct": 18,
+                "precipitationMm": 1,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 396.1
+              },
+              {
+                "month": 8,
+                "tempMinC": 22.8,
+                "tempMeanC": 29.3,
+                "tempMaxC": 35.1,
+                "humidityPct": 23,
+                "precipitationMm": 7,
+                "rainyDays": 1.9,
+                "snowfallCm": 0,
+                "sunshineHours": 385.9
+              },
+              {
+                "month": 9,
+                "tempMinC": 18.3,
+                "tempMeanC": 24.4,
+                "tempMaxC": 30.3,
+                "humidityPct": 33,
+                "precipitationMm": 19.2,
+                "rainyDays": 4.1,
+                "snowfallCm": 0,
+                "sunshineHours": 338.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 14.7,
+                "tempMeanC": 20.2,
+                "tempMaxC": 25.7,
+                "humidityPct": 37,
+                "precipitationMm": 13.9,
+                "rainyDays": 2.6,
+                "snowfallCm": 0,
+                "sunshineHours": 325.6
+              },
+              {
+                "month": 11,
+                "tempMinC": 9.3,
+                "tempMeanC": 14.7,
+                "tempMaxC": 20.5,
+                "humidityPct": 41,
+                "precipitationMm": 10.5,
+                "rainyDays": 1.9,
+                "snowfallCm": 0.2,
+                "sunshineHours": 296.6
+              },
+              {
+                "month": 12,
+                "tempMinC": 5.4,
+                "tempMeanC": 10.7,
+                "tempMaxC": 16.6,
+                "humidityPct": 47,
+                "precipitationMm": 9.4,
+                "rainyDays": 1.9,
+                "snowfallCm": 0.7,
+                "sunshineHours": 291.4
+              }
+            ]
+          }
+        }
+      }
+    },
+    "algerie-p29w": {
+      "stages": {
+        "mtpgpcs7t0c1c": {
+          "name": "Tamanrasset",
+          "lat": 24.37534,
+          "lng": 4.32084,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:07:25.828Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 8.2,
+                "tempMeanC": 15.5,
+                "tempMaxC": 22.8,
+                "humidityPct": 21,
+                "precipitationMm": 0,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 310.1
+              },
+              {
+                "month": 2,
+                "tempMinC": 11.6,
+                "tempMeanC": 18.6,
+                "tempMaxC": 25.4,
+                "humidityPct": 18,
+                "precipitationMm": 1.1,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 297.2
+              },
+              {
+                "month": 3,
+                "tempMinC": 15.5,
+                "tempMeanC": 22.9,
+                "tempMaxC": 29.5,
+                "humidityPct": 15,
+                "precipitationMm": 0.5,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 355.5
+              },
+              {
+                "month": 4,
+                "tempMinC": 20.3,
+                "tempMeanC": 27.9,
+                "tempMaxC": 34.3,
+                "humidityPct": 12,
+                "precipitationMm": 0.1,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 358.3
+              },
+              {
+                "month": 5,
+                "tempMinC": 25.6,
+                "tempMeanC": 32.5,
+                "tempMaxC": 38.3,
+                "humidityPct": 12,
+                "precipitationMm": 0.5,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 390
+              },
+              {
+                "month": 6,
+                "tempMinC": 28.9,
+                "tempMeanC": 35.7,
+                "tempMaxC": 41.2,
+                "humidityPct": 12,
+                "precipitationMm": 0.4,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 385
+              },
+              {
+                "month": 7,
+                "tempMinC": 30.2,
+                "tempMeanC": 36.5,
+                "tempMaxC": 41.6,
+                "humidityPct": 12,
+                "precipitationMm": 0.4,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 391.8
+              },
+              {
+                "month": 8,
+                "tempMinC": 29.5,
+                "tempMeanC": 35.2,
+                "tempMaxC": 40.4,
+                "humidityPct": 17,
+                "precipitationMm": 1.3,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 374.2
+              },
+              {
+                "month": 9,
+                "tempMinC": 27.3,
+                "tempMeanC": 33.5,
+                "tempMaxC": 39.1,
+                "humidityPct": 17,
+                "precipitationMm": 1.8,
+                "rainyDays": 0.5,
+                "snowfallCm": 0,
+                "sunshineHours": 342.3
+              },
+              {
+                "month": 10,
+                "tempMinC": 21.8,
+                "tempMeanC": 28.5,
+                "tempMaxC": 34.5,
+                "humidityPct": 18,
+                "precipitationMm": 0.2,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 337.5
+              },
+              {
+                "month": 11,
+                "tempMinC": 14.5,
+                "tempMeanC": 21.5,
+                "tempMaxC": 28.1,
+                "humidityPct": 22,
+                "precipitationMm": 1.9,
+                "rainyDays": 0.3,
+                "snowfallCm": 0,
+                "sunshineHours": 312.5
+              },
+              {
+                "month": 12,
+                "tempMinC": 10.3,
+                "tempMeanC": 16.9,
+                "tempMaxC": 23.8,
+                "humidityPct": 26,
+                "precipitationMm": 1.8,
+                "rainyDays": 0.3,
+                "snowfallCm": 0,
+                "sunshineHours": 310
+              }
+            ]
+          }
+        },
+        "mtpgpx4kzwkg9": {
+          "name": "Djanet",
+          "lat": 24.07152,
+          "lng": 9.61558,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:07:28.717Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 3.7,
+                "tempMeanC": 11.7,
+                "tempMaxC": 19.6,
+                "humidityPct": 33,
+                "precipitationMm": 0.8,
+                "rainyDays": 0.3,
+                "snowfallCm": 0,
+                "sunshineHours": 323
+              },
+              {
+                "month": 2,
+                "tempMinC": 6.6,
+                "tempMeanC": 14.8,
+                "tempMaxC": 22.5,
+                "humidityPct": 24,
+                "precipitationMm": 0.2,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 302.9
+              },
+              {
+                "month": 3,
+                "tempMinC": 12.7,
+                "tempMeanC": 20.7,
+                "tempMaxC": 27.9,
+                "humidityPct": 18,
+                "precipitationMm": 0.2,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 339.9
+              },
+              {
+                "month": 4,
+                "tempMinC": 18.7,
+                "tempMeanC": 26.6,
+                "tempMaxC": 33.5,
+                "humidityPct": 14,
+                "precipitationMm": 0.2,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 360.4
+              },
+              {
+                "month": 5,
+                "tempMinC": 23.3,
+                "tempMeanC": 30.5,
+                "tempMaxC": 36.8,
+                "humidityPct": 14,
+                "precipitationMm": 1.1,
+                "rainyDays": 0.3,
+                "snowfallCm": 0,
+                "sunshineHours": 386
+              },
+              {
+                "month": 6,
+                "tempMinC": 25.7,
+                "tempMeanC": 32.7,
+                "tempMaxC": 38.7,
+                "humidityPct": 15,
+                "precipitationMm": 0.6,
+                "rainyDays": 0.2,
+                "snowfallCm": 0,
+                "sunshineHours": 384
+              },
+              {
+                "month": 7,
+                "tempMinC": 25.6,
+                "tempMeanC": 32.8,
+                "tempMaxC": 38.6,
+                "humidityPct": 15,
+                "precipitationMm": 0,
+                "rainyDays": 0,
+                "snowfallCm": 0,
+                "sunshineHours": 401.1
+              },
+              {
+                "month": 8,
+                "tempMinC": 25.7,
+                "tempMeanC": 32.3,
+                "tempMaxC": 37.9,
+                "humidityPct": 19,
+                "precipitationMm": 0.5,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 389.1
+              },
+              {
+                "month": 9,
+                "tempMinC": 23.2,
+                "tempMeanC": 30.1,
+                "tempMaxC": 36.2,
+                "humidityPct": 20,
+                "precipitationMm": 0.3,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 352.7
+              },
+              {
+                "month": 10,
+                "tempMinC": 18.2,
+                "tempMeanC": 25.3,
+                "tempMaxC": 31.9,
+                "humidityPct": 24,
+                "precipitationMm": 0.7,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 345.3
+              },
+              {
+                "month": 11,
+                "tempMinC": 10.8,
+                "tempMeanC": 18.4,
+                "tempMaxC": 25.6,
+                "humidityPct": 29,
+                "precipitationMm": 0.3,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 305.4
+              },
+              {
+                "month": 12,
+                "tempMinC": 5.9,
+                "tempMeanC": 13.5,
+                "tempMaxC": 21.1,
+                "humidityPct": 34,
+                "precipitationMm": 0.3,
+                "rainyDays": 0.1,
+                "snowfallCm": 0,
+                "sunshineHours": 311.1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "reunion-ki7r": {
+      "stages": {
+        "mj666mo13ioge": {
+          "name": "Saint-Denis",
+          "lat": -20.87999,
+          "lng": 55.44814,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:28:42.398Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 25.3,
+                "tempMeanC": 27,
+                "tempMaxC": 29.2,
+                "humidityPct": 82,
+                "precipitationMm": 263.5,
+                "rainyDays": 22.9,
+                "snowfallCm": 0,
+                "sunshineHours": 366.6
+              },
+              {
+                "month": 2,
+                "tempMinC": 25.4,
+                "tempMeanC": 27,
+                "tempMaxC": 29.1,
+                "humidityPct": 84,
+                "precipitationMm": 248.9,
+                "rainyDays": 23.9,
+                "snowfallCm": 0,
+                "sunshineHours": 328
+              },
+              {
+                "month": 3,
+                "tempMinC": 25.3,
+                "tempMeanC": 26.9,
+                "tempMaxC": 29,
+                "humidityPct": 84,
+                "precipitationMm": 212.5,
+                "rainyDays": 24.3,
+                "snowfallCm": 0,
+                "sunshineHours": 339.6
+              },
+              {
+                "month": 4,
+                "tempMinC": 24.5,
+                "tempMeanC": 26.1,
+                "tempMaxC": 28.2,
+                "humidityPct": 83,
+                "precipitationMm": 131.1,
+                "rainyDays": 20.2,
+                "snowfallCm": 0,
+                "sunshineHours": 314
+              },
+              {
+                "month": 5,
+                "tempMinC": 22.3,
+                "tempMeanC": 24.1,
+                "tempMaxC": 26.4,
+                "humidityPct": 80,
+                "precipitationMm": 62.6,
+                "rainyDays": 15.6,
+                "snowfallCm": 0,
+                "sunshineHours": 325.7
+              },
+              {
+                "month": 6,
+                "tempMinC": 20.5,
+                "tempMeanC": 22.4,
+                "tempMaxC": 24.7,
+                "humidityPct": 80,
+                "precipitationMm": 51.8,
+                "rainyDays": 13.8,
+                "snowfallCm": 0,
+                "sunshineHours": 310.5
+              },
+              {
+                "month": 7,
+                "tempMinC": 19.6,
+                "tempMeanC": 21.6,
+                "tempMaxC": 24,
+                "humidityPct": 79,
+                "precipitationMm": 42.4,
+                "rainyDays": 13,
+                "snowfallCm": 0,
+                "sunshineHours": 328.1
+              },
+              {
+                "month": 8,
+                "tempMinC": 19.6,
+                "tempMeanC": 21.7,
+                "tempMaxC": 24.2,
+                "humidityPct": 78,
+                "precipitationMm": 40.1,
+                "rainyDays": 10.9,
+                "snowfallCm": 0,
+                "sunshineHours": 339.5
+              },
+              {
+                "month": 9,
+                "tempMinC": 20.1,
+                "tempMeanC": 22.3,
+                "tempMaxC": 25,
+                "humidityPct": 76,
+                "precipitationMm": 32.4,
+                "rainyDays": 9.9,
+                "snowfallCm": 0,
+                "sunshineHours": 346.7
+              },
+              {
+                "month": 10,
+                "tempMinC": 21.5,
+                "tempMeanC": 23.5,
+                "tempMaxC": 26.1,
+                "humidityPct": 79,
+                "precipitationMm": 57.4,
+                "rainyDays": 12.6,
+                "snowfallCm": 0,
+                "sunshineHours": 368.3
+              },
+              {
+                "month": 11,
+                "tempMinC": 22.8,
+                "tempMeanC": 24.7,
+                "tempMaxC": 27,
+                "humidityPct": 81,
+                "precipitationMm": 99,
+                "rainyDays": 17.5,
+                "snowfallCm": 0,
+                "sunshineHours": 360.4
+              },
+              {
+                "month": 12,
+                "tempMinC": 24.3,
+                "tempMeanC": 26.2,
+                "tempMaxC": 28.6,
+                "humidityPct": 79,
+                "precipitationMm": 102,
+                "rainyDays": 19.9,
+                "snowfallCm": 0,
+                "sunshineHours": 390
+              }
+            ]
+          }
+        },
+        "mje2o2jlx6ncs": {
+          "name": "Snorkeling dauphins et baleines",
+          "lat": -21.05482,
+          "lng": 55.22461,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:28:42.730Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 24.5,
+                "tempMeanC": 25.6,
+                "tempMaxC": 26.8,
+                "humidityPct": 79,
+                "precipitationMm": 193.5,
+                "rainyDays": 22.4,
+                "snowfallCm": 0,
+                "sunshineHours": 368.9
+              },
+              {
+                "month": 2,
+                "tempMinC": 24.7,
+                "tempMeanC": 25.7,
+                "tempMaxC": 26.9,
+                "humidityPct": 81,
+                "precipitationMm": 171.5,
+                "rainyDays": 22.7,
+                "snowfallCm": 0,
+                "sunshineHours": 329.5
+              },
+              {
+                "month": 3,
+                "tempMinC": 24.6,
+                "tempMeanC": 25.6,
+                "tempMaxC": 26.8,
+                "humidityPct": 80,
+                "precipitationMm": 151.4,
+                "rainyDays": 23,
+                "snowfallCm": 0,
+                "sunshineHours": 341.4
+              },
+              {
+                "month": 4,
+                "tempMinC": 23.9,
+                "tempMeanC": 24.9,
+                "tempMaxC": 26.1,
+                "humidityPct": 79,
+                "precipitationMm": 87.3,
+                "rainyDays": 17.8,
+                "snowfallCm": 0,
+                "sunshineHours": 316.2
+              },
+              {
+                "month": 5,
+                "tempMinC": 22.1,
+                "tempMeanC": 23.2,
+                "tempMaxC": 24.6,
+                "humidityPct": 75,
+                "precipitationMm": 27.6,
+                "rainyDays": 8.4,
+                "snowfallCm": 0,
+                "sunshineHours": 327.8
+              },
+              {
+                "month": 6,
+                "tempMinC": 20.4,
+                "tempMeanC": 21.6,
+                "tempMaxC": 23.1,
+                "humidityPct": 74,
+                "precipitationMm": 27.8,
+                "rainyDays": 7.9,
+                "snowfallCm": 0,
+                "sunshineHours": 312.8
+              },
+              {
+                "month": 7,
+                "tempMinC": 19.5,
+                "tempMeanC": 20.8,
+                "tempMaxC": 22.3,
+                "humidityPct": 73,
+                "precipitationMm": 22.3,
+                "rainyDays": 7.5,
+                "snowfallCm": 0,
+                "sunshineHours": 330
+              },
+              {
+                "month": 8,
+                "tempMinC": 19.4,
+                "tempMeanC": 20.7,
+                "tempMaxC": 22.2,
+                "humidityPct": 74,
+                "precipitationMm": 26.4,
+                "rainyDays": 8.8,
+                "snowfallCm": 0,
+                "sunshineHours": 340.5
+              },
+              {
+                "month": 9,
+                "tempMinC": 19.8,
+                "tempMeanC": 21.1,
+                "tempMaxC": 22.7,
+                "humidityPct": 74,
+                "precipitationMm": 27.7,
+                "rainyDays": 10.4,
+                "snowfallCm": 0,
+                "sunshineHours": 346.5
+              },
+              {
+                "month": 10,
+                "tempMinC": 21,
+                "tempMeanC": 22.2,
+                "tempMaxC": 23.6,
+                "humidityPct": 76,
+                "precipitationMm": 43,
+                "rainyDays": 11.4,
+                "snowfallCm": 0,
+                "sunshineHours": 369
+              },
+              {
+                "month": 11,
+                "tempMinC": 22.2,
+                "tempMeanC": 23.3,
+                "tempMaxC": 24.6,
+                "humidityPct": 78,
+                "precipitationMm": 64.4,
+                "rainyDays": 15.8,
+                "snowfallCm": 0,
+                "sunshineHours": 362.4
+              },
+              {
+                "month": 12,
+                "tempMinC": 23.6,
+                "tempMeanC": 24.8,
+                "tempMaxC": 26.1,
+                "humidityPct": 77,
+                "precipitationMm": 73.5,
+                "rainyDays": 17.1,
+                "snowfallCm": 0,
+                "sunshineHours": 390.9
+              }
+            ]
+          }
+        },
+        "mj66gizrvko0j": {
+          "name": "Piton de la Fournaise",
+          "lat": -21.2251,
+          "lng": 55.6844,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:28:43.875Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 9.7,
+                "tempMeanC": 11.5,
+                "tempMaxC": 14,
+                "humidityPct": 86,
+                "precipitationMm": 351.8,
+                "rainyDays": 25.3,
+                "snowfallCm": 0,
+                "sunshineHours": 365.5
+              },
+              {
+                "month": 2,
+                "tempMinC": 9.8,
+                "tempMeanC": 11.5,
+                "tempMaxC": 14,
+                "humidityPct": 87,
+                "precipitationMm": 323.6,
+                "rainyDays": 24.4,
+                "snowfallCm": 0,
+                "sunshineHours": 329.6
+              },
+              {
+                "month": 3,
+                "tempMinC": 9.7,
+                "tempMeanC": 11.3,
+                "tempMaxC": 13.7,
+                "humidityPct": 88,
+                "precipitationMm": 308.4,
+                "rainyDays": 27.3,
+                "snowfallCm": 0,
+                "sunshineHours": 338.6
+              },
+              {
+                "month": 4,
+                "tempMinC": 8.8,
+                "tempMeanC": 10.3,
+                "tempMaxC": 12.6,
+                "humidityPct": 89,
+                "precipitationMm": 255.4,
+                "rainyDays": 25,
+                "snowfallCm": 0,
+                "sunshineHours": 311.9
+              },
+              {
+                "month": 5,
+                "tempMinC": 6.7,
+                "tempMeanC": 8.2,
+                "tempMaxC": 10.3,
+                "humidityPct": 87,
+                "precipitationMm": 165.6,
+                "rainyDays": 23.6,
+                "snowfallCm": 0,
+                "sunshineHours": 323.5
+              },
+              {
+                "month": 6,
+                "tempMinC": 4.9,
+                "tempMeanC": 6.4,
+                "tempMaxC": 8.4,
+                "humidityPct": 86,
+                "precipitationMm": 143.6,
+                "rainyDays": 23.4,
+                "snowfallCm": 0,
+                "sunshineHours": 308.1
+              },
+              {
+                "month": 7,
+                "tempMinC": 4,
+                "tempMeanC": 5.5,
+                "tempMaxC": 7.7,
+                "humidityPct": 87,
+                "precipitationMm": 140.6,
+                "rainyDays": 23.3,
+                "snowfallCm": 0,
+                "sunshineHours": 326.4
+              },
+              {
+                "month": 8,
+                "tempMinC": 3.9,
+                "tempMeanC": 5.6,
+                "tempMaxC": 7.9,
+                "humidityPct": 86,
+                "precipitationMm": 117.4,
+                "rainyDays": 20.5,
+                "snowfallCm": 0,
+                "sunshineHours": 338.3
+              },
+              {
+                "month": 9,
+                "tempMinC": 4.3,
+                "tempMeanC": 6.2,
+                "tempMaxC": 8.7,
+                "humidityPct": 85,
+                "precipitationMm": 85.9,
+                "rainyDays": 17.9,
+                "snowfallCm": 0,
+                "sunshineHours": 346.7
+              },
+              {
+                "month": 10,
+                "tempMinC": 5.8,
+                "tempMeanC": 7.8,
+                "tempMaxC": 10.5,
+                "humidityPct": 84,
+                "precipitationMm": 96.8,
+                "rainyDays": 17.8,
+                "snowfallCm": 0,
+                "sunshineHours": 369
+              },
+              {
+                "month": 11,
+                "tempMinC": 7.1,
+                "tempMeanC": 9.1,
+                "tempMaxC": 11.8,
+                "humidityPct": 85,
+                "precipitationMm": 171.4,
+                "rainyDays": 20.5,
+                "snowfallCm": 0,
+                "sunshineHours": 358.9
+              },
+              {
+                "month": 12,
+                "tempMinC": 8.6,
+                "tempMeanC": 10.5,
+                "tempMaxC": 13.2,
+                "humidityPct": 85,
+                "precipitationMm": 179.9,
+                "rainyDays": 24.3,
+                "snowfallCm": 0,
+                "sunshineHours": 391.1
+              }
+            ]
+          }
+        }
+      }
+    },
+    "amazonie-hi8x": {
+      "stages": {
+        "mlxwuhkpr6u5l": {
+          "name": "Quito",
+          "lat": -0.22016,
+          "lng": -78.51233,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:29:11.189Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.5,
+                "tempMaxC": 17.6,
+                "humidityPct": 84,
+                "precipitationMm": 308.6,
+                "rainyDays": 29.8,
+                "snowfallCm": 0,
+                "sunshineHours": 256.5
+              },
+              {
+                "month": 2,
+                "tempMinC": 11,
+                "tempMeanC": 13.8,
+                "tempMaxC": 17.6,
+                "humidityPct": 86,
+                "precipitationMm": 311.4,
+                "rainyDays": 27.9,
+                "snowfallCm": 0,
+                "sunshineHours": 213.9
+              },
+              {
+                "month": 3,
+                "tempMinC": 10.7,
+                "tempMeanC": 13.6,
+                "tempMaxC": 17.5,
+                "humidityPct": 86,
+                "precipitationMm": 359.5,
+                "rainyDays": 30.3,
+                "snowfallCm": 0,
+                "sunshineHours": 213.4
+              },
+              {
+                "month": 4,
+                "tempMinC": 10.8,
+                "tempMeanC": 13.8,
+                "tempMaxC": 17.9,
+                "humidityPct": 84,
+                "precipitationMm": 333.3,
+                "rainyDays": 29.9,
+                "snowfallCm": 0,
+                "sunshineHours": 225.6
+              },
+              {
+                "month": 5,
+                "tempMinC": 11,
+                "tempMeanC": 14.2,
+                "tempMaxC": 18.3,
+                "humidityPct": 82,
+                "precipitationMm": 280.3,
+                "rainyDays": 30.5,
+                "snowfallCm": 0,
+                "sunshineHours": 263.5
+              },
+              {
+                "month": 6,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.8,
+                "tempMaxC": 18.1,
+                "humidityPct": 78,
+                "precipitationMm": 182.6,
+                "rainyDays": 28.5,
+                "snowfallCm": 0,
+                "sunshineHours": 267.1
+              },
+              {
+                "month": 7,
+                "tempMinC": 10.2,
+                "tempMeanC": 13.9,
+                "tempMaxC": 18.5,
+                "humidityPct": 73,
+                "precipitationMm": 125.8,
+                "rainyDays": 24.8,
+                "snowfallCm": 0,
+                "sunshineHours": 283.2
+              },
+              {
+                "month": 8,
+                "tempMinC": 10,
+                "tempMeanC": 13.9,
+                "tempMaxC": 18.8,
+                "humidityPct": 70,
+                "precipitationMm": 134.5,
+                "rainyDays": 25.9,
+                "snowfallCm": 0,
+                "sunshineHours": 295.1
+              },
+              {
+                "month": 9,
+                "tempMinC": 10.2,
+                "tempMeanC": 14,
+                "tempMaxC": 18.9,
+                "humidityPct": 73,
+                "precipitationMm": 181,
+                "rainyDays": 27.6,
+                "snowfallCm": 0,
+                "sunshineHours": 287.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.6,
+                "tempMaxC": 18,
+                "humidityPct": 82,
+                "precipitationMm": 288,
+                "rainyDays": 29.5,
+                "snowfallCm": 0,
+                "sunshineHours": 271.5
+              },
+              {
+                "month": 11,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.3,
+                "tempMaxC": 17.5,
+                "humidityPct": 86,
+                "precipitationMm": 279.3,
+                "rainyDays": 27.5,
+                "snowfallCm": 0,
+                "sunshineHours": 252.1
+              },
+              {
+                "month": 12,
+                "tempMinC": 10.6,
+                "tempMeanC": 13.4,
+                "tempMaxC": 17.4,
+                "humidityPct": 86,
+                "precipitationMm": 332.6,
+                "rainyDays": 29.7,
+                "snowfallCm": 0,
+                "sunshineHours": 266.8
+              }
+            ]
+          }
+        },
+        "mlxy4wnepjn74": {
+          "name": "Coca",
+          "lat": -0.47218,
+          "lng": -76.98372,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:29:14.259Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 22.9,
+                "tempMeanC": 26.2,
+                "tempMaxC": 30.1,
+                "humidityPct": 86,
+                "precipitationMm": 244.2,
+                "rainyDays": 20.5,
+                "snowfallCm": 0,
+                "sunshineHours": 296.3
+              },
+              {
+                "month": 2,
+                "tempMinC": 23.1,
+                "tempMeanC": 26.2,
+                "tempMaxC": 29.8,
+                "humidityPct": 87,
+                "precipitationMm": 255.7,
+                "rainyDays": 21.2,
+                "snowfallCm": 0,
+                "sunshineHours": 256.5
+              },
+              {
+                "month": 3,
+                "tempMinC": 23,
+                "tempMeanC": 25.8,
+                "tempMaxC": 29.3,
+                "humidityPct": 89,
+                "precipitationMm": 445.7,
+                "rainyDays": 28.9,
+                "snowfallCm": 0,
+                "sunshineHours": 248.3
+              },
+              {
+                "month": 4,
+                "tempMinC": 22.9,
+                "tempMeanC": 25.9,
+                "tempMaxC": 29.6,
+                "humidityPct": 89,
+                "precipitationMm": 400,
+                "rainyDays": 26.4,
+                "snowfallCm": 0,
+                "sunshineHours": 255.4
+              },
+              {
+                "month": 5,
+                "tempMinC": 22.7,
+                "tempMeanC": 25.5,
+                "tempMaxC": 29.1,
+                "humidityPct": 89,
+                "precipitationMm": 451,
+                "rainyDays": 27.2,
+                "snowfallCm": 0,
+                "sunshineHours": 260.6
+              },
+              {
+                "month": 6,
+                "tempMinC": 22,
+                "tempMeanC": 24.8,
+                "tempMaxC": 28.3,
+                "humidityPct": 90,
+                "precipitationMm": 474.5,
+                "rainyDays": 26.5,
+                "snowfallCm": 0,
+                "sunshineHours": 241.9
+              },
+              {
+                "month": 7,
+                "tempMinC": 21.6,
+                "tempMeanC": 24.6,
+                "tempMaxC": 28.2,
+                "humidityPct": 89,
+                "precipitationMm": 307.7,
+                "rainyDays": 23.5,
+                "snowfallCm": 0,
+                "sunshineHours": 250.8
+              },
+              {
+                "month": 8,
+                "tempMinC": 21.9,
+                "tempMeanC": 25.4,
+                "tempMaxC": 29.6,
+                "humidityPct": 88,
+                "precipitationMm": 229.2,
+                "rainyDays": 19.5,
+                "snowfallCm": 0,
+                "sunshineHours": 300.8
+              },
+              {
+                "month": 9,
+                "tempMinC": 22.4,
+                "tempMeanC": 26.1,
+                "tempMaxC": 30.6,
+                "humidityPct": 86,
+                "precipitationMm": 225.5,
+                "rainyDays": 19.9,
+                "snowfallCm": 0,
+                "sunshineHours": 307.4
+              },
+              {
+                "month": 10,
+                "tempMinC": 22.9,
+                "tempMeanC": 26.2,
+                "tempMaxC": 30.5,
+                "humidityPct": 88,
+                "precipitationMm": 321.9,
+                "rainyDays": 23.7,
+                "snowfallCm": 0,
+                "sunshineHours": 296.7
+              },
+              {
+                "month": 11,
+                "tempMinC": 22.9,
+                "tempMeanC": 26,
+                "tempMaxC": 30.2,
+                "humidityPct": 89,
+                "precipitationMm": 331.1,
+                "rainyDays": 24.7,
+                "snowfallCm": 0,
+                "sunshineHours": 279.4
+              },
+              {
+                "month": 12,
+                "tempMinC": 23,
+                "tempMeanC": 26.1,
+                "tempMaxC": 29.9,
+                "humidityPct": 88,
+                "precipitationMm": 275.5,
+                "rainyDays": 24,
+                "snowfallCm": 0,
+                "sunshineHours": 307.9
+              }
+            ]
+          }
+        }
+      }
+    },
+    "amazonie-equateur-vr0w": {
+      "stages": {
+        "mtpewxarxc0q3": {
+          "name": "Quito",
+          "lat": -0.22016,
+          "lng": -78.51233,
+          "climate": {
+            "source": "open-meteo",
+            "period": "2016-2025",
+            "fetchedAt": "2026-09-07T07:29:29.106Z",
+            "monthly": [
+              {
+                "month": 1,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.5,
+                "tempMaxC": 17.6,
+                "humidityPct": 84,
+                "precipitationMm": 308.6,
+                "rainyDays": 29.8,
+                "snowfallCm": 0,
+                "sunshineHours": 256.5
+              },
+              {
+                "month": 2,
+                "tempMinC": 11,
+                "tempMeanC": 13.8,
+                "tempMaxC": 17.6,
+                "humidityPct": 86,
+                "precipitationMm": 311.4,
+                "rainyDays": 27.9,
+                "snowfallCm": 0,
+                "sunshineHours": 213.9
+              },
+              {
+                "month": 3,
+                "tempMinC": 10.7,
+                "tempMeanC": 13.6,
+                "tempMaxC": 17.5,
+                "humidityPct": 86,
+                "precipitationMm": 359.5,
+                "rainyDays": 30.3,
+                "snowfallCm": 0,
+                "sunshineHours": 213.4
+              },
+              {
+                "month": 4,
+                "tempMinC": 10.8,
+                "tempMeanC": 13.8,
+                "tempMaxC": 17.9,
+                "humidityPct": 84,
+                "precipitationMm": 333.3,
+                "rainyDays": 29.9,
+                "snowfallCm": 0,
+                "sunshineHours": 225.6
+              },
+              {
+                "month": 5,
+                "tempMinC": 11,
+                "tempMeanC": 14.2,
+                "tempMaxC": 18.3,
+                "humidityPct": 82,
+                "precipitationMm": 280.3,
+                "rainyDays": 30.5,
+                "snowfallCm": 0,
+                "sunshineHours": 263.5
+              },
+              {
+                "month": 6,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.8,
+                "tempMaxC": 18.1,
+                "humidityPct": 78,
+                "precipitationMm": 182.6,
+                "rainyDays": 28.5,
+                "snowfallCm": 0,
+                "sunshineHours": 267.1
+              },
+              {
+                "month": 7,
+                "tempMinC": 10.2,
+                "tempMeanC": 13.9,
+                "tempMaxC": 18.5,
+                "humidityPct": 73,
+                "precipitationMm": 125.8,
+                "rainyDays": 24.8,
+                "snowfallCm": 0,
+                "sunshineHours": 283.2
+              },
+              {
+                "month": 8,
+                "tempMinC": 10,
+                "tempMeanC": 13.9,
+                "tempMaxC": 18.8,
+                "humidityPct": 70,
+                "precipitationMm": 134.5,
+                "rainyDays": 25.9,
+                "snowfallCm": 0,
+                "sunshineHours": 295.1
+              },
+              {
+                "month": 9,
+                "tempMinC": 10.2,
+                "tempMeanC": 14,
+                "tempMaxC": 18.9,
+                "humidityPct": 73,
+                "precipitationMm": 181,
+                "rainyDays": 27.6,
+                "snowfallCm": 0,
+                "sunshineHours": 287.6
+              },
+              {
+                "month": 10,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.6,
+                "tempMaxC": 18,
+                "humidityPct": 82,
+                "precipitationMm": 288,
+                "rainyDays": 29.5,
+                "snowfallCm": 0,
+                "sunshineHours": 271.5
+              },
+              {
+                "month": 11,
+                "tempMinC": 10.4,
+                "tempMeanC": 13.3,
+                "tempMaxC": 17.5,
+                "humidityPct": 86,
+                "precipitationMm": 279.3,
+                "rainyDays": 27.5,
+                "snowfallCm": 0,
+                "sunshineHours": 252.1
+              },
+              {
+                "month": 12,
+                "tempMinC": 10.6,
+                "tempMeanC": 13.4,
+                "tempMaxC": 17.4,
+                "humidityPct": 86,
+                "precipitationMm": 332.6,
+                "rainyDays": 29.7,
+                "snowfallCm": 0,
+                "sunshineHours": 266.8
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

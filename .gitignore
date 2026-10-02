@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.npmrc
+flows_cred.json
+flows_cred*.json
+*.log
+*.save
+*.old
+*.backup
+*.bak
+.DS_Store
+coverage/
+restore-output/

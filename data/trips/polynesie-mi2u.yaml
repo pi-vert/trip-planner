@@ -1,0 +1,185 @@
+itinerary:
+  - mlxy6ilc0x1g6
+  - mlxy8y3bz359f
+  - mlxyav7deygie
+  - mlxycytwpzvtn
+  - mlxyzwe9exk8e
+  - mlxyf6nqw924l
+  - mlxz0rljgdwcb
+  - mlxz1dbml7btq
+  - mlxz0cib668md
+  - mlxz2y1xg5wy1
+  - mlxz2g86tinwr
+places:
+  mlxy6ilc0x1g6:
+    name: Papeete
+    lat: -17.537384
+    lng: -149.565996
+    duration_h: 1
+    budget: 0
+    desc: Arrivée + soirée aux roulottes / front de mer
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxy8y3bz359f:
+    name: Maurea
+    lat: -17.533795
+    lng: -149.830116
+    duration_h: 1
+    budget: 0
+    desc: tour du lagon + pique-nique sur motu, belvédère au coucher du soleil
+    closedDays: []
+    ratings:
+      Eric: 4
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxyav7deygie:
+    name: Bora-Bora
+    lat: -16.504347
+    lng: -151.736689
+    duration_h: 1
+    budget: 0
+    desc: >-
+      3 nuits (idéalement 2 nuits en pilotis + 1 nuit plus “raisonnable”, selon
+      budget).
+
+
+      Moment signature : croisière sunset (même simple) + dîner romantique.
+
+
+      Snorkeling/lagon à deux, sans courir.
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxycytwpzvtn:
+    name: Maupiti
+    lat: -16.446093
+    lng: -152.258264
+    duration_h: 1
+    budget: 0
+    desc: >
+      Maupiti, c’est la carte “je t’emmène là où peu de gens vont”.
+
+      vélo (île petite, rythme slow) + coucher de soleil sur le lagon
+
+      journée lagon : coraux, poissons, motu… Beaucoup d’excursions incluent du
+      snorkeling et des spots très “carte postale”.
+
+      plage de Tereia (eau translucide, sable blanc, ambiance Robinson).
+
+      rando Mont Teurafaatiu (vue 360° incroyable) — fais-la tôt, bonnes
+      chaussures + eau.
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxyzwe9exk8e:
+    name: Taha’a
+    lat: -16.630835
+    lng: -151.503916
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxyf6nqw924l:
+    name: Rangiroa
+    lat: -15.122446
+    lng: -147.546209
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxz0rljgdwcb:
+    name: Fakarava
+    lat: -16.056382
+    lng: -145.618592
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxz1dbml7btq:
+    name: Tikehau
+    lat: -15.005114
+    lng: -148.227065
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxz0cib668md:
+    name: Huahine
+    lat: -16.728588
+    lng: -151.01347
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxz2y1xg5wy1:
+    name: Tetiaroa Airport
+    lat: -17.016255
+    lng: -149.589777
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+  mlxz2g86tinwr:
+    name: Îles Marquises
+    lat: -9.779326
+    lng: -139.006784
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    optionGroup: ''
+    url: ''
+view:
+  center:
+    lat: -17.016255
+    lng: -149.589777
+    zoom: 6
+edges:
+  mlxy6ilc0x1g6|mlxy8y3bz359f:
+    realKm: 43.7
+    realMin: 308

@@ -1,0 +1,99 @@
+/* Two reversible views of the same trip, with progressive disclosure. */
+[hidden] { display: none !important; }
+:is(button, summary, a, input, select, textarea):focus-visible { outline: 2px solid var(--brand2); outline-offset: 3px; }
+html { scroll-padding-top: calc(var(--hdrH) + 16px); }
+.hdr-trips { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.hdr-trips .tool { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.hdr-trips select { max-width: 300px; min-width: 0; }
+.hdr-right { margin-left: auto; }
+.experience-switch { display: flex; padding: 3px; border: 1px solid var(--border); border-radius: 12px; background: #080d19; }
+.experience-switch button { border: 0; border-radius: 9px; background: transparent; color: var(--muted); padding: 9px 14px; font: inherit; font-size: 13px; cursor: pointer; }
+.experience-switch button[aria-pressed="true"] { background: var(--brand2); color: #08221b; font-weight: 700; }
+#appTabs { flex-wrap: nowrap; overflow: visible; align-items: start; }
+#mainPages { display: flex; gap: 8px; min-width: 0; overflow-x: auto; padding: 2px; flex: 1; scrollbar-width: thin; }
+#mainPages .tab { white-space: nowrap; flex: 0 0 auto; }
+.navigation-more { position: relative; flex-shrink: 0; }
+.navigation-more > summary { padding: 10px 14px; }
+#morePages { position: absolute; top: calc(100% + 8px); right: 0; width: min(300px, 85vw); max-height: 65vh; overflow-y: auto; display: grid; gap: 6px; padding: 12px; border: 1px solid var(--border); border-radius: 14px; background: #121a2f; box-shadow: 0 12px 35px #0009; }
+#morePages .tab { border-radius: 8px; text-align: left; font-size: 13px; }
+.trip-management { position: relative; }
+.trip-management .yaml-status__actions { position: absolute; right: 0; top: calc(100% + 8px); z-index: 30; width: min(360px, 85vw); background: var(--card); padding: 14px; border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 30px #0008; }
+#tripFilePath { width: 100%; overflow-wrap: anywhere; color: var(--muted); font-size: 11px; }
+.experience-guide { margin: 14px 16px 0; padding: 16px; border: 1px solid rgba(112,225,161,.3); border-radius: 14px; background: linear-gradient(120deg, rgba(112,225,161,.07), var(--card)); }
+.experience-guide__heading { display: flex; align-items: start; justify-content: space-between; gap: 12px; }
+.experience-guide p, .travel-intro p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 6px 0 12px; }
+.experience-guide__heading > .btn { flex-shrink: 0; }
+.experience-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.experience-steps button { display: grid; gap: 7px; padding: 12px; text-align: left; border: 1px solid var(--border); border-radius: 10px; color: var(--text); background: #0e1731; cursor: pointer; font: inherit; font-size: 12px; }
+.experience-steps button.is-current { border-color: var(--brand2); background: rgba(112,225,161,.07); }
+.experience-steps span { color: var(--muted); font-size: 11px; }
+body:not([data-page="overview"]) .experience-guide__heading { display: none; }
+.advanced-fields, .place-editor, .progressive-section { border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin: 12px 0; min-width: 0; }
+.advanced-fields > summary, .place-editor > summary, .progressive-section > summary, .place-actions > summary { cursor: pointer; color: var(--brand); font-size: 13px; padding: 4px 0; }
+summary span { color: var(--muted); font-size: 11px; margin-left: 5px; }
+.advanced-fields[open] > summary, .place-editor[open] > summary { margin-bottom: 14px; }
+.progressive-section { margin: 12px 16px; }
+.planning-settings { display: block; }
+.planning-settings > .advanced-fields { margin-bottom: 0; }
+.export-tools > div { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 10px; }
+.place-brief { display: flex; align-items: start; gap: 12px; margin-top: 10px; color: var(--muted); font-size: 13px; }
+.place-brief .thumb { width: 100px; height: 76px; object-fit: cover; flex-shrink: 0; margin: 0; }
+.place-brief p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 6px 0 0; line-height: 1.5; }
+.place-actions { font-size: 12px; }
+.place-actions[open] { flex-basis: 100%; }
+.place-actions > div { margin-top: 8px; }
+.item { scroll-margin-top: calc(var(--hdrH) + 16px); }
+.item .row { flex-wrap: wrap; }
+.outline-stage__assignments { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.travel-intro { border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+.travel-stage { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 24px; min-width: 0; }
+.travel-stage h3 { font: 600 26px Georgia, serif; margin: 8px 0 12px; }
+.travel-stage header { margin-bottom: 14px; }
+.travel-description { line-height: 1.65; white-space: pre-line; }
+.travel-group { margin-top: 16px; }
+.travel-group h4 { font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 8px; }
+.travel-group ul { list-style: none; padding: 0; margin: 0; }
+.travel-group li { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(122,162,255,.12); }
+.travel-stage .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.travel-group li > .btn { flex-shrink: 0; }
+.outline-dates { margin-top: 0; padding: 7px 10px; }
+.travel-group li > div { display: grid; gap: 4px; }
+.travel-group small { color: var(--muted); white-space: pre-line; }
+.travel-place-link { border: 0; background: none; color: var(--text); font: inherit; font-size: 14px; cursor: pointer; text-align: left; padding: 4px 0; }
+.travel-done { font-size: 11px; color: var(--brand2); }
+.profile-settings { margin-bottom: 24px; }
+body[data-experience="travel"] .preparation-tools,
+body[data-experience="travel"] #tripOutline [data-photo-search] { display: none; }
+body[data-page="map"] .experience-guide { display: none; }
+@media (min-width: 621px) {
+    .experience-guide { width: calc(50% - 32px); }
+}
+@media (max-width: 1000px) {
+    .experience-guide__heading { flex-direction: column; }
+    .experience-guide__heading > .btn { margin-bottom: 12px; }
+    .experience-steps { grid-template-columns: 1fr; }
+    .experience-steps button { padding: 9px 12px; }
+}
+@media (max-width: 620px) {
+    header#appHeader { gap: 6px; padding: 8px 10px; }
+    #appHeader .hdr-left { display: none; }
+    #appHeader .hdr-trips { order: 0; width: 100%; }
+    #appHeader .hdr-trips .tool { flex: 1; }
+    #appHeader .hdr-trips select { width: 100%; max-width: none; }
+    #appHeader .hdr-right { order: 1; width: 100%; justify-content: space-between; }
+    #appTabs { order: 2; padding-bottom: 0; }
+    #mainPages { gap: 4px; }
+    #mainPages .tab { padding: 9px 8px; font-size: 11px; }
+    .navigation-more > summary { font-size: 11px; padding: 11px 8px; }
+    #editTripShortcut { font-size: 11px; }
+    .yaml-status { grid-template-columns: auto minmax(0,1fr) auto; padding: 9px 12px; }
+    .experience-guide { margin: 10px; padding: 12px; }
+    .experience-steps { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .experience-steps button { padding: 8px; font-size: 11px; }
+    .experience-steps span { display: none; }
+    body:not([data-page="map"]):not([data-page="add"]) #mapContainer { display: none; }
+    body[data-page="add"] #mapContainer { display: none; }
+    .outline-stage__assignments { grid-template-columns: 1fr; }
+    .trip-management .yaml-status__actions .btn { flex-basis: auto; }
+    .place-brief .thumb { width: 76px; height: 65px; }
+}

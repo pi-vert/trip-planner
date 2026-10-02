@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Planificateur de voyage</title>
+    <link rel="stylesheet" href="./vendor/leaflet/leaflet.css" />
+    <script defer src="./vendor/leaflet/leaflet.js"></script>
+    <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+    <link rel="stylesheet" href="./index.css?v=20261002-photos1" />
+    <link rel="stylesheet" href="./experience.css?v=20261002-ux1" />
+    <script defer src="./experience.js?v=20261002-ux1"></script>
+    <script defer src="./experience-ui.js?v=20261002-ux1"></script>
+    <script defer src="./planning.js?v=20261002-completed1"></script>
+    <script defer src="./budget.js?v=20260905-budget3"></script>
+    <script defer src="./route-optimizer.js?v=20260822-route1"></script>
+    <script defer src="./pdf-export.js?v=20261002-stagemaps2"></script>
+    <script defer src="./route-maps.js?v=20261002-gps1"></script>
+    <script defer src="./trip-structure.js?v=20260906-outline1"></script>
+    <script defer src="./weather.js?v=20260907-weather1"></script>
+    <script defer src="./trip-comparison.js?v=20260907-flight1"></script>
+    <script defer src="./wikimedia-images.js?v=20261002-photos1"></script>
+    <script defer src="./planning-ui.js?v=20261002-ux1"></script>
+    <script defer src="./weather-ui.js?v=20260907-weather1"></script>
+    <script defer src="./comparison-ui.js?v=20260907-flight1"></script>
+    <script defer src="./gps-comparison.js?v=20261002-completed1"></script>
+    <script defer src="./visit-progress.js?v=20261002-completed1"></script>
+    <script defer src="./visit-progress-ui.js?v=20261002-completed1"></script>
+    <script defer src="./recordings-ui.js?v=20261002-completed1"></script>
+    <script defer src="./index.js?v=20261002-ux1"></script>
+</head>
+
+<body data-page="overview" data-experience="prepare">
+
+    <!-- En-tête fixe avec sélection du voyage et navigation -->
+    <header id="appHeader">
+        <div class="hdr-left">
+            <span class="eyebrow">TRIP PLANNER</span>
+            <h1>Carnet de route</h1>
+        </div>
+
+        <div class="hdr-trips">
+            <label class="tool">
+    Voyage :
+    <select id="tripSelect"></select>
+  </label>
+            <button id="tripNew" class="btn" title="Nouveau voyage" aria-label="Nouveau voyage">＋</button>
+        </div>
+
+        <div class="hdr-right">
+            <div class="experience-switch" role="group" aria-label="Usage du voyage">
+                <button type="button" data-experience-mode="prepare" aria-pressed="true">Préparer</button>
+                <button type="button" data-experience-mode="travel" aria-pressed="false">En voyage</button>
+            </div>
+            <button id="editTripShortcut" class="btn" type="button" hidden>Modifier le voyage</button>
+        </div>
+
+
+        <nav id="appTabs" class="tabs" aria-label="Navigation">
+            <div id="mainPages">
+            <button class="tab" data-page="overview" type="button">Vue globale</button>
+            <button class="tab" data-page="itinerary" type="button">Itinéraire détaillé</button>
+            <button class="tab" data-page="planning" type="button">Planning</button>
+            <button class="tab" data-page="segments" type="button">Trajets</button>
+            <button class="tab" data-page="recordings" type="button">Prévu / Réalisé</button>
+            <button class="tab" data-page="budget" type="button">Budget</button>
+            <button class="tab" data-page="weather" type="button">Météo</button>
+            <button class="tab" data-page="compare" type="button">Comparer</button>
+            <button class="tab" data-page="map" type="button">Carte</button>
+            <button class="tab" data-page="candidates" type="button">Options</button>
+            <button class="tab" data-page="settings" type="button">Réglages</button>
+            <button class="tab tab-add" data-page="add" type="button" title="Ajouter une étape" aria-label="Ajouter une étape">＋</button>
+            </div>
+            <details id="moreNavigation" class="navigation-more">
+                <summary class="tab">Outils</summary>
+                <div id="morePages" aria-label="Autres outils du voyage"></div>
+            </details>
+        </nav>
+
+    </header>
+
+    <section class="yaml-status" aria-live="polite">
+        <span class="sync-dot" aria-hidden="true"></span>
+        <div class="yaml-status__content">
+            <strong id="tripCurrentName">Chargement des voyages...</strong>
+        </div>
+        <span id="tripCount" class="yaml-status__count">0 voyage</span>
+        <details class="trip-management">
+            <summary class="btn">Gérer</summary>
+            <div class="yaml-status__actions">
+            <span id="tripFilePath">Dossier YAML : /home/pi/trips</span>
+            <button id="tripRename" class="btn" title="Renommer le voyage" aria-label="Renommer le voyage">Renommer</button>
+            <button id="tripDelete" class="btn danger" title="Supprimer le voyage" aria-label="Supprimer le voyage">Supprimer</button>
+            <button id="tripImportYaml" class="btn" type="button" title="Ajouter un ou plusieurs voyages depuis des fichiers .yaml ou .yml">Importer des YAML</button>
+            <input id="tripYamlFiles" type="file" accept=".yaml,.yml" multiple hidden />
+            <button id="tripExportYaml" class="btn" type="button" disabled title="Télécharger le fichier YAML enregistré du voyage sélectionné">Exporter le YAML</button>
+            <button id="tripRefresh" class="btn" type="button">Actualiser les YAML</button>
+            </div>
+        </details>
+    </section>
+
+    <section id="experienceGuide" class="experience-guide" aria-label="Parcours de préparation"></section>
+
+    <!-- Ancre de la carte dans l'espace de travail -->
+    <div id="mapAnchor"></div>
+
+    <!-- Carte fixe à droite sur ordinateur, empilée sur mobile -->
+    <section class="mapbar mapcard" id="mapContainer">
+        <div id="map"></div>
+        <div id="mapAlert" class="alert" style="display:none;"></div>
+    </section>
+
+    <!-- Résumé d’itinéraire -->
+    <div id="routeSummary" class="panel muted routebar" aria-live="polite"></div>
+
+    <!-- Contenu de l'écran actif -->
+    <div class="layout">
+        <div class="col col-left">
+            <div class="card trip-outline-card" id="cardOutline">
+                <div class="card-hdr outline-title">
+                    <div>
+                        <span class="eyebrow">TRAME DU VOYAGE</span>
+                        <h2>Grandes étapes et nuits</h2>
+                    </div>
+                    <div class="actions preparation-tools">
+                        <details class="export-tools"><summary class="btn">Photos et documents</summary><div>
+                        <button class="btn" type="button" data-fill-images>Compléter les photos</button>
+                        <button data-export-stage-routes-pdf class="btn" type="button" title="Une carte complète par grande étape, avec tous ses trajets">Plans des étapes PDF</button>
+                        </div></details>
+                        <button class="btn" type="button" data-open-page="itinerary">Gérer les lieux</button>
+                    </div>
+                </div>
+                <div data-routes-pdf-status class="panel muted" role="status" hidden></div>
+                <div class="photo-search-status muted" data-fill-images-status role="status"></div>
+                <div id="tripOutline" class="trip-outline"></div>
+                <section class="trip-notes" aria-labelledby="tripNotesTitle">
+                    <div class="trip-notes__header">
+                        <div>
+                            <span class="eyebrow">INFORMATIONS GLOBALES</span>
+                            <h3 id="tripNotesTitle">Notes</h3>
+                        </div>
+                        <span id="tripNotesStatus" class="muted" aria-live="polite"></span>
+                    </div>
+                    <textarea id="tripNotes" rows="6" maxlength="20000" placeholder="Informations pratiques, idées, rappels, contacts ou autres notes concernant l’ensemble du voyage..."></textarea>
+                </section>
+            </div>
+
+            <div class="card" id="cardSegments">
+                <h2>Itinéraire & segments</h2>
+                <div class="panel row wrap" style="border-bottom:1px dashed var(--border)">
+                    <button id="btnOptimizeRoute" class="btn primary" type="button">Optimiser la tournée</button>
+                    <button id="btnOsrm" class="btn">🔁 Recalcul réel (OSRM)</button>
+                    <button data-export-routes-pdf class="btn" type="button" title="Télécharger les trajets avec une carte par segment">Trajets PDF avec cartes</button>
+                    <button data-export-stage-routes-pdf class="btn" type="button" title="Une carte complète par grande étape, avec tous ses trajets">Plans des étapes PDF</button>
+                    <button id="btnArbitrate" class="btn">⚖️ Arbitrer alternatives</button>
+                    <div class="spacer"></div>
+                    <button id="btnSortScore" class="btn">⭐ Trier par note</button>
+                </div>
+                <div id="routeProposal" class="route-proposal" hidden></div>
+                <div data-routes-pdf-status class="panel muted" role="status" hidden></div>
+                <div id="itineraryDetails" class="panel"></div>
+            </div>
+
+            <div class="card" id="cardPlanning">
+                <div class="card-hdr planning-title">
+                    <div>
+                        <span class="eyebrow">JOUR PAR JOUR</span>
+                        <h2>Planning du voyage</h2>
+                    </div>
+                    <div class="actions planning-title__actions">
+                        <details class="export-tools"><summary class="btn">Exporter le carnet</summary><div>
+                        <button id="exportPlanningOnlyPdf" class="btn" type="button" title="Télécharger le planning en grille horaire paysage">Planning PDF</button>
+                        <button id="exportPlanPdf" class="btn" type="button" title="Télécharger un carnet de route utilisable hors ligne">Carnet complet PDF</button>
+                        <button data-export-routes-pdf class="btn" type="button" title="Télécharger les trajets avec une carte par segment">Trajets PDF avec cartes</button>
+                        <button data-export-stage-routes-pdf class="btn" type="button" title="Une carte complète par grande étape, avec tous ses trajets">Plans des étapes PDF</button>
+                        </div></details>
+                        <button id="genPlan" class="btn primary" type="button">Recalculer le planning</button>
+                    </div>
+                </div>
+
+                <div data-routes-pdf-status class="panel muted" role="status" hidden></div>
+                <details id="planningSetup" class="progressive-section" open>
+                    <summary>Dates et rythme du séjour <span>Modifiables à tout moment</span></summary>
+                <div class="panel planning-settings">
+                    <div class="planning-range">
+                        <div class="date-boundary">
+                            <label>Premier jour</label>
+                            <div class="date-stepper">
+                                <button class="btn" type="button" data-shift-target="startDate" data-shift-days="-1" aria-label="Avancer le premier jour d'un jour">−1</button>
+                                <input id="startDate" type="date" />
+                                <button class="btn" type="button" data-shift-target="startDate" data-shift-days="1" aria-label="Décaler le premier jour d'un jour">+1</button>
+                            </div>
+                        </div>
+                        <div class="date-boundary">
+                            <label>Dernier jour</label>
+                            <div class="date-stepper">
+                                <button class="btn" type="button" data-shift-target="endDate" data-shift-days="-1" aria-label="Avancer le dernier jour d'un jour">−1</button>
+                                <input id="endDate" type="date" />
+                                <button class="btn" type="button" data-shift-target="endDate" data-shift-days="1" aria-label="Décaler le dernier jour d'un jour">+1</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <details class="advanced-fields"><summary>Participants, horaires et rythme des journées</summary>
+                    <div class="row wrap planning-options">
+                    <div><label>Personnes</label><input id="people" type="number" min="1" value="2" /></div>
+                    <div><label>Vitesse (km/h)</label><input id="speed" type="number" step="1" min="1" value="60" />
+                    </div>
+                    <div><label>Début du séjour</label><input id="startTime" type="time" value="07:00" /></div>
+                    <div><label>Journée : début</label><input id="dayStart" type="time" value="07:00" /></div>
+                    <div><label>Journée : fin</label><input id="dayEnd" type="time" value="22:00" /></div>
+                    </div>
+
+                    <div class="meal-rhythm" aria-label="Rythme quotidien des repas">
+                        <div class="meal-setting"><span>Petit déjeuner</span><input id="breakfastAt" type="time" value="07:00" /><input id="breakfastDur" type="number" min="15" step="15" value="60" aria-label="Durée du petit déjeuner en minutes" /><small>min</small></div>
+                        <div class="meal-setting"><span>Déjeuner</span><input id="lunchAt" type="time" value="12:00" /><input id="lunchDur" type="number" min="15" step="15" value="60" aria-label="Durée du déjeuner en minutes" /><small>min</small></div>
+                        <div class="meal-setting"><span>Dîner</span><input id="dinnerAt" type="time" value="19:00" /><input id="dinnerDur" type="number" min="15" step="15" value="60" aria-label="Durée du dîner en minutes" /><small>min</small></div>
+                    </div>
+                    </details>
+                </div>
+                </details>
+
+                <section class="fixed-dates" aria-labelledby="fixedDatesTitle">
+                    <div class="fixed-dates__head">
+                        <div>
+                            <span class="eyebrow">CONTRAINTES</span>
+                            <h3 id="fixedDatesTitle">Réservations et rendez-vous</h3>
+                        </div>
+                        <span class="muted">Choisissez une date absolue ou un horaire relatif à la grande étape.</span>
+                    </div>
+                    <details id="reservationEditor" class="advanced-fields"><summary>Ajouter une réservation ou un horaire fixe</summary>
+                    <div class="panel fixed-form">
+                        <input id="fixedId" type="hidden" />
+                        <div><label>Type</label><select id="fixedKind">
+                            <option value="activity">Visite / activité</option>
+                            <option value="meal">Restaurant / repas</option>
+                            <option value="lodging">Hôtel / hébergement</option>
+                            <option value="travel">Transport réservé</option>
+                            <option value="other">Autre contrainte</option>
+                        </select></div>
+                        <div><label>Mode de date</label><select id="fixedDateMode">
+                            <option value="fixed">Date fixe</option>
+                            <option value="stage">Relative à l’étape</option>
+                        </select></div>
+                        <div id="fixedRelativeDayField" hidden><label>Jour de référence</label><select id="fixedRelativeDay"><option value="arrival">Jour d’arrivée</option><option value="departure">Jour de départ</option></select></div>
+                        <div class="fixed-title-field"><label>Intitulé</label><input id="fixedTitle" type="text" placeholder="Ex. Musée réservé, Hôtel du Lac" /></div>
+                        <div class="fixed-places-field">
+                            <label>Lieux associés</label>
+                            <div id="fixedPlaces" class="fixed-place-picker" role="group" aria-label="Lieux inclus dans cette date fixe"></div>
+                            <small>Sélectionnez toutes les étapes du créneau. Leur ordre suit l’itinéraire.</small>
+                        </div>
+                        <div id="fixedMealField" hidden><label>Repas</label><select id="fixedMeal">
+                            <option value="breakfast">Petit déjeuner</option>
+                            <option value="lunch" selected>Déjeuner</option>
+                            <option value="dinner">Dîner</option>
+                        </select></div>
+                        <div><label id="fixedStartLabel">Début fixe</label><input id="fixedStart" type="datetime-local" /></div>
+                        <div><label id="fixedEndLabel">Fin fixe</label><input id="fixedEnd" type="datetime-local" /></div>
+                        <div class="fixed-notes-field"><label>Informations</label><input id="fixedNotes" type="text" placeholder="Référence, adresse, conditions…" /></div>
+                        <div class="fixed-form-actions">
+                            <button id="fixedCancelEdit" class="btn" type="button" hidden>Annuler</button>
+                            <button id="fixedAdd" class="btn primary" type="button">Ajouter la contrainte</button>
+                        </div>
+                    </div>
+                    </details>
+                    <div id="fixedDatesList" class="fixed-list"><div class="muted">Aucune contrainte enregistrée.</div></div>
+                </section>
+
+                <div id="planWrap" class="planning-output muted">Choisissez le premier et le dernier jour puis recalculez le planning.</div>
+            </div>
+
+
+            <div class="card" id="cardBudget">
+                <div class="card-hdr">
+                    <h2>Budget</h2>
+                    <div class="actions">
+                        <label class="tool">Personnes
+                            <input id="budgetPeople" type="number" min="1" value="2" />
+                        </label>
+                        <div class="tool budget-currencies-tool">
+                            <span>Devises du voyage</span>
+                            <div id="tripCurrenciesList" class="trip-currencies-list" aria-live="polite"></div>
+                            <div class="trip-currency-add">
+                                <input id="tripCurrencyNew" type="text" maxlength="3" placeholder="EUR" aria-label="Nouvelle devise" />
+                                <button id="tripCurrencyAdd" class="btn" type="button">Ajouter</button>
+                            </div>
+                            <small>La première devise est utilisée par défaut.</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="budgetSummary" class="panel budget-summary">Budget global : —</div>
+                <div id="budgetBreakdown" class="panel list"></div>
+            </div>
+
+            <div class="card weather-card" id="cardWeather">
+                <div class="card-hdr weather-title">
+                    <div>
+                        <span class="eyebrow">CHOISIR QUAND PARTIR</span>
+                        <h2>Météo et tendances climatiques</h2>
+                    </div>
+                    <span class="muted">Données Open-Meteo</span>
+                </div>
+
+                <section class="panel weather-section" aria-labelledby="weatherAnnualTitle">
+                    <div class="weather-section__head">
+                        <div>
+                            <h3 id="weatherAnnualTitle">Vue annuelle</h3>
+                            <p>Comparez température, humidité, pluie, neige et ensoleillement pour choisir votre période.</p>
+                        </div>
+                        <button id="weatherFillClimate" class="btn primary" type="button">Remplir automatiquement</button>
+                    </div>
+                    <div class="weather-toolbar">
+                        <label>Grande étape<select id="weatherStageSelect"></select></label>
+                        <span id="weatherClimateStatus" class="muted" aria-live="polite"></span>
+                    </div>
+                    <div id="weatherAnnualContent"></div>
+                </section>
+
+                <section class="panel weather-section" aria-labelledby="weatherStayTitle">
+                    <div class="weather-section__head">
+                        <div>
+                            <h3 id="weatherStayTitle">Météo du voyage</h3>
+                            <p>Prévisions jusqu’à 16 jours, météo historique pour un voyage passé, ou tendance climatique au-delà.</p>
+                        </div>
+                        <button id="weatherFillStay" class="btn primary" type="button">Remplir la météo du séjour</button>
+                    </div>
+                    <div id="weatherStayStatus" class="muted weather-status" aria-live="polite"></div>
+                    <div id="weatherStayContent"></div>
+                </section>
+            </div>
+
+            <div class="card" id="cardRecordings">
+                <div class="card-hdr">
+                    <div><span class="eyebrow">PARCOURS GARMIN · GPX</span><h2>Prévu / Réalisé</h2></div>
+                    <button id="gpsReload" class="btn" type="button">Actualiser les traces</button>
+                </div>
+                <div class="panel gps-controls">
+                    <p>Avant de partir, figez le parcours prévu. Après le voyage, exportez vos activités en GPX depuis Garmin Connect sur ordinateur, puis importez-les dans leur grande étape.</p>
+                    <div class="gps-toolbar"><label>Nom de la nouvelle référence<input id="gpsReferenceName" maxlength="160" placeholder="Ex. Prévu avant départ" /></label><button id="gpsCapture" class="btn primary" type="button">Figer le prévu actuel</button></div>
+                    <p class="muted">Chaque sauvegarde crée une référence distincte avec les lieux, horaires et tracés du planning. Routage automobile OSRM, comme les cartes du voyage ; les liaisons indisponibles sont signalées comme indicatives.</p>
+                    <div class="gps-toolbar">
+                        <label>Référence prévue<select id="gpsReferenceSelect"></select></label>
+                        <label>Périmètre prévu<select id="gpsStageSelect"></select></label>
+                        <button id="gpsImport" class="btn primary" type="button" disabled>Importer des GPX</button>
+                        <input id="gpsFiles" type="file" accept=".gpx,application/gpx+xml" multiple hidden />
+                    </div>
+                    <p id="gpsReferenceInfo" class="muted"></p>
+                    <small>Plusieurs fichiers par étape · maximum 20 Mo et 100 000 points par fichier. Les doublons sont détectés.</small>
+                    <div id="gpsStatus" class="gps-status muted" role="status" aria-live="polite"></div>
+                </div>
+                <div class="panel">
+                    <div class="gps-toolbar"><label>Enregistrement à comparer<select id="gpsTrackSelect"><option value="">Toutes les traces du périmètre</option></select></label><label>Jour enregistré<select id="gpsDaySelect"><option value="">Tous les jours enregistrés</option></select></label><label>Proximité du tracé et des lieux<select id="gpsThreshold"><option value="50">50 m</option><option value="100" selected>100 m</option><option value="200">200 m</option><option value="500">500 m</option></select></label><span class="gps-legend"><b class="gps-planned">Bleu : prévu figé</b><b class="gps-actual">Vert : réalisé</b></span></div>
+                    <div id="gpsMetrics" class="gps-metrics"></div>
+                    <p id="gpsDetails" class="muted gps-details"></p>
+                    <div id="gpsMap" class="gps-map" aria-label="Carte des parcours prévus et réalisés" hidden></div>
+                    <h3>Passage à proximité des lieux prévus</h3>
+                    <p class="muted">En mode « Ensemble du voyage », la randonnée est comparée aux lieux de tous les jours, même s’ils étaient prévus plus tard. Les visites marquées réalisées sont retirées du planning restant.</p>
+                    <button id="gpsMarkCompleted" class="btn primary" type="button" disabled>Marquer réalisés les lieux à ≤ 100 m</button>
+                    <div id="gpsStops"></div>
+                    <div class="gps-toolbar"><label>Premier jour restant<input id="gpsRemainingStart" type="date" /></label><button id="gpsReplanRemaining" class="btn" type="button">Replanifier les visites restantes</button></div>
+                    <p class="muted">Les cases « Réalisé » sont aussi modifiables dans l’itinéraire détaillé. Ajustez ensuite les dates des grandes étapes et ajoutez de nouvelles visites pour compléter les journées.</p>
+                </div>
+                <details class="panel" open><summary>Toutes les traces enregistrées pour ce voyage</summary><p class="muted">« Rattacher ici » affecte la trace à la référence et à l’étape sélectionnées ci-dessus.</p><div id="gpsTracks"></div></details>
+            </div>
+
+            <div class="card comparison-card" id="cardCompare">
+                <div class="card-hdr comparison-title">
+                    <div>
+                        <span class="eyebrow">OFFRES VOYAGISTES</span>
+                        <h2>Comparer plusieurs circuits</h2>
+                    </div>
+                    <span id="comparisonStatus" class="muted" aria-live="polite"></span>
+                </div>
+                <div class="panel comparison-config">
+                    <div class="comparison-config__row">
+                        <label>Comparaison enregistrée<select id="comparisonSelect"></select></label>
+                        <button id="comparisonNew" class="btn" type="button">Nouvelle</button>
+                        <button id="comparisonDelete" class="btn danger" type="button">Supprimer</button>
+                    </div>
+                    <label>Nom<input id="comparisonName" type="text" maxlength="160" placeholder="Ex. Japon 2027" /></label>
+                    <fieldset>
+                        <legend>Circuits à comparer</legend>
+                        <div id="comparisonTrips" class="comparison-trip-picker"></div>
+                    </fieldset>
+                    <div class="comparison-config__actions">
+                        <button id="comparisonRun" class="btn primary" type="button">Enregistrer et comparer</button>
+                    </div>
+                </div>
+                <div id="comparisonResults" class="comparison-results"><div class="muted">Sélectionnez au moins deux circuits.</div></div>
+            </div>
+
+        </div>
+
+        <div id="splitter" class="splitter" title="Glisser pour redimensionner"></div>
+
+        <div class="col col-right">
+            <div class="card" id="cardAdd">
+                <div class="card-hdr">
+                    <h2>Ajouter une étape</h2>
+                    <div class="actions"><span class="muted">Cherchez un lieu, puis ajoutez-le. Les détails peuvent attendre.</span></div>
+                </div>
+                <div class="panel form">
+                    <div class="group">
+                        <div class="row wrap searchbox">
+                            <div style="flex:2"><label>Rechercher une adresse</label><input id="searchQ" type="text" placeholder="Ex: Skógafoss, Islande" />
+                            </div>
+                            <div style="flex:1">
+                                <label>&nbsp;</label><button id="searchBtn" class="btn">Chercher</button>
+                            </div>
+                        </div>
+                        <div id="searchResults" class="suggestions" aria-label="Résultats de recherche"></div>
+                    </div>
+                    <div class="group two">
+                        <div><label>Nom</label><input id="pName" type="text" placeholder="Ex: Blue Lagoon" /></div>
+                        <div><label>URL (infos)</label><input id="pUrl" type="url" placeholder="https://..." /></div>
+                    </div>
+                    <details class="advanced-fields"><summary>Localisation manuelle <span>Remplie par la recherche</span></summary>
+                    <div class="group two">
+                        <div><label>Latitude</label><input id="pLat" type="number" step="any" placeholder="Cliquez la carte" />
+                        </div>
+                        <div><label>Longitude</label><input id="pLng" type="number" step="any" placeholder="Cliquez la carte" />
+                        </div>
+                    </div>
+                    </details>
+                    <div class="group">
+                        <label>Description</label>
+                        <textarea id="pDesc" rows="3" placeholder="Pourquoi choisir ce lieu ?"></textarea>
+                    </div>
+                    <div class="group two">
+                        <div><label>Durée (h)</label><input id="pDurH" type="number" step="0.25" min="0" value="2" />
+                        </div>
+                            <div><label>Budget</label><input id="pBudget" type="number" step="0.05" min="0" placeholder="0.00" />
+                        </div>
+                    </div>
+                    <div class="group two">
+                        <div><label>Tags (virgules)</label><input id="pTags" type="text" placeholder="baignade, randonnée, restaurant, hébergement" />
+                        </div>
+                    </div>
+                    <details class="advanced-fields"><summary>Préférences et contraintes <span>Facultatif</span></summary>
+                    <div class="group"><label>Alternative (groupe)</label><input id="pAlt" type="text" placeholder="ex: J1-matin" /></div>
+                    <div class="group two">
+                        <div>
+                            <label>Moment préféré</label>
+                            <select id="pSlot">
+                <option value="">Flexible</option>
+                <option value="morning">Matin</option>
+                <option value="midday">Midi</option>
+                <option value="afternoon">Après-midi</option>
+                <option value="evening">Soir</option>
+                <option value="night">Nuit</option>
+              </select>
+                        </div>
+                        <div><label>Étape #</label><input id="pPos" type="number" min="1" step="1" placeholder="ex: 3" />
+                        </div>
+                    </div>
+                    <div class="group two">
+                        <div><label>Votre note (1–6)</label>
+                            <select id="pRate"><option value="" selected>—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+                        </div>
+                        <div class="week">
+                            <label>Jours fermés</label>
+                            <div class="days">
+                                <label><input type="checkbox" class="closed" value="1"> Lun</label>
+                                <label><input type="checkbox" class="closed" value="2"> Mar</label>
+                                <label><input type="checkbox" class="closed" value="3"> Mer</label>
+                                <label><input type="checkbox" class="closed" value="4"> Jeu</label>
+                                <label><input type="checkbox" class="closed" value="5"> Ven</label>
+                                <label><input type="checkbox" class="closed" value="6"> Sam</label>
+                                <label><input type="checkbox" class="closed" value="0"> Dim</label>
+                            </div>
+                        </div>
+                    </div>
+                    </details>
+                    <details class="advanced-fields"><summary>Photo du lieu <span>Recherche automatique</span></summary>
+                    <div class="group two">
+                        <div class="image-url-field"><label>Image (URL)</label><div class="row"><input id="pImgUrl" type="url" placeholder="https://..." /><button id="btnFindImage" class="btn" type="button">Trouver</button></div><span id="imageSearchStatus" class="muted" aria-live="polite"></span><img id="pImagePreview" class="image-preview" alt="Aperçu de l’image trouvée" hidden /></div>
+                        <div class="drop" id="pDrop" tabindex="0">📷 Glissez-déposez / collez une image ici</div>
+                    </div>
+                    </details>
+                    <div class="group">
+                        <label class="chk"><input id="pAddItin" type="checkbox" checked> Ajouter à l’itinéraire <span class="muted">(décoché = optionnel)</span></label>
+                        <button id="addPlace" class="btn primary">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cardPlaces">
+                <div class="card-hdr detail-title">
+                    <div>
+                        <span class="eyebrow">ITINÉRAIRE DÉTAILLÉ</span>
+                        <h2>Étapes principales et sous-étapes</h2>
+                    </div>
+                </div>
+                <div class="panel row wrap" style="border-bottom:1px dashed var(--border)">
+                    <div class="muted hierarchy-help">Définissez les grandes étapes, puis rattachez chaque visite secondaire à l’une d’elles.</div>
+                    <div id="tagFilters" class="tags"></div>
+                    <div class="spacer"></div>
+                    <button id="btnFillImages" class="btn" type="button" data-fill-images>Compléter les photos</button>
+                    <span id="fillImagesStatus" class="muted" aria-live="polite"></span>
+                    <button id="btnSortScoreRight" class="btn">⭐ Trier par note</button>
+                </div>
+                <div id="visitProgressSummary" class="panel muted" role="status"></div>
+                <section id="dailyRoutes" class="panel daily-routes" aria-label="Parcours quotidiens" hidden></section>
+                <div id="places" class="panel list dnd"></div>
+            </div>
+
+            <div class="card" id="cardCandidates">
+                <h2>Lieux optionnels (hors itinéraire)</h2>
+                <div class="panel row wrap candidate-trip-tools" style="border-bottom:1px dashed var(--border)">
+                    <div class="muted">Lieux enregistrés mais exclus de l’itinéraire et du planning.</div>
+                    <div class="spacer"></div>
+                    <button id="candidateSelectAll" class="btn" type="button">Tout sélectionner</button>
+                    <button id="candidateCreateTrip" class="btn primary" type="button" disabled>Créer un voyage (0)</button>
+                </div>
+                <div id="candidates" class="panel list"></div>
+            </div>
+
+            <div class="card" id="cardSettings">
+                <h2>Réglages</h2>
+                <div class="panel">
+                    <section class="profile-settings"><h3>Notes et votes en groupe</h3><label for="userName">Votre prénom</label><div class="row"><input id="userName" type="text" placeholder="Votre prénom" title="Utilisé pour identifier vos notes/votes" /><button id="saveName" class="btn" title="Enregistrer le prénom">Enregistrer</button></div></section>
+                    <div class="yaml-help">
+                        <span class="eyebrow">STOCKAGE</span>
+                        <h3>Fichiers de voyage</h3>
+                        <p>Déposez vos fichiers <code>.yaml</code> ou <code>.yml</code> dans :</p>
+                        <code id="yamlStoragePath" class="path-code">/home/pi/trips</code>
+                        <p class="muted">Utilisez ensuite « Actualiser les YAML ». Les fichiers <code>.save</code> et <code>.old</code> restent ignorés.</p>
+                    </div>
+                    <div class="settings-tools">
+                        <div class="legend" title="Couleur = priorité (1=rouge → 6=vert) • Icône = 1er tag">
+                            <span class="grad" title="Priorité: 1 (rouge) → 6 (vert)">
+          <span class="tick left">1</span><span class="tick right">6</span>
+                            </span>
+                            <span class="legend-icons">
+          <span title="Baignade / plage">🏊</span>
+                            <span title="Randonnée">🥾</span>
+                            <span title="Restaurant / café">🍽️</span>
+                            <span title="Hébergement">🛏️</span>
+                            <span title="Culture / musée">🏛️</span>
+                            </span>
+                        </div>
+
+                        <label class="tool chk" title="Conserver le zoom sur recherches">
+        <input id="preserveZoom" type="checkbox" checked /> Zoom
+      </label>
+                        <label class="tool chk" title="Montrer les lieux optionnels sur la carte">
+        <input id="showCandidates" type="checkbox" checked /> Optionnels
+      </label>
+                        <button id="btnFullMap" class="tool iconbtn" title="Plein écran">🔳</button>
+                        <button id="btnCenterLast" class="tool iconbtn" title="Centrer sur le dernier">🧭</button>
+                        <button id="btnSaveStartup" class="tool iconbtn" title="Mémoriser centre+zoom">📌</button>
+                    </div>
+                    <p class="muted" style="margin:10px 0 0">
+                        La carte occupe la moitié droite de l’écran hors téléphone. L’onglet <b>Carte</b> permet de
+                        l’afficher en plein écran.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Dialog ajout rapide par clic carte -->
+    <div id="dlg" class="dialog" role="dialog" aria-modal="true">
+        <div class="box">
+            <h3>Ajouter un lieu (clic carte)</h3>
+            <div class="row wrap">
+                <div><label>Nom</label><input id="dName" type="text" /></div>
+                <div><label>Lat</label><input id="dLat" type="number" step="any" /></div>
+                <div><label>Lng</label><input id="dLng" type="number" step="any" /></div>
+                <div><label>Durée (h)</label><input id="dDurH" type="number" step="0.25" min="0" value="2" /></div>
+                <div><label>Budget (CHF)</label><input id="dBudget" type="number" step="0.05" min="0" placeholder="0.00" />
+                </div>
+                <div><label>URL</label><input id="dUrl" type="url" placeholder="https://..." /></div>
+                <div><label>Slot préféré</label>
+                    <select id="dSlot">
+            <option value="">Flexible</option>
+            <option value="morning">Matin</option>
+            <option value="midday">Midi</option>
+            <option value="afternoon">Après-midi</option>
+            <option value="evening">Soir</option>
+            <option value="night">Nuit</option>
+          </select>
+                </div>
+                <div><label>Étape #</label><input id="dPos" type="number" min="1" step="1" /></div>
+                <div>
+                    <label>Description</label><textarea id="dDesc" rows="2" placeholder="Pourquoi ce lieu ?"></textarea>
+                </div>
+                <div>
+                    <label>Votre note (1–6)</label><select id="dRate"><option value="">—</option><option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option></select>
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <button id="dCancel" class="btn">Annuler</button>
+                <div class="spacer"></div>
+                <button id="dAdd" class="btn primary">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAB + bottom-sheet mobile -->
+    <button id="fabAdd" class="fab" title="Ajouter un lieu">＋</button>
+    <div id="sheet" class="sheet" aria-hidden="true">
+        <div class="sheet__panel">
+            <div class="sheet__grab"></div>
+            <div class="sheet__hdr">
+                <h3>Ajouter un lieu</h3>
+                <button class="iconbtn" id="sheetClose" aria-label="Fermer">✕</button>
+            </div>
+            <div class="sheet__content">
+                <div class="field">
+                    <label>Rechercher</label>
+                    <div class="row">
+                        <input id="sQ" type="text" placeholder="Skógafoss, Islande…" />
+                        <button id="sBtn" class="btn">Chercher</button>
+                    </div>
+                    <div id="sRes" class="suggestions"></div>
+                </div>
+
+                <div class="grid two">
+                    <div class="field">
+                        <label>Nom</label>
+                        <input id="sName" type="text" placeholder="Nom du lieu" />
+                    </div>
+                    <div class="field">
+                        <label>Durée (h)</label>
+                        <input id="sDur" type="range" min="0" max="8" step="0.25" value="2" />
+                        <div class="hint"><span id="sDurVal">2.00</span> h</div>
+                    </div>
+                </div>
+
+                <div class="grid two">
+                    <div class="field"><label>Latitude</label><input id="sLat" type="number" step="any" placeholder="Cliquez carte ou cherchez" />
+                    </div>
+                    <div class="field"><label>Longitude</label><input id="sLng" type="number" step="any" placeholder="Cliquez carte ou cherchez" />
+                    </div>
+                </div>
+
+                <div class="grid two">
+                    <div class="field">
+                        <label>Slot préféré</label>
+                        <select id="sSlot">
+              <option value="">Flexible</option>
+              <option value="morning">Matin</option>
+              <option value="midday">Midi</option>
+              <option value="afternoon">Après-midi</option>
+              <option value="evening">Soir</option>
+              <option value="night">Nuit</option>
+            </select>
+                    </div>
+                    <div class="field">
+                        <label>Étape #</label>
+                        <input id="sPos" type="number" min="1" step="1" placeholder="ex: 3">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Tags rapides</label>
+                    <div id="sTags" class="chips">
+                        <button type="button" class="chip" data-tag="baignade">🏊 baignade</button>
+                        <button type="button" class="chip" data-tag="randonnée">🥾 rando</button>
+                        <button type="button" class="chip" data-tag="restaurant">🍽️ resto</button>
+                        <button type="button" class="chip" data-tag="hébergement">🛏️ hébergement</button>
+                        <button type="button" class="chip" data-tag="culture">🏛️ culture</button>
+                        <input id="sTagCustom" class="chip-input" type="text" placeholder="+ Tag perso" />
+                    </div>
+                </div>
+
+                <details class="adv">
+                    <summary>Options avancées</summary>
+                    <div class="grid two">
+                        <div class="field"><label>Budget (CHF)</label><input id="sBudget" type="number" min="0" step="0.05">
+                        </div>
+                        <div class="field"><label>URL</label><input id="sUrl" type="url" placeholder="https://…"></div>
+                    </div>
+                    <div class="field">
+                        <label>Description</label><textarea id="sDesc" rows="2" placeholder="Pourquoi ce lieu ?"></textarea>
+                    </div>
+                    <div class="field">
+                        <label>Jours fermés</label>
+                        <div class="chips week">
+                            <label><input type="checkbox" value="1"> Lun</label>
+                            <label><input type="checkbox" value="2"> Mar</label>
+                            <label><input type="checkbox" value="3"> Mer</label>
+                            <label><input type="checkbox" value="4"> Jeu</label>
+                            <label><input type="checkbox" value="5"> Ven</label>
+                            <label><input type="checkbox" value="6"> Sam</label>
+                            <label><input type="checkbox" value="0"> Dim</label>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="field">
+                    <label class="chk"><input id="sAddItin" type="checkbox" checked> Ajouter à l’itinéraire <span class="muted">(décoché = optionnel)</span></label>
+                </div>
+
+                <div class="row end">
+                    <button id="sCancel" class="btn">Annuler</button>
+                    <button id="sAdd" class="btn primary">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toasts -->
+    <div id="toastWrap" class="toasts" aria-live="polite" aria-atomic="true"></div>
+</body>
+
+</html>

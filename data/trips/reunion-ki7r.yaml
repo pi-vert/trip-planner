@@ -1,0 +1,341 @@
+itinerary:
+  - mj666mo13ioge
+  - mk4gtjmkch4au
+  - mk4gr58etpr46
+  - mk4gngahesdq5
+  - mje2o2jlx6ncs
+  - mk4gkkrp4nus4
+  - mj66gizrvko0j
+  - mj66inqw59s5f
+  - mk4gp7pf8lz31
+  - mk4ggx6b6gtmg
+startPlaceId: mj666mo13ioge
+notes: ''
+places:
+  mj666mo13ioge:
+    name: Saint-Denis
+    lat: -20.8799889
+    lng: 55.448137
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Arrivée à l’aéroport et découverte de la capitale
+    closedDays: []
+    ratings:
+      Eric: 4
+    tags:
+      - ville
+      - arrivee
+      - culturel
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/SaintDenisReunion005.JPG/960px-SaintDenisReunion005.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/saint-denis
+  mk4gtjmkch4au:
+    name: Barachois
+    lat: -20.874196
+    lng: 55.446352
+    duration_h: 1
+    budget: 10
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Promenade en bord de mer et food trucks
+    closedDays: []
+    ratings: {}
+    tags:
+      - ville
+      - promenade
+      - nourriture
+      - mer
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/ReU_StDenis_BarachoisSteilk%C3%BCste.jpg/960px-ReU_StDenis_BarachoisSteilk%C3%BCste.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/le-barachois
+  mk4gr58etpr46:
+    name: Run Green Réunion
+    lat: -21.039326
+    lng: 55.2192871
+    duration_h: 2
+    budget: 20
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Boucan Canot et ambiance station balnéaire
+    closedDays: []
+    ratings: {}
+    tags:
+      - plage
+      - detente
+      - station-balneaire
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Cannabis_sativa_plant_%284%29.JPG/960px-Cannabis_sativa_plant_%284%29.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/boucan-canot
+  mk4gngahesdq5:
+    name: La Saline
+    lat: -21.0836981
+    lng: 55.2686293
+    duration_h: 3
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Lagon peu profond idéal pour le snorkeling
+    closedDays: []
+    ratings: {}
+    tags:
+      - plage
+      - snorkeling
+      - lagon
+      - detente
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%C3%89glise-Sainte-Th%C3%A9r%C3%A8se-d%27Avila-Saint-Paul.JPG/960px-%C3%89glise-Sainte-Th%C3%A9r%C3%A8se-d%27Avila-Saint-Paul.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/la-saline-les-bains
+  mje2o2jlx6ncs:
+    name: Snorkeling dauphins et baleines
+    lat: -21.054816
+    lng: 55.224608
+    duration_h: 2.5
+    budget: 88
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Sortie encadrée d’observation de la faune marine
+    closedDays: []
+    ratings:
+      Eric: 4
+    tags:
+      - mer
+      - faune
+      - excursion
+      - snorkeling
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/984-Baleines_St_Gilles_le_250911_HD11_copyright.jpg/960px-984-Baleines_St_Gilles_le_250911_HD11_copyright.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.getyourguide.fr/-l974/
+  mk4gkkrp4nus4:
+    name: Maïdo
+    lat: -21.0621367
+    lng: 55.3789178
+    duration_h: 2
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Point de vue spectaculaire sur Mafate
+    closedDays: []
+    ratings: {}
+    tags:
+      - vue
+      - montagne
+      - nature
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Le_Ma%C3%AFdo_-_Paysage_de_l%27%C3%AEle_de_La_R%C3%A9union.jpg/960px-Le_Ma%C3%AFdo_-_Paysage_de_l%27%C3%AEle_de_La_R%C3%A9union.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/le-maido
+  mj66gizrvko0j:
+    name: Piton de la Fournaise
+    lat: -21.225102
+    lng: 55.684397
+    duration_h: 6
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Randonnée sur un volcan actif
+    closedDays: []
+    ratings:
+      Eric: 6
+    tags:
+      - volcan
+      - randonnee
+      - nature
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Piton_de_La_Fournaise_-_Paysage_de_l%27%C3%AEle_de_La_R%C3%A9union.jpg/960px-Piton_de_La_Fournaise_-_Paysage_de_l%27%C3%AEle_de_La_R%C3%A9union.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/piton-de-la-fournaise
+  mj66inqw59s5f:
+    name: Tunnel de lave
+    lat: -21.238065
+    lng: 55.799561
+    duration_h: 2
+    budget: 60
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Exploration guidée souterraine volcanique
+    closedDays: []
+    ratings:
+      Eric: 4
+    tags:
+      - volcan
+      - geologie
+      - aventure
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Valentine_Cave.JPG/960px-Valentine_Cave.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/tunnels-de-lave
+  mk4gp7pf8lz31:
+    name: Bélouve
+    lat: -21.0607865
+    lng: 55.5363408
+    duration_h: 3
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Forêt humide et Trou de Fer
+    closedDays: []
+    ratings: {}
+    tags:
+      - foret
+      - randonnee
+      - nature
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Foret_de_Belouve01.jpg/960px-Foret_de_Belouve01.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/belouve-bebour
+  mk4ggx6b6gtmg:
+    name: Piton des Neiges
+    lat: -21.0994461
+    lng: 55.4800341
+    duration_h: 10
+    budget: 40
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: Sommet de l’océan Indien
+    closedDays: []
+    ratings: {}
+    tags:
+      - randonnee
+      - montagne
+      - sommet
+    image: >-
+      https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Piton_des_Neiges1.JPG/960px-Piton_des_Neiges1.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: https://www.reunion.fr/decouvrir/les-incontournables/piton-des-neiges
+view: null
+edges:
+  mj666mo13ioge|mk4gtjmkch4au:
+    realKm: 1.5
+    realMin: 2
+  mk4gtjmkch4au|mk4gr58etpr46:
+    realKm: 53.9
+    realMin: 64
+  mk4gr58etpr46|mk4gngahesdq5:
+    realKm: 15.7
+    realMin: 16
+  mk4gngahesdq5|mje2o2jlx6ncs:
+    realKm: 11.3
+    realMin: 16
+  mje2o2jlx6ncs|mk4gkkrp4nus4:
+    realKm: 36.7
+    realMin: 62
+  mk4gkkrp4nus4|mj66gizrvko0j:
+    realKm: 111.7
+    realMin: 147
+  mj66gizrvko0j|mj66inqw59s5f:
+    realKm: 83.3
+    realMin: 121
+  mj66inqw59s5f|mk4gp7pf8lz31:
+    realKm: 68.3
+    realMin: 100
+  mk4gp7pf8lz31|mk4ggx6b6gtmg:
+    realKm: 85
+    realMin: 123
+  mj666mo13ioge|mje2o2jlx6ncs:
+    realKm: 54.7
+    realMin: 66
+  mje2o2jlx6ncs|mj66gizrvko0j:
+    realKm: 99.1
+    realMin: 114
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

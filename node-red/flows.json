@@ -1,0 +1,1273 @@
+[
+  {
+    "id": "678cbe348abeb618",
+    "type": "tab",
+    "label": "Trip Planner v1.13",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "ed82e6102fe8fcd5",
+    "type": "group",
+    "z": "678cbe348abeb618",
+    "name": "Read Info",
+    "style": {
+      "stroke": "#92d04f",
+      "fill": "#e3f3d3",
+      "label": true
+    },
+    "nodes": [
+      "9d0dfa1ddcac7a79",
+      "4049043285ef6e63",
+      "74f4da784ea691d0",
+      "08bf78aa3b169238",
+      "e3214b88234e82a8",
+      "e5a397135c8ccfc8"
+    ],
+    "x": 414,
+    "y": 459,
+    "w": 822,
+    "h": 122
+  },
+  {
+    "id": "97d0af50adcecde7",
+    "type": "group",
+    "z": "678cbe348abeb618",
+    "name": "Write Infos",
+    "style": {
+      "stroke": "#92d04f",
+      "fill": "#e3f3d3",
+      "label": true
+    },
+    "nodes": [
+      "43cf20a158142116",
+      "ca0203c5d76d8926",
+      "d26242ed6d83dcb3",
+      "1ca347c774e927ca",
+      "1828a03917d7780c",
+      "6a6d3112ad8a7704",
+      "d6f7bfa1f2f1736d",
+      "1a3088d4aed38557",
+      "a6c4897de572a6da",
+      "cf67f0ec651af3a7"
+    ],
+    "x": 674,
+    "y": -1,
+    "w": 932,
+    "h": 342
+  },
+  {
+    "id": "b00f95e12c6f33e5",
+    "type": "uibuilder",
+    "z": "678cbe348abeb618",
+    "name": "UI (v1.13)",
+    "topic": "",
+    "url": "trip_planner",
+    "okToGo": true,
+    "fwdInMessages": false,
+    "allowScripts": true,
+    "allowStyles": true,
+    "templateFolder": "blank",
+    "extTemplate": "",
+    "showfolder": false,
+    "reload": false,
+    "sourceFolder": "src",
+    "deployedVersion": "7.5.0",
+    "showMsgUib": false,
+    "title": "",
+    "descr": "",
+    "editurl": "",
+    "x": 490,
+    "y": 380,
+    "wires": [
+      [
+        "1a3088d4aed38557",
+        "4c2756fa3dc34e94",
+        "a91f6c2d8e4b7303"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "134cc505d454a887",
+    "type": "switch",
+    "z": "678cbe348abeb618",
+    "name": "Route actions",
+    "property": "payload.action",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "loadYaml",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "saveYaml",
+        "vt": "str"
+      },
+      {
+        "t": "else"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 3,
+    "x": 140,
+    "y": 280,
+    "wires": [
+      [
+        "e5a397135c8ccfc8"
+      ],
+      [
+        "a91f6c2d8e4b7302"
+      ],
+      [
+        "3cf56a27f3b60e4b"
+      ]
+    ]
+  },
+  {
+    "id": "3cf56a27f3b60e4b",
+    "type": "change",
+    "z": "678cbe348abeb618",
+    "name": "remember action",
+    "rules": [
+      {
+        "t": "set",
+        "p": "action",
+        "pt": "msg",
+        "to": "payload.action",
+        "tot": "msg"
+      }
+    ],
+    "x": 170,
+    "y": 340,
+    "wires": [
+      [
+        "96717b0cf0275851"
+      ]
+    ]
+  },
+  {
+    "id": "9d0dfa1ddcac7a79",
+    "type": "file in",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "name": "read YAML",
+    "filename": "filename",
+    "filenameType": "msg",
+    "format": "utf8",
+    "chunk": false,
+    "sendError": true,
+    "encoding": "none",
+    "allProps": false,
+    "x": 750,
+    "y": 540,
+    "wires": [
+      [
+        "4049043285ef6e63",
+        "1a4d7c584a0e286d"
+      ]
+    ]
+  },
+  {
+    "id": "4049043285ef6e63",
+    "type": "yaml",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "property": "payload",
+    "name": "YAML→JS",
+    "x": 930,
+    "y": 540,
+    "wires": [
+      [
+        "a91f6c2d8e4b7301"
+      ]
+    ]
+  },
+  {
+    "id": "74f4da784ea691d0",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "name": "YAML to state",
+    "func": "let doc = msg.payload || {}\nlet st = flow.get('rankState') || { places: {}, itinerary: [], view: null, edges: {} }\n\ntry {\n    const it = Array.isArray(doc.itinerary) ? doc.itinerary.filter(x => typeof x === 'string') : []\n\n    const places = {}\n    if (doc.places && typeof doc.places === 'object') {\n        for (let [id, p] of Object.entries(doc.places)) {\n            if (!p) continue\n            places[id] = {\n                id,\n                name: String(p.name || 'Lieu').slice(0, 160),\n                lat: Number(p.lat) || 0,\n                lng: Number(p.lng) || 0,\n                durationH: Number(p.duration_h) || 0,\n                budget: Number(p.budget) || 0,\n                desc: String(p.desc || '').slice(0, 2000),\n                closedDays: Array.isArray(p.closedDays) ? p.closedDays.map(Number) : [],\n                ratings: (p.ratings && typeof p.ratings === 'object') ? p.ratings : {},\n                tags: Array.isArray(p.tags) ? p.tags.map(String) : [],\n                image: typeof p.image === 'string' ? p.image : '',\n                optionGroup: typeof p.optionGroup === 'string' ? p.optionGroup : '',\n                url: typeof p.url === 'string' ? p.url : ''\n            }\n        }\n    }\n\n    const edges = (doc.edges && typeof doc.edges === 'object') ? doc.edges : {}\n    st = { places, itinerary: it.filter(id => places[id]), view: doc.view || null, edges }\n    flow.set('rankState', st)\n    const count = Object.keys(places).length\n    node.status({fill:\"green\", shape:\"dot\", text:`Loaded ${count} place(s)`})\n}\ncatch (e) {\n    node.warn(e)\n}\n\nflow.set('loadedOnce', true)\n\nreturn { payload: { state: st } }\n",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 1130,
+    "y": 540,
+    "wires": [
+      [
+        "b00f95e12c6f33e5"
+      ]
+    ]
+  },
+  {
+    "id": "43cf20a158142116",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "Build save doc",
+    "func": "let st = flow.get('rankState') || {places:{},itinerary:[],view:null,edges:{}}\nconst doc = { \n    itinerary: st.itinerary, \n    places: {}, \n    view: st.view||null, \n    edges: st.edges||{} \n}\nfor (const id of st.itinerary){ \n    const p = st.places[id]; \n    if(!p) continue;\n    doc.places[id] = { \n        name: p.name, \n        lat: p.lat, \n        lng: p.lng, \n        duration_h: Number(p.durationH)||0, \n        budget: Number(p.budget)||0, \n        desc: p.desc||'', \n        closedDays: Array.isArray(p.closedDays)? p.closedDays : [], \n        ratings: p.ratings||{}, \n        tags: Array.isArray(p.tags)? p.tags : [], \n        image: p.image||'', \n        optionGroup: p.optionGroup||'', \n        url: p.url||'' \n    }\n} \nmsg.payload = doc;\nreturn msg;",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 840,
+    "y": 220,
+    "wires": [
+      [
+        "1828a03917d7780c"
+      ]
+    ]
+  },
+  {
+    "id": "ca0203c5d76d8926",
+    "type": "yaml",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "property": "payload",
+    "name": "JS→YAML (main)",
+    "x": 1030,
+    "y": 300,
+    "wires": [
+      [
+        "cf67f0ec651af3a7"
+      ]
+    ]
+  },
+  {
+    "id": "6a6d3112ad8a7704",
+    "type": "file",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "write YAML (main)",
+    "filename": "filename",
+    "filenameType": "msg",
+    "appendNewline": false,
+    "createDir": true,
+    "overwriteFile": "true",
+    "encoding": "none",
+    "x": 1470,
+    "y": 300,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "d26242ed6d83dcb3",
+    "type": "yaml",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "property": "payload",
+    "name": "JS→YAML (backup)",
+    "x": 1040,
+    "y": 260,
+    "wires": [
+      [
+        "a6c4897de572a6da"
+      ]
+    ]
+  },
+  {
+    "id": "d6f7bfa1f2f1736d",
+    "type": "file",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "write YAML (backup)",
+    "filename": "",
+    "appendNewline": false,
+    "createDir": true,
+    "overwriteFile": "true",
+    "encoding": "none",
+    "x": 1480,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "96717b0cf0275851",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "State controller",
+    "func": "function getState() {\n    let st = flow.get('rankState')\n    if (!st) {\n        st = { places: {}, itinerary: [], view: null, edges: {} }\n        flow.set('rankState', st)\n    }\n    return st\n}\nfunction save(st) { flow.set('rankState', st) }\nfunction uid() { return (Date.now().toString(36) + Math.random().toString(36).slice(2, 7)) }\n\nlet st = getState()\nconst p = msg.payload || {}\nconst action = (msg.action != null ? msg.action : p.action)\nconst data = p.data || {}\nconst normalizeCurrency = value => {\n    const currency = String(value || '').trim().toUpperCase()\n    return /^[A-Z]{3}$/.test(currency) ? currency : null\n}\nconst normalizeCurrencies = values => {\n    const currencies = (Array.isArray(values) ? values : []).map(normalizeCurrency).filter(Boolean)\n    const unique = [...new Set(currencies)]\n    return unique.length ? unique : ['CHF']\n}\nconst normalizeRelativePeriod = value => {\n    const normalized = String(value || '').toUpperCase().replace(/\\s+/g, '')\n    const match = /^J([1-9]\\d*)([MAS])?(?:-J?([1-9]\\d*)([MAS])?)?$/.exec(normalized)\n    const startDay = Number(match?.[1]), endDay = Number(match?.[3] || match?.[1])\n    if (!match || endDay < startDay) return ''\n    const start = `J${startDay}${match[2] || ''}`\n    if (endDay === startDay && !match[4]) return start\n    return `${start}-J${endDay}${match[4] || ''}`\n}\nst.budgetCurrencies = normalizeCurrencies(st.budgetCurrencies)\nst.startPlaceId = st.itinerary.includes(st.startPlaceId) ? st.startPlaceId : (st.itinerary[0] || '')\n\ntry {\n    switch (action) {\n        case 'requestState': {\n            break\n        }\n        case 'setView': {\n            st.view = (data && data.center) ? { center: data.center } : null\n            break\n        }\n        case 'setPeople': {\n            st.people = Math.max(1, parseInt(data.people, 10) || 2)\n            break\n        }\n        case 'setTripNotes': {\n            st.notes = String(data.notes || '').slice(0, 20000)\n            break\n        }\n        case 'setBudgetCurrencies': {\n            st.budgetCurrencies = normalizeCurrencies(data.currencies)\n            const defaultCurrency = st.budgetCurrencies[0]\n            for (const place of Object.values(st.places || {})) {\n                const currency = normalizeCurrency(place?.budgetCurrency) || defaultCurrency\n                place.budgetCurrency = st.budgetCurrencies.includes(currency) ? currency : defaultCurrency\n            }\n            break\n        }\n        case 'addPlace': {\n            const requestedCurrency = normalizeCurrency(data.budgetCurrency)\n            const budgetCurrency = requestedCurrency || st.budgetCurrencies[0]\n            if (!st.budgetCurrencies.includes(budgetCurrency)) st.budgetCurrencies.push(budgetCurrency)\n            const id = uid()\n            st.places[id] = {\n                id,\n                name: String(data.name || 'Lieu').slice(0, 160),\n                lat: Number(data.lat),\n                lng: Number(data.lng),\n                durationH: Number(data.durationH) || 0,\n                budget: Math.max(0, Number(data.budget) || 0),\n                budgetFree: data.budgetFree === true,\n                budgetCurrency,\n                budgetScope: data.budgetScope === 'group' ? 'group' : 'individual',\n                desc: String(data.desc || '').slice(0, 2000),\n                closedDays: Array.isArray(data.closedDays) ? data.closedDays.map(Number) : [],\n                ratings: {},\n                tags: Array.isArray(data.tags) ? data.tags.map(String) : [],\n                image: (typeof data.image === 'string') ? data.image : '',\n                optionGroup: (typeof data.optionGroup === 'string') ? data.optionGroup : '',\n                relativePeriod: normalizeRelativePeriod(data.relativePeriod),\n                url: (typeof data.url === 'string') ? data.url : ''\n            }\n            const u = (msg && msg.payload && msg.payload.user) ? String(msg.payload.user) : null\n            if (u && (data.rating != null)) {\n                const r = Math.max(1, Math.min(6, Number(data.rating) || 0))\n                if (r) st.places[id].ratings[u] = r\n            }\n            st.itinerary.push(id)\n            if (!st.startPlaceId) st.startPlaceId = id\n            break\n        }\n        case 'removePlace': {\n            const id = data.id\n            if (st.places[id]) {\n                delete st.places[id]\n                st.itinerary = st.itinerary.filter(x => x !== id)\n                if (st.startPlaceId === id) st.startPlaceId = st.itinerary[0] || ''\n            }\n            break\n        }\n        case 'reorder': {\n            const arr = Array.isArray(data.itinerary) ? data.itinerary : []\n            st.itinerary = arr.filter(id => st.places[id])\n            if (st.itinerary.includes(data.startPlaceId)) st.startPlaceId = data.startPlaceId\n            if (!st.itinerary.includes(st.startPlaceId)) st.startPlaceId = st.itinerary[0] || ''\n            break\n        }\n        case 'updatePlace': {\n            const id = data.id\n            const patch = data.patch || {}\n            const t = st.places[id]\n            if (t) {\n                const clean = { ...patch }\n                if ('budget' in clean) clean.budget = Math.max(0, Number(clean.budget) || 0)\n                if ('budgetFree' in clean) clean.budgetFree = clean.budgetFree === true\n                if ('budgetCurrency' in clean) {\n                    clean.budgetCurrency = normalizeCurrency(clean.budgetCurrency) || st.budgetCurrencies[0]\n                    if (!st.budgetCurrencies.includes(clean.budgetCurrency)) st.budgetCurrencies.push(clean.budgetCurrency)\n                }\n                if ('budgetScope' in clean) clean.budgetScope = clean.budgetScope === 'group' ? 'group' : 'individual'\n                if ('relativePeriod' in clean) clean.relativePeriod = normalizeRelativePeriod(clean.relativePeriod)\n                Object.assign(t, clean)\n            }\n            break\n        }\n        case 'ratePlace': {\n            const id = data.id\n            const r = Math.max(1, Math.min(6, Number(data.rating) || 0))\n            const u = (msg && msg.payload && msg.payload.user) ? String(msg.payload.user) : null\n            if (st.places[id] && u && r) {\n                st.places[id].ratings = st.places[id].ratings || {}\n                st.places[id].ratings[u] = r\n            }\n            break\n        }\n        case 'setEdge': {\n            const from = data.from, to = data.to\n            if (!st.edges) st.edges = {}\n            const k = `${from}|${to}`\n            st.edges[k] = st.edges[k] || {}\n            if ('realKm' in data) st.edges[k].realKm = (data.realKm == null ? null : Number(data.realKm))\n            if ('realMin' in data) st.edges[k].realMin = (data.realMin == null ? null : Number(data.realMin))\n            break\n        }\n        default: {\n            // no-op\n        }\n    }\n    save(st)\n} catch (e) {\n    node.warn(e)\n}\n\nreturn { payload: { state: st } }\n",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 180,
+    "y": 380,
+    "wires": [
+      [
+        "b00f95e12c6f33e5"
+      ]
+    ]
+  },
+  {
+    "id": "1a3088d4aed38557",
+    "type": "switch",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "AutoSave?",
+    "property": "payload.action",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "addPlace",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "removePlace",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "reorder",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "updatePlace",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "ratePlace",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "setView",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "setEdge",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "setPeople",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "setBudgetCurrencies",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "setTripNotes",
+        "vt": "str"
+      }
+    ],
+    "checkall": "false",
+    "outputs": 10,
+    "x": 770,
+    "y": 100,
+    "wires": [
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ],
+      [
+        "1ca347c774e927ca"
+      ]
+    ]
+  },
+  {
+    "id": "e3214b88234e82a8",
+    "type": "catch",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "name": "catch read YAML error",
+    "scope": [
+      "9d0dfa1ddcac7a79"
+    ],
+    "uncaught": false,
+    "x": 550,
+    "y": 500,
+    "wires": [
+      [
+        "08bf78aa3b169238"
+      ]
+    ]
+  },
+  {
+    "id": "08bf78aa3b169238",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "name": "Init default YAML doc",
+    "func": "const doc = { \n    view:{ \n        center:{\n            lat:46.2,\n            lng:6.15,\n            zoom:7\n        } \n    }, \n    itinerary:[], \n    places:{}, \n    edges:{} \n}; \n    \nreturn [ { payload: doc }, { payload: doc } ]",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 810,
+    "y": 500,
+    "wires": [
+      [
+        "a91f6c2d8e4b7301"
+      ]
+    ]
+  },
+  {
+    "id": "1ca347c774e927ca",
+    "type": "delay",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": false,
+    "allowrate": false,
+    "outputs": 1,
+    "x": 970,
+    "y": 60,
+    "wires": [
+      [
+        "a91f6c2d8e4b7302"
+      ]
+    ]
+  },
+  {
+    "id": "1828a03917d7780c",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "Guard save",
+    "func": "// Empêche d’écrire avant un 1er chargement réussi et si c’est manifestement vide\nconst loaded = flow.get('loadedOnce') === true\nconst doc = msg.payload || {}\nconst empty = !doc || (\n  Array.isArray(doc.itinerary) && doc.itinerary.length === 0 &&\n  doc.places && Object.keys(doc.places).length === 0\n)\nif (!loaded || empty) {\n    // on jette silencieusement\n    return null\n}\nreturn msg\n",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 830,
+    "y": 260,
+    "wires": [
+      [
+        "ca0203c5d76d8926",
+        "d26242ed6d83dcb3"
+      ]
+    ]
+  },
+  {
+    "id": "2eb5778928bf7f64",
+    "type": "inject",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "{\"toast\":{\"text\":\"Ceci est un toast depuis Node-RED\",\"type\":\"error\",\"timeout\":3000}}",
+    "payloadType": "json",
+    "x": 210,
+    "y": 420,
+    "wires": [
+      [
+        "b00f95e12c6f33e5"
+      ]
+    ]
+  },
+  {
+    "id": "b6b012cf351f1918",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Trip Manager",
+    "func": "const REG_FILE = \"/home/pi/trips/trips.json\";\nconst BASE_DIR = \"/home/pi/trips\";\nconst DEFAULT_FILE = \"/home/pi/trips/trip-planner.yaml\";\n\nfunction normReg(reg) {\n    if (!reg || typeof reg !== 'object') reg = {};\n    if (!Array.isArray(reg.trips)) reg.trips = [];\n    if (!Array.isArray(reg.ignored)) reg.ignored = [];\n    if (!reg.trips.some(t => t && t.id === 'default')) {\n        reg.trips.unshift({ id: \"default\", name: \"Voyage principal\", file: DEFAULT_FILE });\n    }\n    if (!reg.active || !reg.trips.some(t => t && t.id === reg.active)) reg.active = reg.trips[0].id;\n    return reg;\n}\n\nfunction slug(s) {\n    return String(s || '').toLowerCase().normalize('NFD')\n        .replace(/\\p{Diacritic}/gu, '')\n        .replace(/[^a-z0-9]+/g, '-')\n        .replace(/^-+|-+$/g, '')\n        .slice(0, 40) || 'trip';\n}\n\nfunction fileFor(id) {\n    if (id === \"default\") return DEFAULT_FILE;\n    return BASE_DIR + '/' + id + '.yaml';\n}\n\nfunction inferredName(id) {\n    const label = String(id || 'Voyage')\n        .replace(/-[a-z0-9]{4}$/i, '')\n        .replace(/[-_]+/g, ' ')\n        .trim();\n    return label.charAt(0).toUpperCase() + label.slice(1);\n}\n\nfunction discoverYaml(reg) {\n    let changed = false;\n    fs.mkdirSync(BASE_DIR, { recursive: true });\n    const files = fs.readdirSync(BASE_DIR, { withFileTypes: true })\n        .filter(entry => entry.isFile() && /\\.ya?ml$/i.test(entry.name))\n        .map(entry => entry.name)\n        .sort((a, b) => a.localeCompare(b, 'fr'));\n\n    for (const filename of files) {\n        const isDefault = filename === 'trip-planner.yaml';\n        const id = isDefault ? 'default' : filename.replace(/\\.ya?ml$/i, '');\n        if (reg.ignored.includes(id)) continue;\n        const file = BASE_DIR + '/' + filename;\n        const existing = reg.trips.find(trip => trip && trip.id === id);\n        if (!existing) {\n            reg.trips.push({ id, name: isDefault ? 'Voyage principal' : inferredName(id), file });\n            changed = true;\n        } else if (existing.file !== file) {\n            existing.file = file;\n            changed = true;\n        }\n    }\n\n    reg.trips.sort((a, b) => {\n        if (a.id === 'default') return -1;\n        if (b.id === 'default') return 1;\n        return String(a.name || a.id).localeCompare(String(b.name || b.id), 'fr');\n    });\n    return changed;\n}\n\nfunction activeFile(reg) {\n    const trip = reg.trips.find(item => item && item.id === reg.active);\n    return (trip && trip.file) || fileFor(reg.active);\n}\n\nlet reg = normReg(flow.get('tripRegistry'));\nconst p = msg.payload || {};\nconst action = p.action;\nconst data = p.data || {};\nconst hadRegistry = flow.get('tripRegistry') != null;\nconst discovered = discoverYaml(reg);\nlet writeMsg = null;\nlet uiMsg = { payload: {} };\n\nfunction fillUi() {\n    uiMsg.payload.trips = reg.trips.map(trip => ({\n        id: trip.id,\n        name: trip.name,\n        file: trip.file || fileFor(trip.id)\n    }));\n    uiMsg.payload.activeTripId = reg.active;\n    uiMsg.payload.activeTripFile = activeFile(reg);\n    uiMsg.payload.storagePath = BASE_DIR;\n}\n\nfunction persistContext() {\n    flow.set('tripRegistry', reg);\n    flow.set('activeTripId', reg.active);\n    flow.set('activeTripFile', activeFile(reg));\n}\n\nif (action === \"listTrips\") {\n    persistContext();\n    fillUi();\n    uiMsg._needReload = (flow.get('loadedOnce') !== true);\n    const forceSave = data && (data.forceSave === true || data.rescan === true);\n    if (!hadRegistry || forceSave || discovered) {\n        writeMsg = { filename: REG_FILE, payload: JSON.stringify(reg, null, 2) };\n    }\n    return [writeMsg, uiMsg];\n}\n\nif (action === \"createTrip\") {\n    const name = (data.name || \"Nouveau voyage\").trim();\n    const id = slug(name) + '-' + Date.now().toString(36).slice(-4);\n    reg.ignored = reg.ignored.filter(value => value !== id);\n    reg.trips.push({ id, name, file: fileFor(id) });\n    reg.active = id;\n}\n\nif (action === \"renameTrip\") {\n    const trip = reg.trips.find(item => item.id === data.id);\n    if (trip) trip.name = (data.name || trip.name || trip.id).trim();\n}\n\nif (action === \"deleteTrip\" && data.id !== 'default') {\n    reg.ignored = [...new Set([...reg.ignored, data.id])];\n    reg.trips = reg.trips.filter(item => item.id !== data.id);\n    if (reg.active === data.id) reg.active = reg.trips[0].id;\n}\n\nif (action === \"selectTrip\") {\n    const id = data.id;\n    if (reg.trips.some(trip => trip.id === id)) reg.active = id;\n}\n\npersistContext();\nwriteMsg = { filename: REG_FILE, payload: JSON.stringify(reg, null, 2) };\nfillUi();\n\nif ([\"selectTrip\", \"createTrip\", \"deleteTrip\"].includes(action)) uiMsg._needReload = true;\n\nreturn [writeMsg, uiMsg];",
+    "outputs": 2,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "fs",
+        "module": "fs"
+      }
+    ],
+    "x": 350,
+    "y": 180,
+    "wires": [
+      [
+        "549c1fea1bbac4b2"
+      ],
+      [
+        "b00f95e12c6f33e5",
+        "541b77234050349f"
+      ]
+    ]
+  },
+  {
+    "id": "e5a397135c8ccfc8",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "ed82e6102fe8fcd5",
+    "name": "set filename (read)",
+    "func": "msg.encoding = \"utf8\";\nmsg.filename = flow.get(\"activeTripFile\") || \"trip-planner.yaml\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 530,
+    "y": 540,
+    "wires": [
+      [
+        "9d0dfa1ddcac7a79"
+      ]
+    ]
+  },
+  {
+    "id": "a6c4897de572a6da",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "set filename (backup)",
+    "func": "msg.encoding = \"utf8\";\nconst id = flow.get(\"activeTripId\") || \"default\";\nmsg.filename = (id === \"default\")\n    ? \"/home/pi/trips/trip-planner.save\"\n    : `/home/pi/trips/${id}.save`;\nreturn msg;\n",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 1260,
+    "y": 260,
+    "wires": [
+      [
+        "d6f7bfa1f2f1736d"
+      ]
+    ]
+  },
+  {
+    "id": "cf67f0ec651af3a7",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "g": "97d0af50adcecde7",
+    "name": "set filename (main)",
+    "func": "msg.encoding = \"utf8\";\nmsg.filename = flow.get(\"activeTripFile\") || \"/home/pi/trips/trip-planner.yaml\";\nreturn msg;\n",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 1250,
+    "y": 300,
+    "wires": [
+      [
+        "6a6d3112ad8a7704"
+      ]
+    ]
+  },
+  {
+    "id": "4c2756fa3dc34e94",
+    "type": "switch",
+    "z": "678cbe348abeb618",
+    "name": "Trip actions",
+    "property": "payload.action",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "listTrips",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "selectTrip",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "createTrip",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "renameTrip",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "deleteTrip",
+        "vt": "str"
+      },
+      {
+        "t": "else"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 6,
+    "x": 130,
+    "y": 180,
+    "wires": [
+      [
+        "b6b012cf351f1918"
+      ],
+      [
+        "b6b012cf351f1918"
+      ],
+      [
+        "b6b012cf351f1918"
+      ],
+      [
+        "b6b012cf351f1918"
+      ],
+      [
+        "b6b012cf351f1918"
+      ],
+      [
+        "134cc505d454a887"
+      ]
+    ]
+  },
+  {
+    "id": "549c1fea1bbac4b2",
+    "type": "file",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "filename": "filename",
+    "filenameType": "msg",
+    "appendNewline": false,
+    "createDir": true,
+    "overwriteFile": "true",
+    "encoding": "none",
+    "x": 300,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "541b77234050349f",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Trigger Load",
+    "func": "if (msg && msg._needReload === true) {\n    return { payload: { action: \"loadYaml\" } };\n}\nreturn null;\n",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 530,
+    "y": 180,
+    "wires": [
+      [
+        "e5a397135c8ccfc8"
+      ]
+    ]
+  },
+  {
+    "id": "e0125451463a57cb",
+    "type": "inject",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 880,
+    "y": 400,
+    "wires": [
+      [
+        "834ee7ce7991106c"
+      ]
+    ]
+  },
+  {
+    "id": "b731758ebfea7494",
+    "type": "debug",
+    "z": "678cbe348abeb618",
+    "name": "debug 45",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 1260,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "834ee7ce7991106c",
+    "type": "exec",
+    "z": "678cbe348abeb618",
+    "command": "dir",
+    "addpay": "",
+    "append": "",
+    "useSpawn": "false",
+    "timer": "",
+    "winHide": false,
+    "oldrc": false,
+    "name": "",
+    "x": 1070,
+    "y": 400,
+    "wires": [
+      [
+        "b731758ebfea7494"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "1a4d7c584a0e286d",
+    "type": "debug",
+    "z": "678cbe348abeb618",
+    "name": "debug 46",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 1040,
+    "y": 620,
+    "wires": []
+  },
+  {
+    "id": "05b0d0acad9f6409",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "url": "/trips.json",
+    "method": "get",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 340,
+    "y": 740,
+    "wires": [
+      [
+        "9efe28a72d1c3a50"
+      ]
+    ]
+  },
+  {
+    "id": "5d3c3a184c4f3e60",
+    "type": "http response",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "statusCode": "",
+    "headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "x": 810,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "9efe28a72d1c3a50",
+    "type": "file in",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "filename": "/home/pi/trips/trips.json",
+    "filenameType": "str",
+    "format": "utf8",
+    "chunk": false,
+    "sendError": false,
+    "encoding": "none",
+    "allProps": false,
+    "x": 550,
+    "y": 740,
+    "wires": [
+      [
+        "5d3c3a184c4f3e60"
+      ]
+    ]
+  },
+  {
+    "id": "6bbc5e1b689358ca",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "url": "/trips-meta.json",
+    "method": "get",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 350,
+    "y": 820,
+    "wires": [
+      [
+        "31e9ef3fa4877f72"
+      ]
+    ]
+  },
+  {
+    "id": "3a939b1f72ee4bad",
+    "type": "http response",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "statusCode": "",
+    "headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "x": 830,
+    "y": 820,
+    "wires": []
+  },
+  {
+    "id": "31e9ef3fa4877f72",
+    "type": "file in",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "filename": "/home/pi/trips/trips-meta.json",
+    "filenameType": "str",
+    "format": "utf8",
+    "chunk": false,
+    "sendError": false,
+    "encoding": "none",
+    "allProps": false,
+    "x": 560,
+    "y": 820,
+    "wires": [
+      [
+        "3a939b1f72ee4bad"
+      ]
+    ]
+  },
+  {
+    "id": "d49be7f0ce13ae4a",
+    "type": "uibuilder",
+    "z": "678cbe348abeb618",
+    "name": "",
+    "topic": "",
+    "url": "trips",
+    "okToGo": true,
+    "fwdInMessages": false,
+    "allowScripts": false,
+    "allowStyles": false,
+    "copyIndex": true,
+    "templateFolder": "blank",
+    "extTemplate": "",
+    "showfolder": false,
+    "reload": false,
+    "sourceFolder": "src",
+    "deployedVersion": "7.5.0",
+    "showMsgUib": false,
+    "title": "",
+    "descr": "",
+    "editurl": "",
+    "x": 590,
+    "y": 880,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "a91f6c2d8e4b7301",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "YAML to state + planning",
+    "func": "const doc = msg.payload || {}\nconst itinerary = Array.isArray(doc.itinerary) ? doc.itinerary.filter(id => typeof id === 'string') : []\nconst places = {}\nconst normalizeCurrency = value => {\n    const currency = String(value || '').trim().toUpperCase()\n    return /^[A-Z]{3}$/.test(currency) ? currency : null\n}\nconst normalizeCurrencies = values => {\n    const currencies = (Array.isArray(values) ? values : []).map(normalizeCurrency).filter(Boolean)\n    const unique = [...new Set(currencies)]\n    return unique.length ? unique : ['CHF']\n}\nconst budgetCurrencies = normalizeCurrencies(doc.budgetCurrencies)\nconst normalizeRelativePeriod = value => {\n    const normalized = String(value || '').toUpperCase().replace(/\\s+/g, '')\n    const match = /^J([1-9]\\d*)([MAS])?(?:-J?([1-9]\\d*)([MAS])?)?$/.exec(normalized)\n    const startDay = Number(match?.[1]), endDay = Number(match?.[3] || match?.[1])\n    if (!match || endDay < startDay) return ''\n    const start = `J${startDay}${match[2] || ''}`\n    if (endDay === startDay && !match[4]) return start\n    return `${start}-J${endDay}${match[4] || ''}`\n}\nfor (const [id, value] of Object.entries(doc.places || {})) {\n    const p = value || {}\n    const requestedCurrency = normalizeCurrency(p.budgetCurrency)\n    const budgetCurrency = requestedCurrency || budgetCurrencies[0]\n    if (!budgetCurrencies.includes(budgetCurrency)) budgetCurrencies.push(budgetCurrency)\n    places[id] = {\n        id,\n        name: String(p.name || 'Lieu').slice(0, 160),\n        lat: Number(p.lat) || 0,\n        lng: Number(p.lng) || 0,\n        durationH: Number(p.duration_h) || 0,\n        budget: Math.max(0, Number(p.budget) || 0),\n        budgetFree: p.budgetFree === true,\n        budgetCurrency,\n        budgetScope: p.budgetScope === 'group' ? 'group' : 'individual',\n        desc: String(p.desc || '').slice(0, 2000),\n        closedDays: Array.isArray(p.closedDays) ? p.closedDays.map(Number) : [],\n        ratings: p.ratings && typeof p.ratings === 'object' ? p.ratings : {},\n        tags: Array.isArray(p.tags) ? p.tags.map(String) : [],\n        image: typeof p.image === 'string' ? p.image : '',\n        slot: typeof p.slot === 'string' ? p.slot : '',\n        stageType: ['main', 'detail'].includes(p.stageType) ? p.stageType : '',\n        parentStageId: typeof p.parentStageId === 'string' ? p.parentStageId : '',\n        arrivalDate: /^\\d{4}-\\d{2}-\\d{2}$/.test(String(p.arrivalDate || '')) ? p.arrivalDate : '',\n        arrivalTime: /^([01]\\d|2[0-3]):[0-5]\\d$/.test(String(p.arrivalTime || '')) ? p.arrivalTime : '',\n        departureDate: /^\\d{4}-\\d{2}-\\d{2}$/.test(String(p.departureDate || '')) ? p.departureDate : '',\n        departureTime: /^([01]\\d|2[0-3]):[0-5]\\d$/.test(String(p.departureTime || '')) ? p.departureTime : '',\n        optionGroup: typeof p.optionGroup === 'string' ? p.optionGroup : '',\n        relativePeriod: normalizeRelativePeriod(p.relativePeriod),\n        url: typeof p.url === 'string' ? p.url : ''\n    }\n}\nconst planning = doc.planning && typeof doc.planning === 'object' ? doc.planning : {}\nif (!Array.isArray(planning.reservations)) planning.reservations = []\nconst people = Math.max(1, parseInt(doc.people, 10) || 2)\nconst validItinerary = itinerary.filter(id => places[id])\nconst startPlaceId = validItinerary.includes(doc.startPlaceId) ? doc.startPlaceId : (validItinerary[0] || '')\nconst notes = String(doc.notes || '').slice(0, 20000)\nconst state = { places, itinerary: validItinerary, startPlaceId, notes, view: doc.view || null, edges: doc.edges && typeof doc.edges === 'object' ? doc.edges : {}, planning, people, budgetCurrencies }\nflow.set('rankState', state)\nflow.set('loadedOnce', true)\nnode.status({ fill: 'green', shape: 'dot', text: `Loaded ${Object.keys(places).length} place(s)` })\nreturn { payload: { state } }",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 1130,
+    "y": 500,
+    "wires": [
+      [
+        "b00f95e12c6f33e5"
+      ]
+    ]
+  },
+  {
+    "id": "a91f6c2d8e4b7302",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Build save doc + planning",
+    "func": "const state = flow.get('rankState') || { places: {}, itinerary: [], view: null, edges: {}, planning: {} }\nconst normalizeCurrency = value => {\n    const currency = String(value || '').trim().toUpperCase()\n    return /^[A-Z]{3}$/.test(currency) ? currency : null\n}\nconst budgetCurrencies = [...new Set((Array.isArray(state.budgetCurrencies) ? state.budgetCurrencies : []).map(normalizeCurrency).filter(Boolean))]\nif (!budgetCurrencies.length) budgetCurrencies.push('CHF')\nconst itinerary = state.itinerary || []\nconst startPlaceId = itinerary.includes(state.startPlaceId) ? state.startPlaceId : (itinerary[0] || '')\nconst doc = { itinerary, startPlaceId, notes: String(state.notes || '').slice(0, 20000), places: {}, view: state.view || null, edges: state.edges || {}, planning: state.planning || {}, people: Math.max(1, parseInt(state.people, 10) || 2), budgetCurrencies }\nfor (const [id, value] of Object.entries(state.places || {})) {\n    const p = value || {}\n    doc.places[id] = {\n        name: p.name,\n        lat: p.lat,\n        lng: p.lng,\n        duration_h: Number(p.durationH) || 0,\n        budget: Math.max(0, Number(p.budget) || 0),\n        budgetFree: p.budgetFree === true,\n        budgetCurrency: /^[A-Z]{3}$/.test(String(p.budgetCurrency || '').trim().toUpperCase()) ? String(p.budgetCurrency).trim().toUpperCase() : 'CHF',\n        budgetScope: p.budgetScope === 'group' ? 'group' : 'individual',\n        desc: p.desc || '',\n        closedDays: Array.isArray(p.closedDays) ? p.closedDays : [],\n        ratings: p.ratings || {},\n        tags: Array.isArray(p.tags) ? p.tags : [],\n        image: p.image || '',\n        slot: p.slot || '',\n        stageType: p.stageType || '',\n        parentStageId: p.parentStageId || '',\n        arrivalDate: p.arrivalDate || '',\n        arrivalTime: p.arrivalTime || '',\n        departureDate: p.departureDate || '',\n        departureTime: p.departureTime || '',\n        optionGroup: p.optionGroup || '',\n        relativePeriod: p.relativePeriod || '',\n        url: p.url || ''\n    }\n}\nmsg.payload = doc\nreturn msg",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 830,
+    "y": 180,
+    "wires": [
+      [
+        "1828a03917d7780c"
+      ]
+    ]
+  },
+  {
+    "id": "a91f6c2d8e4b7303",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Planning state controller",
+    "func": "const packet = msg.payload || {}\nif (packet.action !== 'setPlanning') return null\nconst data = packet.data && typeof packet.data === 'object' ? packet.data : {}\nconst state = flow.get('rankState') || { places: {}, itinerary: [], view: null, edges: {}, planning: {} }\nconst meal = (value, fallback) => ({ at: /^\\d{2}:\\d{2}$/.test(String(value?.at || '')) ? value.at : fallback, durationMin: Math.max(15, Number(value?.durationMin) || 60) })\nconst placeIdsFor = item => {\n    const ids = Array.isArray(item?.placeIds) ? item.placeIds.filter(id => state.places[id]) : []\n    if (state.places[item?.placeId] && !ids.includes(item.placeId)) ids.unshift(item.placeId)\n    return [...new Set(ids)].slice(0, 50)\n}\nstate.planning = {\n    startDate: String(data.startDate || '').slice(0, 10),\n    endDate: String(data.endDate || '').slice(0, 10),\n    startTime: String(data.startTime || '07:00').slice(0, 5),\n    dayStart: String(data.dayStart || '07:00').slice(0, 5),\n    dayEnd: String(data.dayEnd || '22:00').slice(0, 5),\n    speedKmh: Math.max(1, Number(data.speedKmh) || 60),\n    meals: { breakfast: meal(data.meals?.breakfast, '07:00'), lunch: meal(data.meals?.lunch, '12:00'), dinner: meal(data.meals?.dinner, '19:00') },\n    reservations: Array.isArray(data.reservations) ? data.reservations.slice(0, 300).map(item => {\n        const placeIds = placeIdsFor(item)\n        return {\n            id: String(item?.id || '').slice(0, 80),\n            title: String(item?.title || '').slice(0, 160),\n            kind: ['activity', 'meal', 'lodging', 'travel', 'other'].includes(item?.kind) ? item.kind : 'activity',\n            placeId: placeIds[0] || '',\n            placeIds,\n            stageId: state.places[item?.stageId] ? String(item.stageId).slice(0, 80) : '',\n            start: String(item?.start || '').slice(0, 16),\n            end: String(item?.end || '').slice(0, 16),\n            dateMode: item?.dateMode === 'stage' ? 'stage' : 'fixed',\n            relativeDay: item?.relativeDay === 'departure' ? 'departure' : 'arrival',\n            startTime: /^\\d{2}:\\d{2}$/.test(String(item?.startTime || '')) ? item.startTime : '',\n            endTime: /^\\d{2}:\\d{2}$/.test(String(item?.endTime || '')) ? item.endTime : '',\n            meal: ['breakfast', 'lunch', 'dinner'].includes(item?.meal) ? item.meal : '',\n            notes: String(item?.notes || '').slice(0, 1000)\n        }\n    }) : []\n}\nflow.set('rankState', state)\nreturn [{ payload: { state } }, msg]",
+    "outputs": 2,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 690,
+    "y": 420,
+    "wires": [
+      [
+        "b00f95e12c6f33e5"
+      ],
+      [
+        "1ca347c774e927ca"
+      ]
+    ]
+  },
+  {
+    "id": "a91f6c2d8e4b7304",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Load trip registry at startup",
+    "func": "return null",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "try {\n    const registry = JSON.parse(fs.readFileSync('/home/pi/trips/trips.json', 'utf8'))\n    if (registry && Array.isArray(registry.trips) && registry.trips.length) {\n        flow.set('tripRegistry', registry)\n        flow.set('activeTripId', registry.active || registry.trips[0].id)\n    }\n} catch (error) {\n    node.warn('Impossible de charger le registre des voyages: ' + error.message)\n}",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "fs",
+        "module": "fs"
+      }
+    ],
+    "x": 350,
+    "y": 220,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "7af26dcb93e00101",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Export trip YAML",
+    "url": "/trip_planner/api/yaml",
+    "method": "get",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 210,
+    "y": 960,
+    "wires": [
+      [
+        "7af26dcb93e00103"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00102",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Import trip YAML",
+    "url": "/trip_planner/api/yaml",
+    "method": "post",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 210,
+    "y": 1020,
+    "wires": [
+      [
+        "7af26dcb93e00103"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00103",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "YAML import / export",
+    "func": "const store = context.get('yamlTransfer').createYamlStore();\nmsg.headers = { 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8' };\ntry {\n    const registry = flow.get('tripRegistry');\n    if (msg.req.method === 'POST') {\n        msg.payload = store.importFile(msg.payload, registry);\n        msg.statusCode = 201;\n        return [msg, { payload: { action: 'listTrips', data: { rescan: true } } }];\n    }\n    const result = store.exportFile(msg.req.query.id, registry);\n    msg.payload = result.content;\n    msg.statusCode = 200;\n    msg.headers['Content-Type'] = 'application/yaml; charset=utf-8';\n    const filename = encodeURIComponent(result.filename).replace(/'/g, '%27');\n    msg.headers['Content-Disposition'] = `attachment; filename=\"voyage.yaml\"; filename*=UTF-8''${filename}`;\n    return [msg, null];\n} catch (error) {\n    msg.statusCode = error.statusCode || 500;\n    msg.payload = { error: error.statusCode ? error.message : 'Impossible de lire ou enregistrer le fichier YAML.' };\n    if (!error.statusCode) node.warn(error.message);\n    return [msg, null];\n}",
+    "outputs": 2,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "context.set('yamlTransfer', moduleLoader.createRequire((env.get('TRIP_PLANNER_APP_DIR') || '/home/pi/.node-red/uibuilder/trip_planner') + '/package.json')('./yaml-transfer.js'));",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "moduleLoader",
+        "module": "module"
+      }
+    ],
+    "x": 470,
+    "y": 980,
+    "wires": [
+      [
+        "7af26dcb93e00104"
+      ],
+      [
+        "b6b012cf351f1918"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00104",
+    "type": "http response",
+    "z": "678cbe348abeb618",
+    "name": "YAML response",
+    "statusCode": "",
+    "headers": {},
+    "x": 720,
+    "y": 980,
+    "wires": []
+  },
+  {
+    "id": "7af26dcb93e00201",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Load trip comparison",
+    "url": "/trip_planner/api/comparison",
+    "method": "get",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 210,
+    "y": 1100,
+    "wires": [
+      [
+        "7af26dcb93e00203"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00202",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Save trip comparison",
+    "url": "/trip_planner/api/comparison",
+    "method": "put",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 210,
+    "y": 1160,
+    "wires": [
+      [
+        "7af26dcb93e00203"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00203",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "Comparison API",
+    "func": "const api = context.get('comparisonApi');\nconst request = { query: msg.req.query || {}, body: msg.payload };\nmsg.statusCode = 200;\nmsg.headers = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' };\nconst response = {\n    set(name, value) { msg.headers[name] = value; return this; },\n    status(code) { msg.statusCode = code; return this; },\n    json(payload) { msg.payload = payload; return this; }\n};\napi[msg.req.method.toLowerCase()](request, response);\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "context.set('comparisonApi', moduleLoader.createRequire((env.get('TRIP_PLANNER_APP_DIR') || '/home/pi/.node-red/uibuilder/trip_planner') + '/package.json')('./api/comparison.js'));",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "moduleLoader",
+        "module": "module"
+      }
+    ],
+    "x": 470,
+    "y": 1120,
+    "wires": [
+      [
+        "7af26dcb93e00204"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00204",
+    "type": "http response",
+    "z": "678cbe348abeb618",
+    "name": "Comparison response",
+    "statusCode": "",
+    "headers": {},
+    "x": 720,
+    "y": 1120,
+    "wires": []
+  },
+  {
+    "id": "7af26dcb93e00301",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Load GPS recordings",
+    "url": "/trip_planner/api/recordings",
+    "method": "get",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 200,
+    "y": 1240,
+    "wires": [
+      [
+        "7af26dcb93e00305"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00302",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Import GPX / freeze reference",
+    "url": "/trip_planner/api/recordings",
+    "method": "post",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 220,
+    "y": 1300,
+    "wires": [
+      [
+        "7af26dcb93e00305"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00303",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Assign GPS recording",
+    "url": "/trip_planner/api/recordings",
+    "method": "put",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 200,
+    "y": 1360,
+    "wires": [
+      [
+        "7af26dcb93e00305"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00304",
+    "type": "http in",
+    "z": "678cbe348abeb618",
+    "name": "Delete GPS recording",
+    "url": "/trip_planner/api/recordings",
+    "method": "delete",
+    "upload": false,
+    "skipBodyParsing": false,
+    "swaggerDoc": "",
+    "x": 200,
+    "y": 1420,
+    "wires": [
+      [
+        "7af26dcb93e00305"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00305",
+    "type": "function",
+    "z": "678cbe348abeb618",
+    "name": "GPS recordings API",
+    "func": "const api = context.get('recordingsApi');\nconst request = { query: msg.req.query || {}, body: msg.payload };\nmsg.statusCode = 200;\nmsg.headers = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' };\nconst response = {\n    set(name, value) { msg.headers[name] = value; return this; },\n    status(code) { msg.statusCode = code; return this; },\n    json(payload) { msg.payload = payload; return this; }\n};\napi[msg.req.method.toLowerCase()](request, response);\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "context.set('recordingsApi', moduleLoader.createRequire((env.get('TRIP_PLANNER_APP_DIR') || '/home/pi/.node-red/uibuilder/trip_planner') + '/package.json')('./api/recordings.js'));",
+    "finalize": "",
+    "libs": [
+      {
+        "var": "moduleLoader",
+        "module": "module"
+      }
+    ],
+    "x": 500,
+    "y": 1320,
+    "wires": [
+      [
+        "7af26dcb93e00306"
+      ]
+    ]
+  },
+  {
+    "id": "7af26dcb93e00306",
+    "type": "http response",
+    "z": "678cbe348abeb618",
+    "name": "GPS response",
+    "statusCode": "",
+    "headers": {},
+    "x": 740,
+    "y": 1320,
+    "wires": []
+  }
+]

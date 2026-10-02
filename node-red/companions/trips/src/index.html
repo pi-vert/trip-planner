@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trips Overview</title>
+
+    <!-- Leaflet (reprend le pattern de ton app existante) -->
+    <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <header class="top">
+        <h1>Vue d’ensemble des voyages</h1>
+        <div class="actions">
+            <button id="reloadBtn">Recharger</button>
+            <span id="status" class="muted"></span>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="card">
+            <h2>Carte</h2>
+            <div id="map" class="map"></div>
+            <div class="legend">
+                <span class="muted">Basse saison</span>
+                <div class="legendbar"></div>
+                <span class="muted">Haute saison</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Tableau météo / saison</h2>
+            <div class="muted small">
+                Températures (min–max) et pluviométrie (mm). Couleur = saison (vert→rouge).
+            </div>
+            <div class="tablewrap">
+                <table id="tbl"></table>
+            </div>
+        </section>
+    </main>
+
+    <script src="./vendor/leaflet/leaflet.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

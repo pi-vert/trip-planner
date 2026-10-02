@@ -1,0 +1,40 @@
+itinerary:
+  - mly5oqj2v4lhq
+startPlaceId: mly5oqj2v4lhq
+notes: ''
+places:
+  mly5oqj2v4lhq:
+    name: Tromsø
+    lat: 69.651635
+    lng: 18.955859
+    duration_h: 1
+    budget: 0
+    budgetFree: false
+    budgetCurrency: CHF
+    budgetScope: individual
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    relativePeriod: ''
+    url: ''
+view:
+  center:
+    lat: 69.651635
+    lng: 18.955859
+    zoom: 7
+edges: {}
+planning:
+  reservations: []
+people: 2
+budgetCurrencies:
+  - CHF

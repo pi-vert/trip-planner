@@ -1,0 +1,109 @@
+{
+  "trips": [
+    {
+      "id": "default",
+      "name": "Voyage principal",
+      "file": "/home/pi/trips/trip-planner.yaml"
+    },
+    {
+      "id": "algerie-p29w",
+      "name": "Algérie Djanet - Oulaltène",
+      "file": "/home/pi/trips/algerie-p29w.yaml"
+    },
+    {
+      "id": "amazonie-equateur-vr0w",
+      "name": "Amazonie - Equateur",
+      "file": "/home/pi/trips/amazonie-equateur-vr0w.yaml"
+    },
+    {
+      "id": "ardeche-6lb8",
+      "name": "Annecy-Chambery 2026",
+      "file": "/home/pi/trips/ardeche-6lb8.yaml"
+    },
+    {
+      "id": "ardeche-ifnx",
+      "name": "Ardèche",
+      "file": "/home/pi/trips/ardeche-ifnx.yaml"
+    },
+    {
+      "id": "budapest-eap3",
+      "name": "Budapest Octobre 2026",
+      "file": "/home/pi/trips/budapest-eap3.yaml"
+    },
+    {
+      "id": "corse-xgdk",
+      "name": "Corse",
+      "file": "/home/pi/trips/corse-xgdk.yaml"
+    },
+    {
+      "id": "djibouti-21nov-05dec-2026",
+      "name": "Djibouti 21nov 05dec",
+      "file": "/home/pi/trips/djibouti-21nov-05dec-2026.yaml"
+    },
+    {
+      "id": "islande-iow2",
+      "name": "Islande",
+      "file": "/home/pi/trips/islande-iow2.yaml"
+    },
+    {
+      "id": "jordanie-e0h4",
+      "name": "Jordanie Amman - Wadi Rum",
+      "file": "/home/pi/trips/jordanie-e0h4.yaml"
+    },
+    {
+      "id": "kilimandjaro-jmsh",
+      "name": "Kilimandjaro",
+      "file": "/home/pi/trips/kilimandjaro-jmsh.yaml"
+    },
+    {
+      "id": "maldives",
+      "name": "Maldives",
+      "file": "/home/pi/trips/maldives.yaml"
+    },
+    {
+      "id": "maroc-m-hamid-erg-chigaga-ervb",
+      "name": "Maroc M'Hamid - Erg Chigaga",
+      "file": "/home/pi/trips/maroc-m-hamid-erg-chigaga-ervb.yaml"
+    },
+    {
+      "id": "desert-sahara-xphy",
+      "name": "Maroc Marrakech - M'Hamid",
+      "file": "/home/pi/trips/desert-sahara-xphy.yaml"
+    },
+    {
+      "id": "maroc-necv",
+      "name": "Maroc Marrakech - Merzouga",
+      "file": "/home/pi/trips/maroc-necv.yaml"
+    },
+    {
+      "id": "meghalaya-21nov-05dec-2026",
+      "name": "Meghalaya 21nov 05dec",
+      "file": "/home/pi/trips/meghalaya-21nov-05dec-2026.yaml"
+    },
+    {
+      "id": "norvege-ldg7",
+      "name": "Norvege",
+      "file": "/home/pi/trips/norvege-ldg7.yaml"
+    },
+    {
+      "id": "polynesie-mi2u",
+      "name": "Polynesie",
+      "file": "/home/pi/trips/polynesie-mi2u.yaml"
+    },
+    {
+      "id": "reunion-ki7r",
+      "name": "Reunion",
+      "file": "/home/pi/trips/reunion-ki7r.yaml"
+    },
+    {
+      "id": "timor-leste-21nov-05dec-2026",
+      "name": "Timor leste 21nov 05dec",
+      "file": "/home/pi/trips/timor-leste-21nov-05dec-2026.yaml"
+    }
+  ],
+  "ignored": [
+    "amazonie-hi8x",
+    "verification-import-yaml-20260920"
+  ],
+  "active": "budapest-eap3"
+}

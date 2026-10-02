@@ -1,0 +1,43 @@
+{
+  "name": "trip-planner-uibuilder",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Planificateur collaboratif de voyages alimente par des fichiers YAML.",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "saxes": "^6.0.0"
+  },
+  "browser": "./src/index.js",
+  "scripts": {
+    "build": "node --check src/index.js",
+    "snapshot": "node scripts/snapshot.cjs --include-data",
+    "check:experience": "node --check src/experience.js && node --check src/experience-ui.js && node --check scripts/analyze-yaml-usage.cjs",
+    "check": "node --check src/index.js && node --check src/budget.js && node --check src/planning.js && node --check src/planning-ui.js && node --check src/weather.js && node --check src/weather-ui.js && node --check src/comparison-ui.js && node --check src/pdf-export.js && node --check src/route-maps.js && node --check src/route-optimizer.js && node --check src/trip-structure.js && node --check src/trip-comparison.js && node --check src/wikimedia-images.js && node --check comparison-store.js && node --check weather-store.js && node --check api/comparison.js && node --check api/weather.js",
+    "test": "node --test",
+    "check:yaml": "node --check yaml-transfer.js",
+    "check:gps": "node --check gpx-import.js && node --check recordings-store.js && node --check api/recordings.js && node --check src/gps-comparison.js && node --check src/recordings-ui.js && node --check src/visit-progress.js && node --check src/visit-progress-ui.js"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.27.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
+    "eslint": "^9.27.0",
+    "eslint-plugin-html": "^8.1.3",
+    "eslint-plugin-jsdoc": "^54.1.1",
+    "globals": "^16.1.0"
+  },
+  "keywords": [
+    "uibuilder",
+    "node-red",
+    "node-red-contrib-uibuilder"
+  ],
+  "author": "pi",
+  "license": "Apache-2.0",
+  "browserslist": [
+    "> 0.5%",
+    "maintained versions",
+    "last 2 versions",
+    "not dead",
+    "not ie > 0"
+  ]
+}

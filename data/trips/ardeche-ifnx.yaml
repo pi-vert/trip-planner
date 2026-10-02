@@ -1,0 +1,247 @@
+itinerary:
+  - mtoeifpr8pzp9
+  - mtoeifqrhdvdp
+  - mtoeifrqm6h9b
+  - mtoeifstlrydm
+  - mtoeiftv3cwyc
+  - mtoeifv6znwqe
+  - mtoeifxhnldn0
+  - mtoeifzp7u58w
+  - mtoeig1fyyxiw
+  - mtoeig3cbf959
+places:
+  mtoeifpr8pzp9:
+    name: Grotte de Choranche
+    lat: 45.06365
+    lng: 5.4262
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - culture
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifqrhdvdp:
+    name: Vélorail des Gorges du Doux
+    lat: 45.034391
+    lng: 4.678409
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifrqm6h9b:
+    name: Château de Crussol
+    lat: 44.939119
+    lng: 4.852349
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifstlrydm:
+    name: Valence
+    lat: 44.933228
+    lng: 4.892081
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - hébergement
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeiftv3cwyc:
+    name: Clos de la Balme
+    lat: 45.020153
+    lng: 5.530121
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - randonnée
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifv6znwqe:
+    name: Balazuc
+    lat: 44.509073
+    lng: 4.372983
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifxhnldn0:
+    name: Grotte Chauvet
+    lat: 44.388109
+    lng: 4.415691
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeifzp7u58w:
+    name: Safari de Peaugres Circuit Auto
+    lat: 45.265578
+    lng: 4.726291
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags:
+      - Zoo
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+  mtoeig1fyyxiw:
+    name: Maison de la Drevenne
+    lat: 45.206336
+    lng: 5.465148
+    duration_h: 4
+    budget: 29
+    desc: Kayak sur 16km
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: https://www.canoe-riviere-aventure.com/contact
+  mtoeig3cbf959:
+    name: Pont-en-Royans
+    lat: 45.0622
+    lng: 5.34251
+    duration_h: 1
+    budget: 0
+    desc: ''
+    closedDays: []
+    ratings: {}
+    tags: []
+    image: ''
+    slot: ''
+    stageType: ''
+    parentStageId: ''
+    arrivalDate: ''
+    arrivalTime: ''
+    departureDate: ''
+    departureTime: ''
+    optionGroup: ''
+    url: ''
+view: null
+edges:
+  mtoeifpr8pzp9|mtoeifqrhdvdp:
+    realKm: 80.1
+    realMin: 84
+  mtoeifqrhdvdp|mtoeifrqm6h9b:
+    realKm: 37.5
+    realMin: 43
+  mtoeifrqm6h9b|mtoeifstlrydm:
+    realKm: 5.1
+    realMin: 9
+  mtoeifstlrydm|mtoeiftv3cwyc:
+    realKm: 75.7
+    realMin: 80
+  mtoeiftv3cwyc|mtoeifv6znwqe:
+    realKm: 162.6
+    realMin: 152
+  mtoeifv6znwqe|mtoeifxhnldn0:
+    realKm: 22.9
+    realMin: 26
+  mtoeifxhnldn0|mtoeifzp7u58w:
+    realKm: 162.4
+    realMin: 132
+  mtoeifzp7u58w|mtoeig1fyyxiw:
+    realKm: 118.7
+    realMin: 91
+  mtoeig1fyyxiw|mtoeig3cbf959:
+    realKm: 26.9
+    realMin: 27
+planning:
+  reservations: []
